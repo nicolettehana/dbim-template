@@ -1,0 +1,68 @@
+ /* Colours come from dbim-theme.css (link it before this): footer bg = key colour */
+ .footerbox {
+     background: var(--key);
+     color: var(--on-key);
+     font-family: "Noto Sans", sans-serif;
+     /* self-host the font for a govt site */
+     padding-block: 2rem;
+ }
+
+ .footerbox h2,
+ .footerbox h3 {
+     font-size: 1.125rem;
+     font-weight: 600;
+     margin: 0 0 1rem;
+ }
+
+ .footerbox ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .footerbox a {
+     color: var(--inclusive-white);
+     text-decoration: none;
+ }
+
+ /* Noticeable hover and keyboard focus (DBIM typography + GIGW) */
+ .footerbox a:hover {
+     text-decoration: underline;
+     text-underline-offset: 3px;
+ }
+
+ .footerbox a:focus-visible {
+     outline: 2px solid var(--inclusive-white);
+     outline-offset: 3px;
+ }
+
+ /* Chevron drawn in CSS: no icon font, no extra download */
+ .footer-links a {
+     display: inline-flex;
+     align-items: center;
+     gap: .5rem;
+     padding-block: .25rem;
+ }
+
+ .footer-links a::before {
+     content: "";
+     width: .5rem;
+     height: .5rem;
+     border-top: 2px solid currentColor;
+     border-right: 2px solid currentColor;
+     transform: rotate(45deg);
+ }
+
+ .footer-social {
+     display: flex;
+     gap: 1rem;
+     flex-wrap: wrap;
+ }
+
+ .footer-social img {
+     width: 32px;
+     height: 32px;
+     display: block;
+ }
+
+ /* allowed icon size */

@@ -1,0 +1,39 @@
+/* DBIM colour tokens, shared across all sites.
+   Pick the site's colour group with: <html lang="en" data-theme="green">
+   Valid values: burgundy | purple | blue | green | chrome-yellow | cinnamon-red */
+
+:root {
+  /* ---- Functional palette (same on every site) ---- */
+  --linen: #EBEAEA;            /* image highlight bg, quotes, outlines of boxes */
+  --inclusive-white: #FFFFFF;  /* page bg, headshot bg, text/icons/emblem on dark, cookie banner bg */
+  --text-on-light: #150202;    /* Deep Earthy Brown: text on white/linen */
+  --black: #000000;            /* State Emblem on light bg */
+  --success: #198754;          /* Liberty Green */
+  --warning: #FFC107;          /* Mustard Yellow */
+  --error: #DC3545;            /* Coral Red */
+  --info: #0D6EFD;             /* Blue: info status, also hyperlinks */
+  --grey-01: #C6C6C6;
+  --grey-02: #8E8E8E;
+  --grey-03: #TODO;            /* not visible in the screenshots: copy from the manual */
+  /* Deep Blue #1D0A69 is reserved for the Gov.in root site: do not use. */
+
+  /* ---- Default group (used if data-theme is missing) ---- */
+  --c1: #0F5757; --c2: #2D8686; --c3: #75BDBD; --c4: #A6D9D9; --c5: #D9F2F2;
+}
+
+[data-theme="burgundy"]      { --c1: #6C1340; --c2: #A32966; --c3: #DB70A6; --c4: #EBADCC; --c5: #FAEBF2; }
+[data-theme="purple"]        { --c1: #29136C; --c2: #4729A3; --c3: #8B70DB; --c4: #BDADEB; --c5: #EEEBFA; }
+[data-theme="blue"]          { --c1: #162F6A; --c2: #214AAB; --c3: #5279D7; --c4: #A3BBF3; --c5: #D2DFFF; }
+[data-theme="green"]         { --c1: #0F5757; --c2: #2D8686; --c3: #75BDBD; --c4: #A6D9D9; --c5: #D9F2F2; }
+[data-theme="chrome-yellow"] { --c1: #5D3E00; --c2: #916100; --c3: #DDA73A; --c4: #F4D390; --c5: #FFEECC; }
+[data-theme="cinnamon-red"]  { --c1: #771D1D; --c2: #A72626; --c3: #D75151; --c4: #FAAAAA; --c5: #FCDADA; }
+
+:root {
+  /* ---- Semantic aliases: components should use these, never raw hex ---- */
+  --key: var(--c1);            /* key colour = darkest shade: footer bg, icons on light bg */
+  --on-key: var(--inclusive-white);
+  --link: var(--info);         /* or var(--key), both allowed */
+}
+
+/* Gradients may use any two variants of the selected group */
+.dbim-gradient { background: linear-gradient(to bottom, var(--c2), var(--c5)); }
