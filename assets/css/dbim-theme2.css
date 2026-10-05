@@ -1,0 +1,122 @@
+/* ==========================================================================
+   DBIM theme tokens (CSS version of the toolkit's SCSS variables)
+   Variable names follow the toolkit: $wintergreen-dream -> --wintergreen-dream
+
+   Usage (put the attributes on <html>, not <body>):
+     <html lang="en" data-theme="green">                      light, Forest Green
+     <html lang="en" data-theme="green" data-mode="dark">     dark / high-contrast
+
+   data-theme: burgundy | purple | blue | green | chrome-yellow | cinnamon-red | grey
+   data-mode : dark (optional)
+
+   Colour group shades, darkest to lightest:
+     --wintergreen-dream  = key colour (footer bg, icons on light bg)
+     --powder-blue
+     --columbia-blue
+     --azureish-white
+     --azureish-white-bg  = lightest tint
+   ========================================================================== */
+
+:root {
+  /* ---- Defaults: same in every colour mode ---- */
+  --deep-blue: #1D0A69;          /* Gov.in root site only: do not use elsewhere */
+  --bright-gray: #EBEAEA;        /* Linen */
+  --anti-flash-white: #F1F1F1;
+  --rhythm: #3D4043;
+  --white: #FFFFFF;              /* Inclusive white */
+  --black: #150202;              /* Deep Earthy Brown: text on light backgrounds */
+  --black-pure: #000000;         /* State Emblem on light backgrounds */
+  --profile-border-color: #D5CBBD;
+  --profile-card-secondary: #DBEBEB;
+
+  /* ---- Functional palette: status colours and greys ---- */
+  --success: #198754;
+  --warning: #FFC107;
+  --error: #DC3545;
+  --info: #0D6EFD;
+  --grey-01: #C6C6C6;
+  --grey-02: #8E8E8E;
+  /* --grey-03: copy the value from the manual */
+
+  /* ---- Fallback colour group: Forest Green (used if data-theme is missing) ---- */
+  --banner-transparency: rgba(15, 87, 87, 0.95);
+  --wintergreen-dream: #0F5757;
+  --powder-blue: #2D8686;
+  --columbia-blue: #75BDBD;
+  --azureish-white: #A6D9D9;
+  --azureish-white-bg: #D9F2F2;
+
+  /* ---- Semantic aliases: components should use these ---- */
+  --key: var(--wintergreen-dream);
+  --on-key: #FFFFFF;             /* text and icons on key-colour backgrounds */
+  --link: var(--info);           /* the key colour is also allowed for links */
+  --c1: var(--wintergreen-dream);
+  --c2: var(--powder-blue);
+  --c3: var(--columbia-blue);
+  --c4: var(--azureish-white);
+  --c5: var(--azureish-white-bg);
+}
+
+/* ---------- Colour modes ---------- */
+[data-theme="burgundy"] {
+  --banner-transparency: rgba(108, 19, 64, 0.95);
+  --wintergreen-dream: #6C1340; --powder-blue: #A32966; --columbia-blue: #DB70A6;
+  --azureish-white: #EBADCC; --azureish-white-bg: #FAEBF2;
+}
+[data-theme="purple"] {
+  --banner-transparency: rgba(41, 19, 108, 0.95);
+  --wintergreen-dream: #29136C; --powder-blue: #4729A3; --columbia-blue: #8B70DB;
+  --azureish-white: #BDADEB; --azureish-white-bg: #EEEBFA;
+}
+[data-theme="blue"] {
+  --banner-transparency: rgba(22, 47, 106, 0.95);
+  --wintergreen-dream: #162F6A; --powder-blue: #214AAB; --columbia-blue: #5279D7;
+  --azureish-white: #A3BBF3; --azureish-white-bg: #D2DFFF;
+}
+[data-theme="green"] {
+  --banner-transparency: rgba(15, 87, 87, 0.95);
+  --wintergreen-dream: #0F5757; --powder-blue: #2D8686; --columbia-blue: #75BDBD;
+  --azureish-white: #A6D9D9; --azureish-white-bg: #D9F2F2;
+}
+[data-theme="chrome-yellow"] {
+  --banner-transparency: rgba(93, 62, 0, 0.95);
+  --wintergreen-dream: #5D3E00; --powder-blue: #916100; --columbia-blue: #DDA73A;
+  --azureish-white: #F4D390; --azureish-white-bg: #FFEECC;
+}
+[data-theme="cinnamon-red"] {
+  --banner-transparency: rgba(119, 29, 29, 0.95);
+  --wintergreen-dream: #771D1D; --powder-blue: #A72626; --columbia-blue: #D75151;
+  --azureish-white: #FAAAAA; --azureish-white-bg: #FCDADA;
+}
+
+/* ---------- Light theme (neutral greys) ---------- */
+[data-theme="grey"] {
+  --banner-transparency: rgba(69, 71, 84, 0.95);
+  --eagle-green: #22242A;
+  --wintergreen-dream: #454754; --powder-blue: #676B7E; --columbia-blue: #8A8E9F;
+  --azureish-white: #D5D6DC; --azureish-white-bg: #F1F1F4;
+}
+
+/* ---------- Dark theme (overrides any colour mode; keep this block last) ---------- */
+[data-mode="dark"] {
+  --banner-transparency: rgba(38, 24, 0, 0.95);
+  --eagle-green: #0B0C0E;
+  --wintergreen-dream: #0B0C0E; --powder-blue: #0B0C0E; --columbia-blue: #0B0C0E;
+  --azureish-white: #23232A; --azureish-white-bg: #BCB9C6;
+
+  --deep-blue: #FFFF00;
+  --bright-gray: #EBEAEA;
+  --anti-flash-white: #FFFF00;
+  --rhythm: #FFFF00;
+  --white: #0B0C0E;              /* page background in dark mode */
+  --black: #FFFF00;              /* text in dark mode */
+  --black-pure: #FFFF00;
+  --profile-border-color: #23232A;
+  --profile-card-secondary: #23232A;
+
+  --on-key: #FFFF00;
+  --link: #FFFF00;
+}
+
+/* Gradients may use any two variants of the selected group */
+.dbim-gradient { background: linear-gradient(to bottom, var(--c2), var(--c5)); }

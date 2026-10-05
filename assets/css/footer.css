@@ -1,0 +1,52 @@
+/* Footer for the Bootstrap-grid markup. Colours come from dbim-theme.css. */
+.footerbox {
+  background: var(--key);
+  color: var(--on-key);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-block: 2rem;
+}
+
+.footerbox h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase; /* short headings only */
+}
+.footerbox ul { list-style: none; margin: 0; padding: 0; }
+.footerbox p { margin: 0; }
+
+.footerbox a { color: inherit; text-decoration: none; }
+.footerbox a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.footerbox a:focus-visible { outline: 2px solid var(--on-key); outline-offset: 3px; }
+
+/* Useful links: columns fill the available width, chevron drawn in CSS */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.5rem 1rem;
+}
+.footer-links a { display: inline-flex; align-items: center; gap: 0.5rem; }
+.footer-links a::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+
+/* Social icons and portal logo */
+.footer-social { display: flex; flex-wrap: wrap; gap: 1rem; }
+.footer-social img { display: block; width: 32px; height: 32px; }
+.footer-portal { display: inline-block; margin-top: 1rem; }
+.footer-portal img { display: block; height: 40px; width: auto; } /* keeps proportion */
+
+.footer-bottom p:last-child { font-weight: 700; }
+
+@media (min-width: 992px) {
+  .footer-right { text-align: right; }
+  .footer-right .footer-social { justify-content: flex-end; }
+}
