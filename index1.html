@@ -16,10 +16,34 @@
     <link rel="stylesheet" href="assets/css/about-us.css">
     <link rel="stylesheet" href="assets/css/offerings.css">
     <link rel="stylesheet" href="assets/css/explore.css">
+    <link rel="stylesheet" href="assets/css/ticker.css">
 </head>
 
 <body>
 
+    <section class="ticker" aria-labelledby="ticker-title">
+  <div class="ticker-inner">
+
+    <div class="ticker-label">
+      <h2 id="ticker-title">Announcements</h2>
+      <span class="ico" aria-hidden="true"></span>
+    </div>
+
+    <div class="ticker-viewport">
+      <div class="ticker-move">
+        <ul class="ticker-list">
+          <li><a href="#">Placeholder announcement one: a vacancy circular</a></li>
+          <li><a href="#">Placeholder announcement two: an advertisement for hiring</a></li>
+          <li><a href="#">Placeholder announcement three: a notice for stakeholders</a></li>
+          <li><a href="#">Placeholder announcement four: a tender notice</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button type="button" class="ticker-toggle" aria-label="Pause announcements" title="Pause announcements"></button>
+
+  </div>
+</section>
     <section class="about" aria-labelledby="about-title">
         <div class="about-inner">
     
@@ -345,6 +369,7 @@
     <script src="assets/js/logo-carousel.js"></script>
     <script src="assets/js/offerings-tabs.js"></script>
     <script src="assets/js/persona-slider.js"></script>
+    <script src="assets/js/ticker.js"></script>
 
 </body>
 

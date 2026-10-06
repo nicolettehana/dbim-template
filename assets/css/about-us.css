@@ -17,7 +17,7 @@
   background: var(--white);
   color: var(--black);
   font-family: "Noto Sans", sans-serif;
-  padding-top: 6rem;
+  padding-top: 4.5rem;
   padding-bottom: 6rem;
 
 }
@@ -163,7 +163,8 @@
     --about-name-size: 1.75rem;
     --about-role-size: 1.25rem;
   }
-  .about-inner { grid-template-columns: minmax(0, 1fr) 435px; gap: 4.5rem; }
+  /* .about-inner { grid-template-columns: minmax(0, 1fr) 435px; gap: 4.5rem; } */
+  .about-inner { width: 88%; grid-template-columns: minmax(0, 1fr) 435px; gap: 4.5rem; }
   .about-people { align-self: end; margin: 0; max-width: 435px; gap: 2rem; }
 }
 

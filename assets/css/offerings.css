@@ -174,7 +174,7 @@
     
   }
     .offerings-inner {
-      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      width: 88%; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
       gap: 2rem;
     }
 }

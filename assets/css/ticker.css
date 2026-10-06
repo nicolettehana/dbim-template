@@ -1,0 +1,122 @@
+/* Announcements ticker: scrolls right to left until paused.
+   Pauses while the pointer or keyboard focus is over the text.
+   Visitors who prefer reduced motion get a still, scrollable line instead.
+   Colours come from the dbim-theme tokens. */
+
+.ticker {
+  --ticker-title-size: 1.5rem;
+  --ticker-text-size: 1.5rem;
+
+  background: var(--grey-01, #C6C6C6);
+  color: var(--black);
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ticker-inner {
+  width: calc(100% - 3rem);
+  max-width: 1590px;
+  margin-inline: auto;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Label: "Announcements" + speaker icon */
+.ticker .ticker-label { flex: none; display: flex; align-items: center; gap: 0.5rem; padding-right: 1.5rem; }
+.ticker .ticker-label h2 {
+  margin: 0;
+  font-size: var(--ticker-title-size);
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--key);
+  white-space: nowrap;
+}
+.ticker .ico {
+  flex: none;
+  width: 2.5rem;                              /* 24px */
+  height: 2.5rem;
+  background-color: var(--key);
+  -webkit-mask: url("../../assets/images/icons/announcement.svg") center / contain no-repeat;
+          mask: url("../../assets/images/icons/announcement.svg") center / contain no-repeat;
+}
+
+/* Moving text */
+.ticker .ticker-viewport { flex: 1; min-width: 0; overflow-x: auto; }   /* no JS: still scrollable */
+.ticker.is-ready .ticker-viewport { overflow: hidden; }
+
+.ticker .ticker-move { display: flex; width: max-content; }
+.ticker .ticker-list {
+  display: flex;
+  flex: none;
+  min-width: var(--ticker-min, 0);            /* set by the script: at least as wide as the viewport */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ticker .ticker-list li { flex: none; padding-right: 3rem; white-space: nowrap; }
+.ticker .ticker-list a {
+  font-size: var(--ticker-text-size);
+  color: var(--black);
+  text-decoration: none;
+}
+.ticker .ticker-list a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.ticker .ticker-list a:focus-visible { outline: 2px solid var(--key); outline-offset: 2px; }
+
+.ticker.is-ready .ticker-move { animation: ticker-scroll var(--ticker-duration, 40s) linear infinite; }
+@keyframes ticker-scroll { to { transform: translateX(-50%); } }
+
+/* Paused: by the button, or while hovering or focusing the text */
+.ticker.is-paused .ticker-move,
+.ticker .ticker-viewport:hover .ticker-move,
+.ticker .ticker-viewport:focus-within .ticker-move { animation-play-state: paused; }
+
+/* Pause / play button (icons drawn in CSS) */
+.ticker .ticker-toggle {
+  display: none;                              /* shown once the script is running */
+  flex: none;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0.25rem;
+  color: var(--key);
+  cursor: pointer;
+}
+.ticker.is-ready .ticker-toggle { display: grid; }
+.ticker .ticker-toggle::before {              /* pause: two bars */
+  content: "";
+  width: 0.625rem;
+  height: 0.875rem;
+  border-left: 0.1875rem solid currentColor;
+  border-right: 0.1875rem solid currentColor;
+}
+.ticker.is-paused .ticker-toggle::before {    /* play: triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.4375rem 0 0.4375rem 0.75rem;
+  border-color: transparent transparent transparent currentColor;
+}
+.ticker .ticker-toggle:hover { background: rgba(0, 0, 0, 0.08); }
+.ticker .ticker-toggle:focus-visible { outline: 2px solid var(--key); outline-offset: 2px; }
+
+/* Reduced motion: no scrolling, just a still line the visitor can scroll */
+@media (prefers-reduced-motion: reduce) {
+  .ticker .ticker-viewport,
+  .ticker.is-ready .ticker-viewport { overflow-x: auto; }
+  .ticker .ticker-move { animation: none !important; }
+  .ticker .ticker-clone,
+  .ticker.is-ready .ticker-toggle { display: none; }
+}
+
+@media (min-width: 768px) {
+  .ticker { --ticker-title-size: 1.6rem; --ticker-text-size: 1.5rem; }
+}
+@media (min-width: 1200px) {
+  .ticker-inner { width: 88%; }
+}

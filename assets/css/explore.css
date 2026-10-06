@@ -267,5 +267,5 @@
 /* Side by side only from 1200px up (change this number to switch earlier or later) */
 @media (min-width: 1200px) {
   .explore { --explore-card-title-size: 2rem; }
-  .explore-inner { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem; }
+  .explore-inner { width: 88%; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem; }
 }

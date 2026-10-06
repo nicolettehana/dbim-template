@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Announcements ticker test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/ticker.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Put this section just below the banner -->
+<section class="ticker" aria-labelledby="ticker-title">
+  <div class="ticker-inner">
+
+    <div class="ticker-label">
+      <h2 id="ticker-title">Announcements</h2>
+      <span class="ico" aria-hidden="true"></span>
+    </div>
+
+    <div class="ticker-viewport">
+      <div class="ticker-move">
+        <ul class="ticker-list">
+          <li><a href="#">Placeholder announcement one: a vacancy circular</a></li>
+          <li><a href="#">Placeholder announcement two: an advertisement for hiring</a></li>
+          <li><a href="#">Placeholder announcement three: a notice for stakeholders</a></li>
+          <li><a href="#">Placeholder announcement four: a tender notice</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button type="button" class="ticker-toggle" aria-label="Pause announcements" title="Pause announcements"></button>
+
+  </div>
+</section>
+
+<script src="assets/js/ticker.js"></script>
+</body>
+</html>
