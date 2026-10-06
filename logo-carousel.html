@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logo carousel test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/logo-carousel.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Put this section just above the footer -->
+<section class="logo-carousel" aria-labelledby="lc-title">
+  <h2 id="lc-title" class="visually-hidden">Related websites and services</h2>
+  <div class="lc-inner">
+
+    <button type="button" class="lc-btn lc-prev" aria-label="Previous logos"></button>
+
+    <ul class="lc-track" role="list">
+      <!-- One <li> per logo. Use the official logos, each under 100 KB. -->
+      <li class="lc-item"><a href="https://www.india.gov.in/" target="_blank" rel="noopener noreferrer"><img src="assets/images/logos/india.png" width="200" height="60" alt="Website one (opens in a new tab)"></a></li>
+      <li class="lc-item"><a href="https://meghalaya.gov.in/" target="_blank" rel="noopener noreferrer"><img src="assets/images/logos/meglogo.png" width="200" height="60" alt="Website two (opens in a new tab)"></a></li>
+      <li class="lc-item"><a href="https://finmin.gov.in/" target="_blank" rel="noopener noreferrer"><img src="assets/images/logos/ministry_of_finance.png" width="200" height="60" alt="Website three (opens in a new tab)"></a></li>
+      <li class="lc-item"><a href="https://rbi.org.in/" target="_blank" rel="noopener noreferrer"><img src="assets/images/logos/rbi.png" width="200" height="60" alt="Website four (opens in a new tab)"></a></li>
+      <li class="lc-item"><a href="https://pfms.nic.in/" target="_blank" rel="noopener noreferrer"><img src="assets/images/logos/pfms.png" width="200" height="60" alt="Website five (opens in a new tab)"></a></li>
+    </ul>
+
+    <button type="button" class="lc-btn lc-next" aria-label="Next logos"></button>
+
+  </div>
+</section>
+
+<script src="assets/js/logo-carousel.js"></script>
+</body>
+</html>

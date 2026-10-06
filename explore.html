@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore section test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/explore.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<section class="explore" aria-label="Recent documents, user personas and important links">
+  <div class="explore-inner">
+
+    <!-- Recent Documents -->
+    <div class="explore-col">
+      <h2 class="explore-title"><span class="ico ico-docs" aria-hidden="true"></span>Quick Access</h2>
+      <ul class="doc-grid">
+        <li><a class="doc-card" href="#"><span class="doc-card-title"><span class="doc-card-icon doc-icon-egov"
+                aria-hidden="true"></span>e-Gov Initiatives</span><span class="doc-card-text">Placeholder headline for the first
+              press release. Anything longer than three lines is cut off with an ellipsis, so cards stay the same
+              height.</span></a></li>
+        <li><a class="doc-card" href="#"><span class="doc-card-title"><span class="doc-card-icon doc-icon-egov" aria-hidden="true"></span>Forms</span><span class="doc-card-text">Placeholder headline for the second press release, a little shorter.</span></a></li>
+        <li><a class="doc-card" href="#"><span class="doc-card-title"><span class="doc-card-icon doc-icon-egov" aria-hidden="true"></span>State Budget</span><span class="doc-card-text">Placeholder headline for the third press release. It can run to a few lines before it is trimmed to fit the card.</span></a></li>
+        <li><a class="doc-card" href="#"><span class="doc-card-title"><span class="doc-card-icon doc-icon-egov" aria-hidden="true"></span>Expenditure</span><span class="doc-card-text">Placeholder headline for the fourth press release.</span></a></li>
+      </ul>
+      <!-- <a class="explore-more" href="documents.html" aria-label="View more recent documents">View more</a> -->
+    </div>
+
+    <!-- Explore User Personas -->
+    <div class="explore-col">
+      <h2 class="explore-title" id="persona-title"><span class="ico ico-personas" aria-hidden="true"></span>Explore User Personas</h2>
+
+      <div class="persona" role="region" aria-roledescription="carousel" aria-labelledby="persona-title">
+        <ul class="persona-track">
+          <!-- One <li> per persona: 2 default DBIM personas plus up to 4 more. Use the UX Kit images. -->
+          <li class="persona-slide" role="group" aria-roledescription="slide" aria-label="1 of 4">
+            <a class="persona-link" href="#">
+              <span class="persona-img"><img src="assets/images/icons/employee.svg" width="400" height="400" alt=""></span>
+              <span class="persona-name">For Employees</span>
+            </a>
+          </li>
+          <li class="persona-slide" role="group" aria-roledescription="slide" aria-label="2 of 4">
+            <a class="persona-link" href="#">
+              <span class="persona-img"><img src="assets/images/icons/citizens.svg" width="400" height="400" alt=""></span>
+              <span class="persona-name">For Citizens</span>
+            </a>
+          </li>
+          <!-- <li class="persona-slide" role="group" aria-roledescription="slide" aria-label="3 of 4">
+            <a class="persona-link" href="#">
+              <span class="persona-img"><img src="assets/images/personas/persona-placeholder.svg" width="400" height="400" alt=""></span>
+              <span class="persona-name">For Media</span>
+            </a>
+          </li>
+          <li class="persona-slide" role="group" aria-roledescription="slide" aria-label="4 of 4">
+            <a class="persona-link" href="#">
+              <span class="persona-img"><img src="assets/images/personas/persona-placeholder.svg" width="400" height="400" alt=""></span>
+              <span class="persona-name">For Industry</span>
+            </a>
+          </li> -->
+        </ul>
+
+        <div class="persona-controls">
+          <button type="button" class="persona-btn persona-prev" aria-label="Previous persona"></button>
+          <ul class="persona-dots">
+            <li><button type="button" aria-label="Show persona 1 of 4" aria-current="true"></button></li>
+            <li><button type="button" aria-label="Show persona 2 of 4"></button></li>
+            <!-- <li><button type="button" aria-label="Show persona 3 of 4"></button></li>
+            <li><button type="button" aria-label="Show persona 4 of 4"></button></li> -->
+          </ul>
+          <button type="button" class="persona-btn persona-next" aria-label="Next persona"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Important Links -->
+    <div class="explore-col">
+      <h2 class="explore-title"><span class="ico ico-links" aria-hidden="true"></span>Important Links</h2>
+      <ul class="link-list">
+        <li><a href="https://meghalaya.gov.in/">Meghalaya State Portal</a></li>
+        <li><a href="https://megrti.gov.in/">Right to Information</a></li>
+        <li><a href="https://ebilling.megfinance.gov.in/">Meghalaya e-Billing</a></li>
+        <li><a href="https://pfms.nic.in/SitePages/Users/LoginDetails/Login.aspx">PFMS</a></li>
+        <li><a href="https://www.rbi.org.in/">RBI</a></li>
+      </ul>
+      <a class="explore-more" href="important-links.html" aria-label="View more recent documents">View all</a>
+    </div>
+
+  </div>
+</section>
+
+<script src="assets/js/persona-slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key Offerings test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/offerings.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<section class="offerings" aria-label="Key offerings and latest updates">
+  <div class="offerings-inner">
+
+    <!-- Key Offerings -->
+    <div class="offer-col">
+      <h2 class="offer-title" id="offerings-title"><span class="ico ico-offer" aria-hidden="true"></span>Key Offerings</h2>
+
+      <div class="offer-box">
+        <div class="offer-tabs" role="tablist" aria-labelledby="offerings-title">
+          <button type="button" class="offer-tab" role="tab" id="tab-schemes" aria-selected="true" aria-controls="panel-schemes"
+                  data-more="schemes.html" data-label="View more schemes">Notification/Orders/Tenders</button>
+          <button type="button" class="offer-tab" role="tab" id="tab-vacancies" aria-selected="false" aria-controls="panel-vacancies"
+                  data-more="vacancies.html" data-label="View more vacancies">Acts</button>
+          <button type="button" class="offer-tab" role="tab" id="tab-tenders" aria-selected="false" aria-controls="panel-tenders"
+                  data-more="tenders.html" data-label="View more tenders">Rules</button>
+        </div>
+
+        <div class="offer-panel" role="tabpanel" id="panel-schemes" aria-labelledby="tab-schemes">
+          <ul class="offer-list">
+            <li><a href="#">Scheme title one</a></li>
+            <li><a href="#">Scheme title two</a></li>
+            <li><a href="#">Scheme title three</a></li>
+            <li><a href="#">Scheme title four</a></li>
+            <li><a href="#">Scheme title five</a></li>
+            <li><a href="#">Scheme title six</a></li>
+          </ul>
+        </div>
+
+        <div class="offer-panel" role="tabpanel" id="panel-vacancies" aria-labelledby="tab-vacancies" hidden>
+          <ul class="offer-list">
+            <li><a href="#">Vacancy notice one</a></li>
+            <li><a href="#">Vacancy notice two</a></li>
+            <li><a href="#">Vacancy notice three</a></li>
+          </ul>
+        </div>
+
+        <div class="offer-panel" role="tabpanel" id="panel-tenders" aria-labelledby="tab-tenders" hidden>
+          <ul class="offer-list">
+            <li><a href="#">Tender notice one</a></li>
+            <li><a href="#">Tender notice two</a></li>
+            <li><a href="#">Tender notice three</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- The link changes with the selected tab (schemes.html, vacancies.html, tenders.html) -->
+      <a class="offer-more" href="schemes.html" aria-label="View more schemes" data-tab-more>View more</a>
+    </div>
+
+    <!-- What's New -->
+    <div class="offer-col">
+      <h2 class="offer-title"><span class="ico ico-sparkle" aria-hidden="true"></span>What's New</h2>
+
+      <ul class="offer-box offer-news">
+        <li><a href="#">Latest update one</a></li>
+        <li><a href="#">A longer update title that runs over two or three lines on narrow columns, like a circular or notice</a></li>
+        <li><a href="#">Latest update three</a></li>
+      </ul>
+
+      <a class="offer-more" href="whats-new.html" aria-label="View more updates">View more</a>
+    </div>
+
+  </div>
+</section>
+
+<script src="assets/js/offerings-tabs.js"></script>
+</body>
+</html>

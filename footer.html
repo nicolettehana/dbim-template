@@ -1,23 +1,22 @@
 <!doctype html>
-<html lang="en">
-<!-- DBIM footer: cleaned-up version of the supplied snippet.
-     Replace the TODO values with the exact tokens from the DBIM manual. -->
-     <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--link rel="stylesheet" href="assets/css/bootstrap.min.css"-->
-      <link rel="stylesheet" href="assets/css/dbim-theme2.css">
-      <link rel="stylesheet" href="assets/css/components/footer.css">
-      <link rel="stylesheet" href="assets/css/compiled.min.css">
-      <link rel="stylesheet" href="assets/css/style.css">
-     </head>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Footer test</title>
 
-
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/footer4.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
 <footer class="footerbox" aria-label="Site footer">
-  <div class="container">
-    <div class="row g-4">
+  <div class="container-fluid">
+    <div class="footer-grid">
 
-      <nav class="col-12 col-lg-5" aria-labelledby="footer-useful-links">
+      <nav class="footer-useful" aria-labelledby="footer-useful-links">
         <h2 id="footer-useful-links">Useful Links</h2>
         <ul class="footer-links">
           <li><a href="#">Archives</a></li>
@@ -28,40 +27,37 @@
         </ul>
       </nav>
 
-      <div class="col-12 col-lg-6 offset-lg-1">
-        <h2 id="footer-social">Follow us</h2>
-        <ul class="footer-social" aria-labelledby="footer-social">
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="assets/images/icons/x.svg" width="32" height="32" alt="X (opens in a new tab)">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="assets/images/icons/facebook.svg" width="32" height="32" alt="Facebook (opens in a new tab)">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="assets/images/icons/instagram.svg" width="32" height="32" alt="Instagram (opens in a new tab)">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="assets/images/icons/youtube.svg" width="32" height="32" alt="YouTube (opens in a new tab)">
-            </a>
-          </li>
-        </ul>
+      <p class="footer-lineage">This Website belongs to Finance Department, Government of Meghalaya and Hosted by National Informatics Centre, Meghalaya
+      State Centre.</p>
 
-        <p class="mt-4 mb-1">
-          Last updated: <time datetime="2024-04-09">09 April 2024</time>
-        </p>
-        <p class="mb-0">
-          All rights reserved to Ministry of Skill Development and Entrepreneurship, Government of India
-        </p>
+      <div class="footer-subscribe">
+        <h2 id="footer-subscribe">Subscribe for updates</h2>
+        <ul class="footer-social" aria-labelledby="footer-subscribe">
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/x.svg" width="32" height="32" alt="X (opens in a new tab)"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/youtube.svg" width="32" height="32" alt="YouTube (opens in a new tab)"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/facebook.svg" width="32" height="32" alt="Facebook (opens in a new tab)"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/instagram.svg" width="32" height="32" alt="Instagram (opens in a new tab)"></a></li>
+        </ul>
+        <!-- Official logos from the DBIM toolkit, each under 100 KB. Add the myGov logo here if your site uses it. -->
+        <div class="footer-logos">
+          <a href="https://www.meghalaya.gov.in" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/logos/meglogo.png" height="44" alt="Meghalaya.gov.in: Portal of Meghalaya (opens in a new tab)">
+          </a>
+          <a href="https://meg.nic.in" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/logos/nic.svg" height="44"
+              alt="Meg.nic.in: Portal of Meghalaya (opens in a new tab)">
+          </a>
+        </div>
       </div>
+
+      <!-- <p class="footer-updated">Last Updated On: <time datetime="2026-10-06">06.10.2026</time></p> -->
+      <p class="footer-updated">Last Updated On: <time id="last-updated" datetime="2026-10-06">06.10.2026</time></p>
 
     </div>
   </div>
 </footer>
+
+  <script src="assets/js/last-updated.js"></script>
+
+</body>
 </html>
