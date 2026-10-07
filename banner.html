@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banner slider test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<section class="hero" role="region" aria-roledescription="carousel" aria-label="Featured banners">
+
+  <ul class="hero-track">
+    <!-- One <li> per banner. Each image: under 500 KB, JPG or WEBP.
+         The alt text must repeat any text that appears inside the banner image.
+         Remove the <a> if a banner does not link anywhere. -->
+    <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/images/banners/banner2.jpg" width="750" height="563">
+          <img src="assets/images/banners/banner2.jpg" width="1920" height="640" alt="Placeholder banner one: describe the banner and repeat its text here">
+        </picture>
+      </a>
+    </li>
+    <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/images/banners/banner2.jpg" width="750" height="563">
+          <img src="assets/images/banners/banner2.jpg" width="1920" height="640" alt="Placeholder banner two: describe the banner and repeat its text here">
+        </picture>
+      </a>
+    </li>
+    <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/images/banners/banner1.png" width="750" height="563">
+          <img src="assets/images/banners/banner1.png" width="1920" height="640" alt="Placeholder banner three: describe the banner and repeat its text here">
+        </picture>
+      </a>
+    </li>
+  </ul>
+
+  <button type="button" class="hero-btn hero-prev" aria-label="Previous banner"></button>
+  <button type="button" class="hero-btn hero-next" aria-label="Next banner"></button>
+
+  <div class="hero-controls">
+    <ul class="hero-dots">
+      <li><button type="button" aria-label="Show banner 1 of 3" aria-current="true"></button></li>
+      <li><button type="button" aria-label="Show banner 2 of 3"></button></li>
+      <li><button type="button" aria-label="Show banner 3 of 3"></button></li>
+    </ul>
+    <button type="button" class="hero-toggle" aria-label="Pause banner slideshow" title="Pause banner slideshow"></button>
+  </div>
+
+</section>
+
+<script src="assets/js/banner.js"></script>
+</body>
+</html>

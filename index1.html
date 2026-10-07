@@ -17,11 +17,115 @@
     <link rel="stylesheet" href="assets/css/offerings.css">
     <link rel="stylesheet" href="assets/css/explore.css">
     <link rel="stylesheet" href="assets/css/ticker.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/header.css">
 </head>
 
 <body>
 
-    <section class="ticker" aria-labelledby="ticker-title">
+    <header class="site-header">
+        <div class="hdr-inner">
+    
+            <!-- Emblem and names: use the official emblem and the lockup for your type of entity.
+             On the home page you can make the ministry name an <h1> (keep the same class). -->
+            <a class="hdr-brand" href="index.html">
+                <img src="assets/images/indian-emblem.svg" width="70" height="90" alt="State Emblem of India">
+                <div>
+                    <p class="hdr-gov">Government of Meghalaya</p>
+                    <p class="hdr-name">Finance Department</p>
+                </div>
+            </a>
+    
+            <!-- Search: point action at your search results page -->
+            <form class="hdr-search" role="search" action="search.html" method="get">
+                <label class="visually-hidden" for="site-search">Search the website</label>
+                <input type="search" id="site-search" name="q" placeholder="Search...">
+                <button type="submit" aria-label="Search"><span class="ico ico-search" aria-hidden="true"></span></button>
+            </form>
+    
+            <!-- Co-brand logo: constant logo for your ministry's flagship programme -->
+            <a class="hdr-cobrand" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/logos/meglogo.png" width="120" height="56" alt="Skill India (opens in a new tab)">
+            </a>
+    
+            <ul class="hdr-tools">
+                <li>
+                    <a class="hdr-tool" href="#maincontent" aria-label="Skip to main content" title="Skip to main content">
+                        <span class="ico ico-skip" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <!-- Hook for the Bhashini translation plugin -->
+                    <button type="button" class="hdr-tool dont-translate translate-plugin-popup-button"
+                        aria-label="Translate this page" title="Translate this page">
+                        <span class="ico ico-trans" aria-hidden="true"></span>
+                    </button>
+                </li>
+                <li>
+                    <!-- Hook for your accessibility panel (text size, contrast) -->
+                    <button type="button" class="hdr-tool accessibility-btn" aria-label="Accessibility panel"
+                        title="Accessibility panel">
+                        <span class="ico ico-access" aria-hidden="true"></span>
+                    </button>
+                </li>
+            </ul>
+    
+        </div>
+    </header>
+
+    <section class="hero" role="region" aria-roledescription="carousel" aria-label="Featured banners">
+    
+        <ul class="hero-track">
+            <!-- One <li> per banner. Each image: under 500 KB, JPG or WEBP.
+             The alt text must repeat any text that appears inside the banner image.
+             Remove the <a> if a banner does not link anywhere. -->
+            <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="assets/images/banners/banner2.jpg" width="750"
+                            height="563">
+                        <img src="assets/images/banners/banner2.jpg" width="1920" height="640"
+                            alt="Placeholder banner one: describe the banner and repeat its text here">
+                    </picture>
+                </a>
+            </li>
+            <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="assets/images/banners/banner2.jpg" width="750"
+                            height="563">
+                        <img src="assets/images/banners/banner2.jpg" width="1920" height="640"
+                            alt="Placeholder banner two: describe the banner and repeat its text here">
+                    </picture>
+                </a>
+            </li>
+            <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="assets/images/banners/banner1.png" width="750"
+                            height="563">
+                        <img src="assets/images/banners/banner1.png" width="1920" height="640"
+                            alt="Placeholder banner three: describe the banner and repeat its text here">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+    
+        <button type="button" class="hero-btn hero-prev" aria-label="Previous banner"></button>
+        <button type="button" class="hero-btn hero-next" aria-label="Next banner"></button>
+    
+        <div class="hero-controls">
+            <ul class="hero-dots">
+                <li><button type="button" aria-label="Show banner 1 of 3" aria-current="true"></button></li>
+                <li><button type="button" aria-label="Show banner 2 of 3"></button></li>
+                <li><button type="button" aria-label="Show banner 3 of 3"></button></li>
+            </ul>
+            <button type="button" class="hero-toggle" aria-label="Pause banner slideshow"
+                title="Pause banner slideshow"></button>
+        </div>
+    
+    </section>
+<section class="ticker" aria-labelledby="ticker-title" id="maincontent" tabindex="-1">
   <div class="ticker-inner">
 
     <div class="ticker-label">
@@ -44,7 +148,7 @@
 
   </div>
 </section>
-    <section class="about" aria-labelledby="about-title">
+    <section class="about" aria-labelledby="about-title" >
         <div class="about-inner">
     
             <div class="about-main">
@@ -370,6 +474,7 @@
     <script src="assets/js/offerings-tabs.js"></script>
     <script src="assets/js/persona-slider.js"></script>
     <script src="assets/js/ticker.js"></script>
+    <script src="assets/js/banner.js"></script>
 
 </body>
 

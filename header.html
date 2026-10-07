@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Header test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="hdr-inner">
+
+    <!-- Emblem and names: use the official emblem and the lockup for your type of entity.
+         On the home page you can make the ministry name an <h1> (keep the same class). -->
+    <a class="hdr-brand" href="index.html">
+      <img src="assets/images/indian-emblem.svg" width="70" height="90" alt="State Emblem of India">
+      <div>
+        <p class="hdr-gov">Government of Meghalaya</p>
+        <p class="hdr-name">Finance Department</p>
+      </div>
+    </a>
+
+    <!-- Search: point action at your search results page -->
+    <form class="hdr-search" role="search" action="search.html" method="get">
+      <label class="visually-hidden" for="site-search">Search the website</label>
+      <input type="search" id="site-search" name="q" placeholder="Search...">
+      <button type="submit" aria-label="Search"><span class="ico ico-search" aria-hidden="true"></span></button>
+    </form>
+
+    <!-- Co-brand logo: constant logo for your ministry's flagship programme -->
+    <a class="hdr-cobrand" href="#" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/logos/meglogo.png" width="120" height="56" alt="Skill India (opens in a new tab)">
+    </a>
+
+    <ul class="hdr-tools">
+      <li>
+        <a class="hdr-tool" href="#maincontent" aria-label="Skip to main content" title="Skip to main content">
+          <span class="ico ico-skip" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li>
+        <!-- Hook for the Bhashini translation plugin -->
+        <button type="button" class="hdr-tool dont-translate translate-plugin-popup-button" aria-label="Translate this page" title="Translate this page">
+          <span class="ico ico-trans" aria-hidden="true"></span>
+        </button>
+      </li>
+      <li>
+        <!-- Hook for your accessibility panel (text size, contrast) -->
+        <button type="button" class="hdr-tool accessibility-btn" aria-label="Accessibility panel" title="Accessibility panel">
+          <span class="ico ico-access" aria-hidden="true"></span>
+        </button>
+      </li>
+    </ul>
+
+  </div>
+</header>
+
+<main id="maincontent" tabindex="-1">
+  <p style="padding: 2rem">Page content starts here. The skip icon in the header jumps to this point.</p>
+</main>
+
+</body>
+</html>
