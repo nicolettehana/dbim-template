@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="assets/css/menu.css">
   <link rel="stylesheet" href="assets/css/footer4.css">
   <link rel="stylesheet" href="assets/css/org-cards.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
 </head>
 <body>
 
@@ -328,58 +329,42 @@
     </div>
   </footer>
 
-<script>
-(function () {
-  var rows = Array.prototype.slice.call(document.querySelectorAll('#dirList .directoryBox'));
-  var alpha = document.getElementById('alphabet');
-  var search = document.getElementById('dirSearch');
-  var clearBtn = document.getElementById('clearAll');
-  var empty = document.getElementById('dirEmpty');
-  var letter = '';
+  <aside class="a11y-drawer" id="a11y-drawer" role="dialog" aria-modal="true" aria-labelledby="a11y-title">
+    <div class="a11y-head">
+      <h2 class="a11y-title" id="a11y-title">Accessibility Controls</h2>
+      <button type="button" class="a11y-close" aria-label="Close accessibility controls"></button>
+    </div>
 
-  // A-Z buttons: click a letter to filter, click it again to deselect
-  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function (l) {
-    var b = document.createElement('button');
-    b.type = 'button'; b.textContent = l;
-    b.addEventListener('click', function () {
-      letter = (letter === l) ? '' : l; render();
-    });
-    alpha.appendChild(b);
-  });
+    <div class="a11y-body">
+      <ul class="a11y-grid">
+        <li><button type="button" class="a11y-tile" data-action="contrast" aria-pressed="false"><span
+              class="a11y-ico ico-contrast" aria-hidden="true"></span>Dark contrast</button></li>
+        <li><button type="button" class="a11y-tile" data-action="invert" aria-pressed="false"><span
+              class="a11y-ico ico-invert" aria-hidden="true"></span>Invert</button></li>
+        <li><button type="button" class="a11y-tile" data-action="saturation" aria-pressed="false"><span
+              class="a11y-ico ico-saturation" aria-hidden="true"></span>Saturation<span class="a11y-state"
+              data-state-for="saturation"></span></button></li>
+        <li><button type="button" class="a11y-tile" data-action="text-increase" aria-disabled="false"><span
+              class="a11y-ico ico-text-plus" aria-hidden="true"></span>Text size increase</button></li>
+        <li><button type="button" class="a11y-tile" data-action="text-decrease" aria-disabled="false"><span
+              class="a11y-ico ico-text-minus" aria-hidden="true"></span>Text size decrease</button></li>
+        <li><button type="button" class="a11y-tile" data-action="links" aria-pressed="false"><span
+              class="a11y-ico ico-link" aria-hidden="true"></span>Highlight links</button></li>
+        <li><button type="button" class="a11y-tile" data-action="images" aria-pressed="false"><span
+              class="a11y-ico ico-hide-image" aria-hidden="true"></span>Hide images</button></li>
+        <li><button type="button" class="a11y-tile" data-action="cursor" aria-pressed="false"><span
+              class="a11y-ico ico-cursor" aria-hidden="true"></span>Default cursor</button></li>
+      </ul>
+    </div>
 
-  function matches(row) {
-    var q = search.value.trim().toLowerCase();
-    // ignore honorifics so "Shri Jitin Prasada" files under J
-    var key = row.dataset.name.toLowerCase().replace(/^(shri|smt|dr|sh)\.?\s+/, '');
-    return (!letter || key.charAt(0) === letter.toLowerCase()) &&
-           (!q || row.textContent.toLowerCase().indexOf(q) > -1);
-  }
+    <div class="a11y-foot">
+      <button type="button" class="a11y-reset">Reset all settings</button>
+    </div>
 
-  function render() {
-    var shown = 0;
-    rows.forEach(function (r) {
-      var ok = matches(r);
-      r.hidden = !ok;
-      if (ok) shown++;
-    });
-    empty.hidden = shown > 0;
-    clearBtn.hidden = !(letter || search.value.trim());
-
-    Array.prototype.forEach.call(alpha.children, function (b) {
-      var on = b.textContent === letter;
-      b.classList.toggle('active', on);
-      b.setAttribute('aria-pressed', on);
-    });
-  }
-
-  clearBtn.addEventListener('click', function () {
-    letter = ''; search.value = ''; render(); search.focus();
-  });
-  search.addEventListener('input', render);
-  render();
-})();
-</script>
+    <p class="visually-hidden" id="a11y-status" role="status" aria-live="polite"></p>
+  </aside>
 
 <script src="assets/js/menu.js"></script>
+<script src="assets/js/accessibility.js"></script>
 </body>
 </html>

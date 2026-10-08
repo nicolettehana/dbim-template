@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Directory | Ministry of Skill Development and Entrepreneurship</title>
+  <title>Notifications | Finance Department Government of Meghalaya</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,11 @@
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/menu.css">
   <link rel="stylesheet" href="assets/css/footer4.css">
+  <link rel="stylesheet" href="assets/css/org-cards.css">
   <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/documents.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
 
@@ -173,10 +177,10 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/">Home</a></li>
-          <li class="breadcrumb-item"><a href="/department">Department</a></li>
+          <li class="breadcrumb-item"><a href="/documents">Documents</a></li>
         </ol>
       </nav>
-      <h1 class="pagename">Directory</h1>
+      <h1 class="pagename">Notifications</h1>
     </div>
   </div>
 </div>
@@ -197,83 +201,81 @@
 </div>
 
 <!-- ================= MAIN ================= -->
-<main id="maincontent" tabindex="-1" class="maincontent">
-  <div class="container-fluid px-4 px-lg-5">
+<main id="maincontent" class="maincontent docs-section"
+        data-docs-section
+        data-source="assets/documents.json"
+        data-archive-url="archive.html">
+    <div class="container">
 
-    <!-- Search + per page -->
-    <div class="filterbox d-flex flex-wrap justify-content-between gap-3">
-      <div class="searchField">
-        <div class="input-group">
-          <span class="input-group-text"><span class="material-symbols-outlined" aria-hidden="true">search</span></span>
-          <input id="dirSearch" type="search" class="form-control" placeholder="Search..." aria-label="Search directory">
+      <!-- Filters -->
+      <div class="row g-2 filterbox align-items-center justify-content-between">
+        <div class="col-12 col-lg-4 searchField">
+          <label class="docs-filter" for="docSearch">
+            <span class="material-symbols-outlined" aria-hidden="true">search</span>
+            <input type="search" id="docSearch" placeholder="Search..." autocomplete="off" aria-label="Search documents">
+          </label>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <div class="row g-2 justify-content-lg-end">
+            <div class="col-12 col-md-4 sortField">
+              <label class="docs-filter" for="docSort">
+                <span class="material-symbols-outlined" aria-hidden="true">sort</span>
+                <select id="docSort" aria-label="Sort by">
+                  <option value="">Sort by</option>
+                  <option value="newest">Newest first</option>
+                  <option value="oldest">Oldest first</option>
+                  <option value="title-asc">Title: A to Z</option>
+                  <option value="title-desc">Title: Z to A</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-12 col-md-4 filterField">
+              <label class="docs-filter" for="docCategory">
+                <span class="material-symbols-outlined" aria-hidden="true">sort</span>
+                <select id="docCategory" aria-label="Category">
+                  <option value="">Category</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-12 col-md-4 perPageField">
+              <label class="docs-filter" for="docPerPage">
+                <span class="material-symbols-outlined" aria-hidden="true">table_rows</span>
+                <select id="docPerPage" aria-label="Documents per page">
+                  <option value="10">10 per page</option>
+                  <option value="20">20 per page</option>
+                  <option value="50">50 per page</option>
+                </select>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
 
-      <button id="clearAll" type="button" class="btn clearbtn" hidden>
-        <span class="material-symbols-outlined" aria-hidden="true">close</span> Clear all
-      </button>
+      <!-- Column headings (style.css hides this under 992px) -->
+      <div class="tableheader d-flex align-items-center" aria-hidden="true">
+        <small class="col-title ps-4">Title</small>
+        <small class="col-year">Published year</small>
+        <small class="col-type">Type/Size</small>
+        <small class="col-act"></small>
+      </div>
+
+      <!-- Rows are rendered by documents.js -->
+      <div id="docList" role="list" aria-live="polite"></div>
+
+      <!-- Pagination + archive -->
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mt-3">
+        <span class="d-none d-md-block" style="min-width:150px"></span>
+        <nav aria-label="Documents pagination">
+          <ul class="pagination justify-content-center mb-0 d-flex" id="docPager"></ul>
+        </nav>
+        <a href="archive.html" id="docArchive" class="archive-btn">
+          <span class="material-symbols-outlined" aria-hidden="true">archive</span> View archive
+        </a>
+      </div>
+
     </div>
-
-    <!-- A-Z -->
-    <div class="alphabetBox" id="alphabet" role="group" aria-label="Filter by first letter"></div>
-
-    <!-- List -->
-    <div id="dirList">
-
-      <article class="row directoryBox" data-name="Shri Ashwini Vaishnaw">
-        <div class="col-lg-5">
-          <small class="designation d-block">Minister (E&amp;IT)</small>
-          <p class="name">Shri Ashwini Vaishnaw</p>
-          <span class="departmentBadge">Hon'ble Minister of Railways; Information and Broadcasting; and Electronics and Information Technology</span>
-        </div>
-        <div class="col-lg-4">
-          <div class="contact-line">
-            <span class="material-symbols-outlined" aria-hidden="true">call</span>
-            <p>+91-11-24369191 (Office), +91-11-24362626 (Office), +91-11-24366070 (Fax)</p>
-          </div>
-          <div class="contact-line">
-            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-            <p>moeit[at]gov[dot]in</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="contact-line">
-            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
-            <p>1st Floor, Electronics Niketan, 6, CGO Complex, Lodhi Road, New Delhi: 110003</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="row directoryBox" data-name="Shri Jitin Prasada">
-        <div class="col-lg-5">
-          <small class="designation d-block">Minister of State (E&amp;IT)</small>
-          <p class="name">Shri Jitin Prasada</p>
-          <span class="departmentBadge">Hon'ble Minister of State in the Ministry of Commerce and Industry; and Electronics and Information Technology</span>
-        </div>
-        <div class="col-lg-4">
-          <div class="contact-line">
-            <span class="material-symbols-outlined" aria-hidden="true">call</span>
-            <p>+91-11-24368757 (Office), +91-11-24368758 (Office), +91-11-24360958 (Fax)</p>
-          </div>
-          <div class="contact-line">
-            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-            <p>mos-eit[at]gov[dot]in</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="contact-line">
-            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
-            <p>1st Floor, Electronics Niketan, 6, CGO Complex, Lodhi Road, New Delhi: 110003</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- Copy an <article class="row directoryBox" data-name="..."> block for each person -->
-    </div>
-
-    <p id="dirEmpty" class="directory-empty" hidden>No entries match your search.</p>
-  </div>
-</main>
+  </main>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footerbox" aria-label="Site footer">
@@ -327,7 +329,7 @@
     </div>
   </footer>
 
-<aside class="a11y-drawer" id="a11y-drawer" role="dialog" aria-modal="true" aria-labelledby="a11y-title">
+  <aside class="a11y-drawer" id="a11y-drawer" role="dialog" aria-modal="true" aria-labelledby="a11y-title">
     <div class="a11y-head">
       <h2 class="a11y-title" id="a11y-title">Accessibility Controls</h2>
       <button type="button" class="a11y-close" aria-label="Close accessibility controls"></button>
@@ -363,7 +365,7 @@
   </aside>
 
 <script src="assets/js/menu.js"></script>
-<script src="assets/js/directory-search.js"></script>
 <script src="assets/js/accessibility.js"></script>
+<script src="assets/js/documents.js" defer></script>
 </body>
 </html>

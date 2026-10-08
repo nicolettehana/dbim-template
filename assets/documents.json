@@ -1,0 +1,272 @@
+{
+  "categories": [
+    {
+      "id": "grants",
+      "label": "Demand for Grants"
+    },
+    {
+      "id": "rs",
+      "label": "Rajya Sabha"
+    },
+    {
+      "id": "ls",
+      "label": "Lok Sabha"
+    }
+  ],
+  "documents": [
+    {
+      "title": "Detailed Demand for Grants (2016-24)",
+      "year": 2024,
+      "date": "2024-03-15",
+      "category": "grants",
+      "files": [
+        {
+          "title": "Demand for Grants 2016-17",
+          "type": "PDF",
+          "size": "1.2 MB",
+          "url": "files/dfg-2016-17.pdf"
+        },
+        {
+          "title": "Demand for Grants 2017-18",
+          "type": "PDF",
+          "size": "1.1 MB",
+          "url": "files/dfg-2017-18.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Rajya Sabha Un-Starred Question No: 3794 To be Answered on 05-04-2023",
+      "year": 2023,
+      "date": "2023-04-05",
+      "category": "rs",
+      "files": [
+        {
+          "title": "Reply",
+          "type": "PDF",
+          "size": "210 KB",
+          "url": "files/rsuq-3794.pdf"
+        },
+        {
+          "title": "Annexure I",
+          "type": "PDF",
+          "size": "98 KB",
+          "url": "files/rsuq-3794-a1.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Annexure (Raj Sabha) - RSUQ No. 1556 due for reply on 02.08.2023",
+      "year": 2023,
+      "date": "2023-08-02",
+      "category": "rs",
+      "files": [
+        {
+          "title": "Annexure A",
+          "type": "PDF",
+          "size": "150 KB",
+          "url": "files/rsuq-1556-a.pdf"
+        },
+        {
+          "title": "Annexure B",
+          "type": "PDF",
+          "size": "120 KB",
+          "url": "files/rsuq-1556-b.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Rajya Sabha Starred Q.No.220 to be answered on 09.08.2023",
+      "year": 2023,
+      "date": "2023-08-09",
+      "category": "rs",
+      "type": "PDF",
+      "size": "860.03 KB",
+      "url": "files/rssq-220.pdf"
+    },
+    {
+      "title": "Rajya Sabha Unstarred Question No. 1235 due for reply on 13.12.2023",
+      "year": 2023,
+      "date": "2023-12-13",
+      "category": "rs",
+      "type": "PDF",
+      "size": "335.76 KB",
+      "url": "files/rsuq-1235.pdf"
+    },
+    {
+      "title": "Annexure to Rajya Sabha Unstarred Question No. 2038 due for reply on 20.12.2023",
+      "year": 2023,
+      "date": "2023-12-20",
+      "category": "rs",
+      "type": "PDF",
+      "size": "444.53 KB",
+      "url": "files/rsuq-2038-annexure.pdf"
+    },
+    {
+      "title": "Annexures (Lok Sabha) - for LSUSQ No. 675 due for reply on 06.02.2023",
+      "year": 2023,
+      "date": "2023-02-06",
+      "category": "ls",
+      "files": [
+        {
+          "title": "Annexure 1",
+          "type": "PDF",
+          "size": "80 KB",
+          "url": "files/lsusq-675-1.pdf"
+        },
+        {
+          "title": "Annexure 2",
+          "type": "PDF",
+          "size": "75 KB",
+          "url": "files/lsusq-675-2.pdf"
+        },
+        {
+          "title": "Annexure 3",
+          "type": "PDF",
+          "size": "92 KB",
+          "url": "files/lsusq-675-3.pdf"
+        },
+        {
+          "title": "Annexure 4",
+          "type": "PDF",
+          "size": "64 KB",
+          "url": "files/lsusq-675-4.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Annexure in respect of Lok Sabha Unstarred Question no. 508 due for reply on 06.02.2023",
+      "year": 2023,
+      "date": "2023-02-06",
+      "category": "ls",
+      "type": "PDF",
+      "size": "343.02 KB",
+      "url": "files/lsusq-508.pdf"
+    },
+    {
+      "title": "Annexure in respect of Lok Sabha Starred Question no. 275 replied on 20.03.2023",
+      "year": 2023,
+      "date": "2023-03-20",
+      "category": "ls",
+      "type": "PDF",
+      "size": "633.56 KB",
+      "url": "files/lssq-275.pdf"
+    },
+    {
+      "title": "Annexures (Lok Sabha) - Unstarred Question No.1811 due for reply on 31.07.2023",
+      "year": 2023,
+      "date": "2023-07-31",
+      "category": "ls",
+      "type": "PDF",
+      "size": "908.80 KB",
+      "url": "files/lsusq-1811.pdf"
+    },
+    {
+      "title": "Sample document 1 - replace or delete",
+      "year": 2022,
+      "date": "2022-02-10",
+      "category": "ls",
+      "type": "PDF",
+      "size": "137 KB",
+      "url": "files/sample-1.pdf"
+    },
+    {
+      "title": "Sample document 2 - replace or delete",
+      "year": 2022,
+      "date": "2022-03-10",
+      "category": "rs",
+      "type": "PDF",
+      "size": "174 KB",
+      "url": "files/sample-2.pdf"
+    },
+    {
+      "title": "Sample document 3 - replace or delete",
+      "year": 2022,
+      "date": "2022-04-10",
+      "category": "ls",
+      "type": "PDF",
+      "size": "211 KB",
+      "url": "files/sample-3.pdf"
+    },
+    {
+      "title": "Sample document 4 - replace or delete",
+      "year": 2022,
+      "date": "2022-05-10",
+      "category": "rs",
+      "type": "PDF",
+      "size": "248 KB",
+      "url": "files/sample-4.pdf"
+    },
+    {
+      "title": "Sample document 5 - replace or delete",
+      "year": 2022,
+      "date": "2022-06-10",
+      "category": "ls",
+      "type": "PDF",
+      "size": "285 KB",
+      "url": "files/sample-5.pdf"
+    },
+    {
+      "title": "Sample document 6 - replace or delete",
+      "year": 2022,
+      "date": "2022-07-10",
+      "category": "rs",
+      "type": "PDF",
+      "size": "322 KB",
+      "url": "files/sample-6.pdf"
+    },
+    {
+      "title": "Sample document 7 - replace or delete",
+      "year": 2022,
+      "date": "2022-08-10",
+      "category": "ls",
+      "type": "PDF",
+      "size": "359 KB",
+      "url": "files/sample-7.pdf"
+    },
+    {
+      "title": "Sample document 8 - replace or delete",
+      "year": 2022,
+      "date": "2022-09-10",
+      "category": "rs",
+      "type": "PDF",
+      "size": "396 KB",
+      "url": "files/sample-8.pdf"
+    },
+    {
+      "title": "Sample document 9 - replace or delete",
+      "year": 2022,
+      "date": "2022-10-10",
+      "category": "ls",
+      "type": "PDF",
+      "size": "433 KB",
+      "url": "files/sample-9.pdf"
+    },
+    {
+      "title": "Sample document 10 - replace or delete",
+      "year": 2022,
+      "date": "2022-11-10",
+      "category": "rs",
+      "type": "PDF",
+      "size": "470 KB",
+      "url": "files/sample-10.pdf"
+    },
+    {
+      "title": "Sample document 11 - replace or delete",
+      "year": 2022,
+      "date": "2022-12-10",
+      "category": "ls",
+      "type": "PDF",
+      "size": "507 KB",
+      "url": "files/sample-11.pdf"
+    },
+    {
+      "title": "Sample document 12 - replace or delete",
+      "year": 2022,
+      "date": "2022-01-10",
+      "category": "rs",
+      "type": "PDF",
+      "size": "544 KB",
+      "url": "files/sample-12.pdf"
+    }
+  ]
+}

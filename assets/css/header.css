@@ -5,8 +5,8 @@
    Colours come from the dbim-theme tokens. */
 
 .site-header {
-  --hdr-gov-size: 1rem;
-  --hdr-name-size: 1.125rem;
+  --hdr-gov-size: 2rem;
+  --hdr-name-size: 2.125rem;
   --hdr-emblem-height: 8rem;
 
   background: var(--white);
@@ -133,8 +133,8 @@ header.site-header {
 
 @media (min-width: 768px) {
   .site-header {
-    --hdr-gov-size: 1.125rem;
-    --hdr-name-size: 1.25rem;
+    --hdr-gov-size: 2.125rem;
+    --hdr-name-size: 2.25rem;
     --hdr-emblem-height: 8.5rem;
   }
 }

@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Documents section
+   Load AFTER bootstrap.min.css, dbim-theme2.css and style.css.
+   style.css has hard-coded grey values; these rules re-point them to the
+   DBIM theme tokens so the section follows <html data-theme="...">.
+   ========================================================================== */
+
+/* ---- Filters ---- */
+.docs-section .docs-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+  margin: 0;
+  border: 1px solid var(--c2);
+  border-radius: 4px;
+  background: var(--white);
+}
+.docs-section .docs-filter:focus-within {
+  outline: 2px solid var(--key);
+  outline-offset: 1px;
+}
+.docs-section .docs-filter .material-symbols-outlined {
+  color: var(--c2);
+  font-size: 2rem;
+}
+.docs-section .docs-filter select,
+.docs-section .docs-filter input {
+  width: 100%;
+  padding: 8px 4px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  box-shadow: none !important;
+  color: var(--black);
+  font-size: 1.4rem !important;
+}
+.docs-section .docs-filter select option { color: #150202; background: #fff; }
+
+/* ---- Column layout shared by heading bar and rows ---- */
+.docs-section .col-title { flex: 1 1 auto; min-width: 0; }
+.docs-section .col-year  { flex: 0 0 188px; }
+.docs-section .col-type  { flex: 0 0 188px; }
+.docs-section .col-act   { flex: 0 0 120px; text-align: right; }
+
+/* ---- Heading bar ---- */
+.docs-section .tableheader { background: var(--c4); }
+.docs-section .tableheader small { color: var(--key); }
+
+/* ---- Rows ---- */
+.docs-section .announcementbox {
+  min-height: 52px;
+  padding: 8px 32px;
+}
+.docs-section .doc-icon { color: var(--rhythm); }
+.docs-section .doc-title { overflow-wrap: anywhere; }
+
+.docs-section .counter-box,
+.docs-section .download-btn,
+.docs-section .archive-btn {
+  background: var(--c4);
+  color: var(--key);
+}
+.docs-section .counter-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 6px;
+  padding: 0;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.docs-section .download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 102px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+.docs-section .download-btn:hover { background: var(--c3); color: var(--key); }
+.docs-section .download-btn .material-symbols-outlined { font-size: 2rem; }
+.docs-section .download-btn:focus-visible {
+  outline: 2px solid var(--key) !important;
+  outline-offset: 2px;
+}
+
+.docs-section .year,
+.docs-section .filesize {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--key);
+}
+.docs-section .filetype {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--rhythm);
+}
+
+/* ---- Expanded group (View all) ---- */
+.docs-section .doc-group { margin-bottom: 6px; }
+.docs-section .doc-group .announcementbox { margin-bottom: 0; }
+.docs-section .doc-children {
+  margin: 0 0 6px;
+  padding: 4px 0 4px 56px;
+  border: 1px solid var(--bright-gray);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  background: var(--c5);
+  list-style: none;
+}
+.docs-section .doc-children li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 32px 6px 0;
+}
+.docs-section .doc-children li + li { border-top: 1px solid var(--c4); }
+.docs-section .doc-children .doc-title { font-size: 1.4rem; margin: 0; }
+
+/* ---- Footer row: pagination + archive ---- */
+.docs-section .archive-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: none;
+}
+.docs-section .archive-btn:hover { background: var(--c3); color: var(--key); }
+
+.docs-section .pagination { list-style: none; padding: 0; }
+.docs-section .pagination .page-link {
+  background: transparent;
+  color: var(--key);
+  cursor: pointer;
+}
+.docs-section .pagination .page-link:hover { background: var(--c4); }
+.docs-section .pagination .page-link.active { background: var(--c3); color: var(--key); }
+.docs-section .pagination .button-item .material-symbols-outlined { color: var(--key); }
+.docs-section .pagination .button-item:disabled .material-symbols-outlined {
+  color: var(--grey-01);
+  cursor: not-allowed;
+}
+.docs-section .pagination .gap { padding: 0 6px; color: var(--rhythm); }
+
+/* ---- States ---- */
+.docs-section .docs-message {
+  padding: 32px;
+  text-align: center;
+  color: var(--rhythm);
+}
+
+/* ---- Small screens (style.css already hides .tableheader under 992px) ---- */
+@media (max-width: 991.5px) {
+  .docs-section .col-year,
+  .docs-section .col-type,
+  .docs-section .col-act { flex: 0 0 auto; }
+  .docs-section .announcementbox { padding: 12px 16px; }
+  .docs-section .doc-children { padding-left: 24px; }
+}

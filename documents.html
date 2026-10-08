@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documents</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/documents.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+  <!-- your existing <header> and menu -->
+
+  <main id="maincontent" class="maincontent docs-section"
+        data-docs-section
+        data-source="assets/documents.json"
+        data-archive-url="archive.html">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="row g-2 filterbox align-items-center justify-content-between">
+        <div class="col-12 col-lg-4 searchField">
+          <label class="docs-filter" for="docSearch">
+            <span class="material-symbols-outlined" aria-hidden="true">search</span>
+            <input type="search" id="docSearch" placeholder="Search..." autocomplete="off" aria-label="Search documents">
+          </label>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <div class="row g-2 justify-content-lg-end">
+            <div class="col-12 col-md-4 sortField">
+              <label class="docs-filter" for="docSort">
+                <span class="material-symbols-outlined" aria-hidden="true">sort</span>
+                <select id="docSort" aria-label="Sort by">
+                  <option value="">Sort by</option>
+                  <option value="newest">Newest first</option>
+                  <option value="oldest">Oldest first</option>
+                  <option value="title-asc">Title: A to Z</option>
+                  <option value="title-desc">Title: Z to A</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-12 col-md-4 filterField">
+              <label class="docs-filter" for="docCategory">
+                <span class="material-symbols-outlined" aria-hidden="true">sort</span>
+                <select id="docCategory" aria-label="Category">
+                  <option value="">Category</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-12 col-md-4 perPageField">
+              <label class="docs-filter" for="docPerPage">
+                <span class="material-symbols-outlined" aria-hidden="true">table_rows</span>
+                <select id="docPerPage" aria-label="Documents per page">
+                  <option value="10">10 per page</option>
+                  <option value="20">20 per page</option>
+                  <option value="50">50 per page</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column headings (style.css hides this under 992px) -->
+      <div class="tableheader d-flex align-items-center" aria-hidden="true">
+        <small class="col-title ps-4">Title</small>
+        <small class="col-year">Published year</small>
+        <small class="col-type">Type/Size</small>
+        <small class="col-act"></small>
+      </div>
+
+      <!-- Rows are rendered by documents.js -->
+      <div id="docList" role="list" aria-live="polite"></div>
+
+      <!-- Pagination + archive -->
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mt-3">
+        <span class="d-none d-md-block" style="min-width:150px"></span>
+        <nav aria-label="Documents pagination">
+          <ul class="pagination justify-content-center mb-0 d-flex" id="docPager"></ul>
+        </nav>
+        <a href="archive.html" id="docArchive" class="archive-btn">
+          <span class="material-symbols-outlined" aria-hidden="true">archive</span> View archive
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- your existing <footer> -->
+
+  <script src="assets/js/documents.js" defer></script>
+</body>
+</html>
