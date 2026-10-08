@@ -87,7 +87,7 @@ html {
     gap: 0.5rem;
     width: 100%;
     min-height: 3rem;
-    padding: 0.5rem 0.25rem;
+    padding: 0.625rem 0.75rem;
     background: transparent;
     color: var(--black);
     border: 0;
@@ -101,11 +101,14 @@ html {
 
 .main-nav .nav-link:hover {
     color: var(--key);
+    /* background-color: var(--columbia-blue);
+    width: 20rem; */
 }
 
 .main-nav .nav-link:focus-visible {
     outline: 2px solid var(--key);
     outline-offset: -2px;
+    
 }
 
 .main-nav .nav-link[aria-current="page"] {

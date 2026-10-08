@@ -63,7 +63,10 @@
   .explore .doc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 .explore .doc-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   padding: 1.25rem 1.5rem;
   background: var(--white);
@@ -86,8 +89,8 @@
 }
 .explore .doc-card-icon {
   flex: none;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: var(--key);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
@@ -95,7 +98,7 @@
   mask-position: center;
   -webkit-mask-size: contain;
   mask-size: contain;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .explore .doc-icon-egov {

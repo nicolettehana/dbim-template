@@ -1,249 +1,383 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="green">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Directory of officials, Ministry of Skill Development and Entrepreneurship">
   <title>Directory | Ministry of Skill Development and Entrepreneurship</title>
 
-  <!-- Setup A: toolkit build first (includes Bootstrap), then tokens, then your own CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <!-- Order matters -->
   <link rel="stylesheet" href="assets/css/compiled.min.css">
-  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/style.css"><!-- .pointer / button cursor rules and footer rules go here -->
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">   <!-- your DBIM tokens file -->
+  <link rel="stylesheet" href="assets/css/style.css">          <!-- your toolkit style.css -->
+  <link rel="stylesheet" href="assets/css/directory.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/footer4.css">
 </head>
 <body>
 
-<header class="headerSection">
-  <div class="container-fluid">
-    <div class="row align-items-center mb-flex">
+<a class="visually-hidden-focusable" href="#maincontent">Skip to main content</a>
 
-      <div class="col-lg-8">
-        <div class="d-flex justify-content-start mobilescr">
-          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-            <a class="logobox" href="index.html">
-              <!-- Emblem and logo lockup: use the official files for your entity type from the DBIM toolkit -->
-              <img src="assets/images/emblem.svg" width="48" alt="State Emblem of India">
-              <div class="pe-0 logotext">
-                <p class="mb-1 govtext">Government of India</p>
-                <p class="me-3 ministry-name-45 mb-0">Ministry of Skill Development and Entrepreneurship</p>
-              </div>
-            </a>
-          </div>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="hdr-inner">
 
-          <div class="col-lg-5 col-md-12 ps-0 pe-0 pt-lg-4">
-            <div class="d-flex justify-content-between gap-2 searchposition">
-              <button type="button" class="search-icon-btn" title="Search" aria-label="Search">
-                <img src="assets/images/icons/search.svg" width="24" height="24" alt="">
-              </button>
-              <ul class="menutop px-0 d-flex align-items-center mb-0">
-                <li class="d-block d-lg-none">
-                  <button type="button" class="pointer" title="Menu" aria-label="Open menu" aria-expanded="false">
-                    <img src="assets/images/icons/menu.svg" width="24" height="24" alt="">
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <!-- Emblem and names: use the official emblem and the lockup for your type of entity.
+             On the home page you can make the ministry name an <h1> (keep the same class). -->
+      <a class="hdr-brand" href="index.html">
+        <img src="assets/images/indian-emblem.svg" width="70" height="90" alt="State Emblem of India">
+        <div>
+          <p class="hdr-gov">Government of Meghalaya</p>
+          <p class="hdr-name">Finance Department</p>
         </div>
-      </div>
+      </a>
 
-      <div class="col-lg-4 col-md-12">
-        <div class="menuright ms-0 mt-4">
-          <div class="d-flex justify-content-start align-items-end gap-5 ms-4">
-            <a target="_blank" rel="noopener noreferrer" class="d-none d-lg-block" href="#">
-              <img src="assets/images/skill-india.png" alt="Skill Development and Entrepreneurship (opens in a new tab)" class="skillimg">
-            </a>
-          </div>
+      <!-- Search: point action at your search results page -->
+      <form class="hdr-search" role="search" action="search.html" method="get">
+        <label class="visually-hidden" for="site-search">Search the website</label>
+        <input type="search" id="site-search" name="q" placeholder="Search...">
+        <button type="submit" aria-label="Search"><span class="ico ico-search" aria-hidden="true"></span></button>
+      </form>
 
-          <ul class="menutop">
-            <li><a href="#maincontent" class="skipcontent">Skip to Main Content</a></li>
+      <!-- Co-brand logo: constant logo for your ministry's flagship programme -->
+      <a class="hdr-cobrand" href="#" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/logos/meglogo.png" width="120" height="56" alt="Skill India (opens in a new tab)">
+      </a>
 
-            <li>
-              <button type="button" class="dont-translate translate-plugin-popup-button"
-                      title="Translate this page" aria-label="Translate this page" aria-expanded="false"></button>
-              <div class="dropdown-wrapper">
-                <div class="dropdown">
-                  <div class="d-none dropdown-content languageList">
-                    <ul class="list-unstyled mb-0">
-                      <li><button type="button" class="item pointer language-item active" aria-pressed="true">English</button></li>
-                      <li><button type="button" class="item pointer language-item" aria-pressed="false">Hindi (<span lang="hi">हिन्दी</span>)</button></li>
-                    </ul>
-                    <div class="bg-white sticky-bottom py-2 px-4 d-flex align-items-center justify-content-start gap-2">
-                      <p class="text-center mb-0 smalltxt">Powered by Bhashini</p>
-                      <img src="assets/images/bhashini.png" alt="Bhashini">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <button type="button" class="accessibility-btn" aria-label="Accessibility panel" title="Accessibility panel"></button>
-            </li>
-
-            <li class="d-lg-block d-none">
-              <button type="button" class="menuicon" title="Menu" aria-expanded="false">
-                <img src="assets/images/icons/menu.svg" width="24" height="24" alt="">
-                <span>Menu</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <ul class="hdr-tools">
+        <li>
+          <a class="hdr-tool" href="#maincontent" aria-label="Skip to main content" title="Skip to main content">
+            <span class="ico ico-skip" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <!-- Hook for the Bhashini translation plugin -->
+          <button type="button" class="hdr-tool dont-translate translate-plugin-popup-button"
+            aria-label="Translate this page" title="Translate this page">
+            <span class="ico ico-trans" aria-hidden="true"></span>
+          </button>
+        </li>
+        <li>
+          <!-- Hook for your accessibility panel (text size, contrast) -->
+          <button type="button" class="hdr-tool accessibility-btn" aria-label="Accessibility panel"
+            title="Accessibility panel">
+            <span class="ico ico-access" aria-hidden="true"></span>
+          </button>
+        </li>
+      </ul>
 
     </div>
-  </div>
-</header>
+  </header>
 
-<div class="position-relative">
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
 
-  <nav class="navigationSection" aria-label="Main navigation">
-    <div class="container px-0">
-      <div class="innernav position-relative d-flex justify-content-between">
-        <button type="button" class="d-lg-none d-md-none d-sm-block scroll-btn leftside" aria-label="Previous navigation items">
-          <img src="assets/images/icons/chevron-left.svg" width="24" height="24" alt="">
-        </button>
-        <ul class="nav">
-          <li class="nav-item"><a href="#">Contact Us</a></li>
-          <li class="nav-item"><a href="#" aria-current="page">Directory</a></li>
-          <li class="nav-item"><a href="#">RTI</a></li>
-        </ul>
-        <button type="button" class="d-lg-none d-md-none d-sm-block scroll-btn" aria-label="Next navigation items">
-          <img src="assets/images/icons/chevron-right.svg" width="24" height="24" alt="">
-        </button>
-      </div>
+      <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="main-menu">
+        <span class="nav-bars" aria-hidden="true"></span>Menu
+      </button>
+
+      <ul class="nav-list" id="main-menu">
+        <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-ministry">Department</button>
+          <ul class="nav-sub" id="sub-ministry" hidden>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Branches</a></li>
+            <li><a href="#">Directorates</a></li>
+            <li><a href="#">Organisational Structure</a></li>
+            <li><a href="#">Directory</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-offerings">Offerings</button>
+          <ul class="nav-sub" id="sub-offerings" hidden>
+            <li><a href="schemes.html">e-Gov Initiatives</a></li>
+            <li><ul class="nav-sub" id="sub-offerings" hidden>
+              <li><a href="schemes.html">e-Gov Initiatives</a></li>
+              <li><a href="vacancies.html">Vacancies</a></li>
+              <li><a href="tenders.html">Tenders</a></li>
+            </ul></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-documents">Documents</button>
+          <ul class="nav-sub" id="sub-documents" hidden>
+            <li><a href="#">State Budget</a></li>
+            <li><a href="#">Acts</a></li>
+            <li><a href="#">Rules</a></li>
+            <li><a href="#">Notifications/Circulars/Orders</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">PFMS/SNA</a></li>
+            <li><a href="#">Expenditure</a></li>
+            <li><a href="#">User Manuals</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-media">Media</button>
+          <ul class="nav-sub" id="sub-media" hidden>
+            <li><a href="#">NPS ki Pathshala</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-connect">Connect</button>
+          <ul class="nav-sub" id="sub-connect" hidden>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">RTI</a></li>
+            <li><a href="#">Important Links</a></li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
   </nav>
 
-  <div class="Innerbaner">
-    <!-- Decorative banner: keep under 500 KB, and set real width/height -->
-    <img src="assets/images/banner.webp" width="1920" height="320" class="img-fluid w-100" alt="">
-    <div class="container">
-      <div class="innerbox">
-        <nav aria-label="Breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Connect</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Directory</li>
-          </ol>
-        </nav>
-        <h1 class="pagename" id="maincontent" tabindex="-1">Directory</h1>
-      </div>
+<!-- ================= BANNER ================= -->
+<div class="Innerbaner">
+  <svg class="banner-art" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="1.6" style="fill:var(--azureish-white)"/>
+      </pattern>
+      <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
+        <stop offset=".35" stop-color="#fff" stop-opacity="0"/>
+        <stop offset="1" stop-color="#fff"/>
+      </linearGradient>
+      <mask id="dotmask"><rect width="1440" height="260" fill="url(#fade)"/></mask>
+    </defs>
+    <!-- waves -->
+    <path d="M0 190 C260 110 520 250 820 170 S1260 90 1440 150 V260 H0Z" style="fill:var(--c2)" opacity=".35"/>
+    <path d="M0 225 C300 165 560 275 900 205 S1300 145 1440 195 V260 H0Z" style="fill:var(--c3)" opacity=".25"/>
+    <path d="M620 0 C820 90 1060 -30 1440 100 V0Z" style="fill:var(--c2)" opacity=".3"/>
+    <!-- dots, fading in from the left -->
+    <rect width="1440" height="260" fill="url(#dots)" mask="url(#dotmask)" opacity=".6"/>
+  </svg>
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="innerbox">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/department">Department</a></li>
+        </ol>
+      </nav>
+      <h1 class="pagename">Directory</h1>
     </div>
   </div>
 </div>
 
-<main class="maincontent">
-  <div class="container mt-5">
+<!-- ================= INNER NAV ================= -->
+<div class="container-fluid px-4 px-lg-5">
+  <div class="innernav">
+    <ul class="nav" role="list">
+      <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link active" href="/directory" aria-current="page">Directory</a></li>
+      <li class="nav-item"><a class="nav-link" href="/rti">RTI</a></li>
+      <li class="nav-item"><a class="nav-link" href="/grievance-redressal">Grievance Redressal</a></li>
+      <li class="nav-item"><a class="nav-link" href="/public-consultation">Public Consultation</a></li>
+      <li class="nav-item"><a class="nav-link" href="/parliament-questions">Parliament Questions</a></li>
+      <li class="nav-item"><a class="nav-link" href="/visitors-pass">Visitor's Pass</a></li>
+    </ul>
+  </div>
+</div>
 
-    <div class="row align-items-center mb-4">
-      <div class="col-md-12 col-lg-4">
-        <div class="input-group searchField">
-          <span class="input-group-text"><img src="assets/images/icons/search.svg" width="24" height="24" alt=""></span>
-          <input type="search" class="form-control" placeholder="Search" aria-label="Search directory">
+<!-- ================= MAIN ================= -->
+<main id="maincontent" tabindex="-1" class="maincontent">
+  <div class="container-fluid px-4 px-lg-5">
+
+    <!-- Search + per page -->
+    <div class="filterbox d-flex flex-wrap justify-content-between gap-3">
+      <div class="searchField">
+        <div class="input-group">
+          <span class="input-group-text"><span class="material-symbols-outlined" aria-hidden="true">search</span></span>
+          <input id="dirSearch" type="search" class="form-control" placeholder="Search..." aria-label="Search directory">
         </div>
       </div>
-      <div class="col-md-12 col-lg-8">
-        <div class="d-flex align-items-center justify-content-end flex-wrap gap-2">
-          <div class="input-group perPageField">
-            <span class="input-group-text"><img src="assets/images/icons/list.svg" width="24" height="24" alt=""></span>
-            <select class="form-select" aria-label="Items per page">
-              <option value="10" selected>10 per page</option>
-              <option value="15">15 per page</option>
-              <option value="20">20 per page</option>
-            </select>
+
+      <button id="clearAll" type="button" class="btn clearbtn" hidden>
+        <span class="material-symbols-outlined" aria-hidden="true">close</span> Clear all
+      </button>
+    </div>
+
+    <!-- A-Z -->
+    <div class="alphabetBox" id="alphabet" role="group" aria-label="Filter by first letter"></div>
+
+    <!-- List -->
+    <div id="dirList">
+
+      <article class="row directoryBox" data-name="Shri Ashwini Vaishnaw">
+        <div class="col-lg-5">
+          <small class="designation d-block">Minister (E&amp;IT)</small>
+          <p class="name">Shri Ashwini Vaishnaw</p>
+          <span class="departmentBadge">Hon'ble Minister of Railways; Information and Broadcasting; and Electronics and Information Technology</span>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-line">
+            <span class="material-symbols-outlined" aria-hidden="true">call</span>
+            <p>+91-11-24369191 (Office), +91-11-24362626 (Office), +91-11-24366070 (Fax)</p>
+          </div>
+          <div class="contact-line">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <p>moeit[at]gov[dot]in</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="alphabetBox" role="group" aria-label="Filter by first letter">
-      <button type="button" aria-pressed="false">A</button><button type="button" aria-pressed="false">B</button><button type="button" aria-pressed="false">C</button><button type="button" aria-pressed="false">D</button><button type="button" aria-pressed="false">E</button><button type="button" aria-pressed="false">F</button><button type="button" aria-pressed="false">G</button><button type="button" aria-pressed="false">H</button><button type="button" aria-pressed="false">I</button><button type="button" aria-pressed="false">J</button><button type="button" aria-pressed="false">K</button><button type="button" aria-pressed="false">L</button><button type="button" aria-pressed="false">M</button><button type="button" aria-pressed="false">N</button><button type="button" aria-pressed="false">O</button><button type="button" aria-pressed="false">P</button><button type="button" aria-pressed="false">Q</button><button type="button" aria-pressed="false">R</button><button type="button" aria-pressed="false">S</button><button type="button" aria-pressed="false">T</button><button type="button" aria-pressed="false">U</button><button type="button" aria-pressed="false">V</button><button type="button" aria-pressed="false">W</button><button type="button" aria-pressed="false">X</button><button type="button" aria-pressed="false">Y</button><button type="button" aria-pressed="false">Z</button>
-    </div>
-
-    <!-- Sample data: replace with your ministry's real, verified entries -->
-    <div class="directoryBox row">
-      <div class="col-sm-6 col-md-4">
-        <h2 class="designation">Hon'ble Minister</h2>
-        <p class="name">Shri Dharmendra Pradhan</p>
-        <div class="d-flex align-items-center flex-wrap gap-2">
-          <div class="departmentBadge">
-            <p class="mb-0">Hon'ble Minister for Skill Development and Entrepreneurship</p>
+        <div class="col-lg-3">
+          <div class="contact-line">
+            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+            <p>1st Floor, Electronics Niketan, 6, CGO Complex, Lodhi Road, New Delhi: 110003</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="col-sm-6 col-md-4">
-        <div class="d-flex align-items-center gap-2">
-          <img src="assets/images/icons/call.svg" width="24" height="24" alt="">
-          <p class="connect mb-0"><a href="tel:+911123465810">+91 11 23465810</a></p>
+      <article class="row directoryBox" data-name="Shri Jitin Prasada">
+        <div class="col-lg-5">
+          <small class="designation d-block">Minister of State (E&amp;IT)</small>
+          <p class="name">Shri Jitin Prasada</p>
+          <span class="departmentBadge">Hon'ble Minister of State in the Ministry of Commerce and Industry; and Electronics and Information Technology</span>
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3">
-          <img src="assets/images/icons/mail.svg" width="24" height="24" alt="">
-          <p class="connect mb-0">minister-msde[at]gov[dot]in</p>
+        <div class="col-lg-4">
+          <div class="contact-line">
+            <span class="material-symbols-outlined" aria-hidden="true">call</span>
+            <p>+91-11-24368757 (Office), +91-11-24368758 (Office), +91-11-24360958 (Fax)</p>
+          </div>
+          <div class="contact-line">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <p>mos-eit[at]gov[dot]in</p>
+          </div>
         </div>
-      </div>
+        <div class="col-lg-3">
+          <div class="contact-line">
+            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+            <p>1st Floor, Electronics Niketan, 6, CGO Complex, Lodhi Road, New Delhi: 110003</p>
+          </div>
+        </div>
+      </article>
 
-      <div class="col-sm-12 col-md-4">
-        <div class="d-flex align-items-start gap-2">
-          <img src="assets/images/icons/location.svg" width="24" height="24" alt="">
-          <address class="connect mb-0">
-            Ministry of Skill Development and Entrepreneurship,
-            Room No. 516, Shram Shakti Bhawan, Rafi Marg, New Delhi - 110001
-          </address>
-        </div>
-      </div>
+      <!-- Copy an <article class="row directoryBox" data-name="..."> block for each person -->
     </div>
 
-    <nav class="d-flex justify-content-center mt-4" aria-label="Page navigation">
-      <ul class="pagination">
-        <li><button type="button" class="button-item previous" disabled aria-label="Previous page"><img src="assets/images/icons/chevron-left.svg" width="24" height="24" alt=""></button></li>
-        <li><button type="button" class="button-item" aria-label="Page 1" aria-current="page">1</button></li>
-        <li><button type="button" class="button-item" aria-label="Page 2">2</button></li>
-        <li><button type="button" class="button-item" aria-label="Page 3">3</button></li>
-        <li><button type="button" class="button-item" aria-label="Page 4">4</button></li>
-        <li><button type="button" class="button-item" aria-label="Page 5">5</button></li>
-        <li><button type="button" class="button-item next" aria-label="Next page"><img src="assets/images/icons/chevron-right.svg" width="24" height="24" alt=""></button></li>
-      </ul>
-    </nav>
-
+    <p id="dirEmpty" class="directory-empty" hidden>No entries match your search.</p>
   </div>
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="footerbox" aria-label="Site footer">
-  <div class="container">
-    <div class="row g-4">
-      <nav class="col-12 col-lg-5" aria-labelledby="footer-useful-links">
-        <h2 id="footer-useful-links">Useful Links</h2>
-        <ul class="footer-links">
-          <li><a href="#">Archives</a></li>
-          <li><a href="#">Site Map</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Website Policies</a></li>
-          <li><a href="#">Related Links</a></li>
-        </ul>
-      </nav>
-      <div class="col-12 col-lg-6 offset-lg-1 footer-right">
-        <h2 id="footer-subscribe">Subscribe for updates</h2>
-        <ul class="footer-social" aria-labelledby="footer-subscribe">
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/x.svg" width="32" height="32" alt="X (opens in a new tab)"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/youtube.svg" width="32" height="32" alt="YouTube (opens in a new tab)"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/facebook.svg" width="32" height="32" alt="Facebook (opens in a new tab)"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/instagram.svg" width="32" height="32" alt="Instagram (opens in a new tab)"></a></li>
-        </ul>
-        <a class="footer-portal" href="https://www.india.gov.in" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/india-gov-in.png" height="40" alt="India.gov.in: National Portal of India (opens in a new tab)">
-        </a>
-      </div>
-      <div class="col-12 footer-bottom d-flex flex-wrap justify-content-between gap-2">
-        <p>This Website belongs to Ministry of Skill Development and Entrepreneurship, Government of India</p>
-        <p>Last updated on: <time datetime="2024-04-09">09.04.2024</time></p>
+    <div class="container-fluid">
+      <div class="footer-grid">
+
+        <nav class="footer-useful" aria-labelledby="footer-useful-links">
+          <h2 id="footer-useful-links">Useful Links</h2>
+          <ul class="footer-links">
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Website Policies</a></li>
+            <li><a href="#">Related Links</a></li>
+          </ul>
+        </nav>
+
+        <p class="footer-lineage">This Website belongs to Finance Department, Government of Meghalaya and hosted
+          by National Informatics Centre, Meghalaya
+          State Centre.</p>
+
+        <div class="footer-subscribe">
+          <h2 id="footer-subscribe">Subscribe for updates</h2>
+          <ul class="footer-social" aria-labelledby="footer-subscribe">
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/x.svg" width="32"
+                  height="32" alt="X (opens in a new tab)"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/youtube.svg"
+                  width="32" height="32" alt="YouTube (opens in a new tab)"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/facebook.svg"
+                  width="32" height="32" alt="Facebook (opens in a new tab)"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/instagram.svg"
+                  width="32" height="32" alt="Instagram (opens in a new tab)"></a></li>
+          </ul>
+          <!-- Official logos from the DBIM toolkit, each under 100 KB. Add the myGov logo here if your site uses it. -->
+          <div class="footer-logos">
+            <a href="https://www.meghalaya.gov.in" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/logos/meglogo.png" height="44"
+                alt="Meghalaya.gov.in: Portal of Meghalaya (opens in a new tab)">
+            </a>
+            <a href="https://meg.nic.in" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/logos/nic.svg" height="44"
+                alt="Meg.nic.in: Portal of Meghalaya (opens in a new tab)">
+            </a>
+          </div>
+        </div>
+
+        <!-- <p class="footer-updated">Last Updated On: <time datetime="2026-10-06">06.10.2026</time></p> -->
+        <p class="footer-updated">Last Updated On: <time id="last-updated" datetime="2026-10-06">06.10.2026</time></p>
+
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+(function () {
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#dirList .directoryBox'));
+  var alpha = document.getElementById('alphabet');
+  var search = document.getElementById('dirSearch');
+  var clearBtn = document.getElementById('clearAll');
+  var empty = document.getElementById('dirEmpty');
+  var letter = '';
+
+  // A-Z buttons: click a letter to filter, click it again to deselect
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function (l) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.textContent = l;
+    b.addEventListener('click', function () {
+      letter = (letter === l) ? '' : l; render();
+    });
+    alpha.appendChild(b);
+  });
+
+  function matches(row) {
+    var q = search.value.trim().toLowerCase();
+    // ignore honorifics so "Shri Jitin Prasada" files under J
+    var key = row.dataset.name.toLowerCase().replace(/^(shri|smt|dr|sh)\.?\s+/, '');
+    return (!letter || key.charAt(0) === letter.toLowerCase()) &&
+           (!q || row.textContent.toLowerCase().indexOf(q) > -1);
+  }
+
+  function render() {
+    var shown = 0;
+    rows.forEach(function (r) {
+      var ok = matches(r);
+      r.hidden = !ok;
+      if (ok) shown++;
+    });
+    empty.hidden = shown > 0;
+    clearBtn.hidden = !(letter || search.value.trim());
+
+    Array.prototype.forEach.call(alpha.children, function (b) {
+      var on = b.textContent === letter;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on);
+    });
+  }
+
+  clearBtn.addEventListener('click', function () {
+    letter = ''; search.value = ''; render(); search.focus();
+  });
+  search.addEventListener('input', render);
+  render();
+})();
+</script>
+
+<script src="assets/js/menu.js"></script>
 </body>
 </html>
