@@ -169,7 +169,7 @@
 @media (min-width: 1200px) {
   .offerings {
     --offer-tab-size: 2rem;
-    --offer-item-size: 1.75rem;
+    --offer-item-size: 1.5rem;
     --offer-more-size: 1.5rem;
     
   }

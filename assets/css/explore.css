@@ -48,7 +48,7 @@
   -webkit-mask-position: center;  mask-position: center;
   -webkit-mask-size: contain;     mask-size: contain;
 }
-.explore .ico-docs     { -webkit-mask-image: url("../../assets/images/icons/services.svg");    mask-image: url("../../assets/images/icons/services.svg"); }
+.explore .ico-docs     { -webkit-mask-image: url("../../assets/images/icons/recent_documents.svg");    mask-image: url("../../assets/images/icons/recent_documents.svg"); }
 .explore .ico-personas { -webkit-mask-image: url("../../assets/images/icons/user_personas.svg");     mask-image: url("../../assets/images/icons/user_personas.svg"); }
 .explore .ico-links    { -webkit-mask-image: url("../../assets/images/icons/important_links.svg"); mask-image: url("../../assets/images/icons/important_links.svg"); }
 
@@ -60,7 +60,7 @@
   gap: 1rem;
 }
 @media (min-width: 576px) {
-  .explore .doc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .explore .doc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 .explore .doc-card {
   display: block;
@@ -102,6 +102,10 @@
   -webkit-mask-image: url("../../assets/images/icons/egov.svg");
   mask-image: url("../../assets/images/icons/egov.svg");
 }
+.explore .doc-icon-acts {
+  -webkit-mask-image: url("../../assets/images/icons/acts.svg");
+  mask-image: url("../../assets/images/icons/acts.svg");
+}
 .explore .doc-icon-form {
   -webkit-mask-image: url("../../assets/images/icons/forms.svg");
   mask-image: url("../../assets/images/icons/forms.svg");
@@ -113,6 +117,14 @@
 .explore .doc-icon-expenditure {
   -webkit-mask-image: url("../../assets/images/icons/expenditure.svg");
   mask-image: url("../../assets/images/icons/expenditure.svg");
+}
+.explore .doc-icon-rules {
+  -webkit-mask-image: url("../../assets/images/icons/rules.svg");
+  mask-image: url("../../assets/images/icons/rules.svg");
+}
+.explore .doc-icon-manual {
+  -webkit-mask-image: url("../../assets/images/icons/manual.svg");
+  mask-image: url("../../assets/images/icons/manual.svg");
 }
 .explore .doc-card-text {
   display: -webkit-box;
