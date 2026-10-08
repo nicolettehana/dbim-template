@@ -1,0 +1,154 @@
+/* Main navigation: sticky bar under the header.
+   Desktop (992px+): items in one row, dropdown panels open on click.
+   Below 992px: a "Menu" button opens a vertical list; sub-menus open inside it.
+   Colours come from the dbim-theme tokens. */
+
+/* Keeps anchor jumps and keyboard focus from hiding under the sticky bar */
+html { scroll-padding-top: 5rem; }
+
+.main-nav {
+  --nav-size: 2.0625rem;
+  --nav-sub-size: 1.5rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--white);
+  border-bottom: 1px solid var(--bright-gray);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  font-family: "Noto Sans", sans-serif;
+}
+.main-nav ul { list-style: none; margin: 0; padding: 1rem; }
+
+.main-nav .nav-inner {
+  width: calc(100% - 3rem);
+  max-width: 1590px;
+  margin-inline: auto;
+}
+
+/* Menu button (small screens) */
+.main-nav .nav-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3.5rem;
+  padding: 0 0.25rem;
+  background: transparent;
+  color: var(--black);
+  border: 0;
+  font: inherit;
+  font-size: var(--nav-size);
+  font-weight: 700;
+  cursor: pointer;
+}
+.main-nav .nav-bars {                         /* hamburger drawn in CSS */
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 -7px 0 currentColor, 0 7px 0 currentColor;
+}
+.main-nav .nav-menu-btn[aria-expanded="true"] { color: var(--key); }
+.main-nav .nav-menu-btn:focus-visible { outline: 2px solid var(--key); outline-offset: 2px; }
+
+/* The list: hidden on small screens until the Menu button is pressed */
+.main-nav.is-ready .nav-list { display: none; }
+.main-nav.is-ready.is-open .nav-list {
+  display: block;
+  max-height: calc(100vh - 3.5rem);
+  overflow-y: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Links and sub-menu buttons */
+.main-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.5rem 0.25rem;
+  background: transparent;
+  color: var(--black);
+  border: 0;
+  font: inherit;
+  font-size: var(--nav-size);
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main-nav .nav-link:hover { color: var(--key); }
+.main-nav .nav-link:focus-visible { outline: 2px solid var(--key); outline-offset: -2px; }
+.main-nav .nav-link[aria-current="page"] { color: var(--key); }
+
+.main-nav .nav-toggle::after {                /* chevron drawn in CSS */
+  content: "";
+  flex: none;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-bottom: 0.25rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+.main-nav .nav-toggle[aria-expanded="true"] { color: var(--key); }
+.main-nav .nav-toggle[aria-expanded="true"]::after { margin-bottom: -0.25rem; transform: rotate(-135deg); }
+
+/* Sub-menus (small screens: open inside the list) */
+.main-nav .nav-sub[hidden] { display: none; }
+.main-nav .nav-sub { padding: 0 0 1rem 1rem; border-left: 3px solid var(--key); margin-left: 0.25rem; }
+.main-nav .nav-sub a {
+  display: block;
+  padding: 0.625rem 0.75rem;
+  color: var(--black);
+  font-size: var(--nav-sub-size);
+  text-decoration: none;
+}
+.main-nav .nav-sub a:hover { background: var(--azureish-white-bg); text-decoration: underline; text-underline-offset: 3px; }
+.main-nav .nav-sub a:focus-visible { outline: 2px solid var(--key); outline-offset: -2px; }
+
+/* Desktop */
+@media (min-width: 992px) {
+  .main-nav { --nav-size: 2.125rem; }
+
+  .main-nav .nav-menu-btn { display: none; }
+
+  .main-nav.is-ready .nav-list,
+  .main-nav.is-ready.is-open .nav-list {
+    display: flex;
+    justify-content: space-between;
+    max-height: none;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+  .main-nav .nav-item { position: relative; }
+
+  .main-nav .nav-link {
+    width: auto;
+    min-height: 3.75rem;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+  }
+  .main-nav .nav-link[aria-current="page"] { box-shadow: inset 0 -4px 0 var(--key); }   /* bar under the current page */
+
+  .main-nav .nav-sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    min-width: 16rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    background: var(--white);
+    border: 1px solid var(--bright-gray);
+    border-top: 3px solid var(--key);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .main-nav .nav-item:nth-last-child(-n+2) .nav-sub { left: auto; right: 0; }   /* last two open towards the left */
+}
+@media (min-width: 1200px) {
+  .main-nav { --nav-size: 2rem; }
+  .main-nav .nav-inner { width: 88%; }
+}

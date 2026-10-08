@@ -1,0 +1,206 @@
+/* Accessibility controls: a drawer that slides in from the right, plus the effects of each control.
+   Keep this file in assets/css/ (the icon paths below start from there).
+   Colours come from the dbim-theme tokens. */
+
+/* ---------- Drawer ---------- */
+.a11y-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1999;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+.a11y-overlay.is-open { opacity: 1; visibility: visible; transition: opacity 0.3s ease; }
+
+.a11y-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  width: min(100vw, 24rem);
+  height: 100%;
+  background: var(--white);
+  color: var(--black);
+  font-family: "Noto Sans", sans-serif;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.25);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.3s ease, visibility 0s linear 0.3s;
+}
+.a11y-drawer.is-open { transform: none; visibility: visible; transition: transform 0.3s ease; }
+
+.a11y-drawer .a11y-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--bright-gray);
+}
+.a11y-drawer .a11y-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.a11y-drawer .a11y-title::before {
+  content: "";
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--key);
+  -webkit-mask: url("../../assets/images/icons/accessibility.svg") center / contain no-repeat;
+          mask: url("../../assets/images/icons/accessibility.svg") center / contain no-repeat;
+}
+
+.a11y-drawer .a11y-close {
+  position: relative;
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  background: transparent;
+  color: var(--black);
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.a11y-drawer .a11y-close::before,
+.a11y-drawer .a11y-close::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 1.5rem;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+.a11y-drawer .a11y-close::after { transform: rotate(-45deg); }
+
+.a11y-drawer .a11y-body { flex: 1; overflow-y: auto; padding: 1.25rem; }
+.a11y-drawer .a11y-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Control tiles */
+.a11y-drawer .a11y-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 6.5rem;
+  padding: 0.75rem 0.5rem;
+  background: var(--white);
+  color: var(--key);
+  border: 1px solid var(--key);
+  border-radius: 0.375rem;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;               /* short labels only */
+  cursor: pointer;
+}
+.a11y-drawer .a11y-tile:hover { background: var(--azureish-white-bg); }
+.a11y-drawer .a11y-tile[aria-pressed="true"] { background: var(--key); color: var(--on-key); }
+.a11y-drawer .a11y-tile[aria-disabled="true"] { opacity: 0.4; cursor: not-allowed; }
+.a11y-drawer .a11y-ico {
+  width: 3rem;                              /* 48px */
+  height: 3rem;
+  background-color: currentColor;           /* follows the tile's text colour */
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center;  mask-position: center;
+  -webkit-mask-size: contain;     mask-size: contain;
+}
+.a11y-drawer .a11y-state { font-size: 0.75rem; font-weight: 400; text-transform: none; }
+.a11y-drawer .a11y-state:empty { display: none; }
+
+.a11y-drawer .ico-contrast   { -webkit-mask-image: url("../../assets/images/icons/dark_contrast.svg");   mask-image: url("../../assets/images/icons/dark_contrast.svg"); }
+.a11y-drawer .ico-invert     { -webkit-mask-image: url("../../assets/images/icons/invert.svg");     mask-image: url("../../assets/images/icons/invert.svg"); }
+.a11y-drawer .ico-saturation { -webkit-mask-image: url("../../assets/images/icons/saturation.svg"); mask-image: url("../../assets/images/icons/saturation.svg"); }
+.a11y-drawer .ico-text-plus  { -webkit-mask-image: url("../../assets/images/icons/text_plus.svg");  mask-image: url("../../assets/images/icons/text_plus.svg"); }
+.a11y-drawer .ico-text-minus { -webkit-mask-image: url("../../assets/images/icons/text_minus.svg"); mask-image: url("../../assets/images/icons/text_minus.svg"); }
+.a11y-drawer .ico-link       { -webkit-mask-image: url("../../assets/images/icons/link.svg");       mask-image: url("../../assets/images/icons/link.svg"); }
+.a11y-drawer .ico-hide-image { -webkit-mask-image: url("../../assets/images/icons/hide-image.svg"); mask-image: url("../../assets/images/icons/hide-image.svg"); }
+.a11y-drawer .ico-cursor     { -webkit-mask-image: url("../../assets/images/icons/cursor.svg");     mask-image: url("../../assets/images/icons/cursor.svg"); }
+
+/* Reset */
+.a11y-drawer .a11y-foot { padding: 1rem 1.25rem; border-top: 1px solid var(--bright-gray); }
+.a11y-drawer .a11y-reset {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  color: var(--key);
+  border: 1px solid var(--key);
+  border-radius: 0.25rem;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.a11y-drawer .a11y-reset:hover { background: var(--azureish-white-bg); }
+
+.a11y-drawer button:focus-visible { outline: 3px solid var(--key); outline-offset: 2px; }
+
+html.a11y-open body { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  .a11y-overlay, .a11y-drawer { transition: none; }
+}
+
+/* ---------- Effects of the controls ---------- */
+
+/* Dark contrast: black page, white text, yellow accents. Components that use the theme tokens follow it. */
+html.a11y-contrast {
+  --white: #000000;
+  --black: #FFFFFF;
+  --black-pure: #FFFFFF;
+  --key: #FFFF00;
+  --on-key: #000000;
+  --link: #FFFF00;
+  --bright-gray: #4D4D4D;
+  --azureish-white: #6B6B00;
+  --azureish-white-bg: #262626;
+  --columbia-blue: #8A8A00;
+  --grey-01: #1A1A1A;
+  --rhythm: #FFFFFF;
+}
+html.a11y-contrast body { background: #000000; color: #FFFFFF; }
+
+/* Invert: flips every colour, then flips pictures back so they look normal */
+html.a11y-invert img,
+html.a11y-invert picture,
+html.a11y-invert video { filter: invert(1) hue-rotate(180deg); }
+
+/* Highlight links */
+html.a11y-links a:not(.a11y-tile) {
+  background: #FFFF00 !important;
+  color: #000000 !important;
+  text-decoration: underline !important;
+  outline: 2px solid #000000;
+}
+
+/* Hide images (their alt text stays available to screen readers) */
+html.a11y-noimg img { display: none !important; }
+
+/* Default cursor everywhere */
+html.a11y-cursor,
+html.a11y-cursor * { cursor: default !important; }

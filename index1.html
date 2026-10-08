@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/ticker.css">
     <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/accessibility.css">
 </head>
 
 <body>
@@ -73,6 +75,68 @@
         </div>
     </header>
 
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+    
+            <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="main-menu">
+                <span class="nav-bars" aria-hidden="true"></span>Menu
+            </button>
+    
+            <ul class="nav-list" id="main-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+    
+                <li class="nav-item">
+                    <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+                        aria-controls="sub-ministry">Ministry</button>
+                    <ul class="nav-sub" id="sub-ministry" hidden>
+                        <li><a href="#">Sub page one</a></li>
+                        <li><a href="#">Sub page two</a></li>
+                        <li><a href="#">Sub page three</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+                        aria-controls="sub-offerings">Offerings</button>
+                    <ul class="nav-sub" id="sub-offerings" hidden>
+                        <li><a href="schemes.html">Schemes</a></li>
+                        <li><a href="vacancies.html">Vacancies</a></li>
+                        <li><a href="tenders.html">Tenders</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+                        aria-controls="sub-documents">Documents</button>
+                    <ul class="nav-sub" id="sub-documents" hidden>
+                        <li><a href="#">Sub page one</a></li>
+                        <li><a href="#">Sub page two</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+                        aria-controls="sub-media">Media</button>
+                    <ul class="nav-sub" id="sub-media" hidden>
+                        <li><a href="#">Sub page one</a></li>
+                        <li><a href="#">Sub page two</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+                        aria-controls="sub-connect">Connect</button>
+                    <ul class="nav-sub" id="sub-connect" hidden>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">RTI</a></li>
+                    </ul>
+                </li>
+            </ul>
+    
+        </div>
+    </nav>
+
     <section class="hero" role="region" aria-roledescription="carousel" aria-label="Featured banners">
     
         <ul class="hero-track">
@@ -99,7 +163,7 @@
                     </picture>
                 </a>
             </li>
-            <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+            <!-- <li class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
                 <a href="#">
                     <picture>
                         <source media="(max-width: 767px)" srcset="assets/images/banners/banner1.png" width="750"
@@ -108,7 +172,7 @@
                             alt="Placeholder banner three: describe the banner and repeat its text here">
                     </picture>
                 </a>
-            </li>
+            </li> -->
         </ul>
     
         <button type="button" class="hero-btn hero-prev" aria-label="Previous banner"></button>
@@ -118,7 +182,7 @@
             <ul class="hero-dots">
                 <li><button type="button" aria-label="Show banner 1 of 3" aria-current="true"></button></li>
                 <li><button type="button" aria-label="Show banner 2 of 3"></button></li>
-                <li><button type="button" aria-label="Show banner 3 of 3"></button></li>
+                <!-- <li><button type="button" aria-label="Show banner 3 of 3"></button></li> -->
             </ul>
             <button type="button" class="hero-toggle" aria-label="Pause banner slideshow"
                 title="Pause banner slideshow"></button>
@@ -469,12 +533,57 @@
         </div>
     </footer>
 
+
+
+
+
+    <div class="a11y-overlay" id="a11y-overlay"></div>
+    
+    <aside class="a11y-drawer" id="a11y-drawer" role="dialog" aria-modal="true" aria-labelledby="a11y-title">
+        <div class="a11y-head">
+            <h2 class="a11y-title" id="a11y-title">Accessibility Controls</h2>
+            <button type="button" class="a11y-close" aria-label="Close accessibility controls"></button>
+        </div>
+    
+        <div class="a11y-body">
+            <ul class="a11y-grid">
+                <li><button type="button" class="a11y-tile" data-action="contrast" aria-pressed="false"><span
+                            class="a11y-ico ico-contrast" aria-hidden="true"></span>Dark contrast</button></li>
+                <li><button type="button" class="a11y-tile" data-action="invert" aria-pressed="false"><span
+                            class="a11y-ico ico-invert" aria-hidden="true"></span>Invert</button></li>
+                <li><button type="button" class="a11y-tile" data-action="saturation" aria-pressed="false"><span
+                            class="a11y-ico ico-saturation" aria-hidden="true"></span>Saturation<span class="a11y-state"
+                            data-state-for="saturation"></span></button></li>
+                <li><button type="button" class="a11y-tile" data-action="text-increase" aria-disabled="false"><span
+                            class="a11y-ico ico-text-plus" aria-hidden="true"></span>Text size increase</button></li>
+                <li><button type="button" class="a11y-tile" data-action="text-decrease" aria-disabled="false"><span
+                            class="a11y-ico ico-text-minus" aria-hidden="true"></span>Text size decrease</button></li>
+                <li><button type="button" class="a11y-tile" data-action="links" aria-pressed="false"><span
+                            class="a11y-ico ico-link" aria-hidden="true"></span>Highlight links</button></li>
+                <li><button type="button" class="a11y-tile" data-action="images" aria-pressed="false"><span
+                            class="a11y-ico ico-hide-image" aria-hidden="true"></span>Hide images</button></li>
+                <li><button type="button" class="a11y-tile" data-action="cursor" aria-pressed="false"><span
+                            class="a11y-ico ico-cursor" aria-hidden="true"></span>Default cursor</button></li>
+            </ul>
+        </div>
+    
+        <div class="a11y-foot">
+            <button type="button" class="a11y-reset">Reset all settings</button>
+        </div>
+    
+        <p class="visually-hidden" id="a11y-status" role="status" aria-live="polite"></p>
+    </aside>
+
+
+
     <script src="assets/js/last-updated.js"></script>
     <script src="assets/js/logo-carousel.js"></script>
     <script src="assets/js/offerings-tabs.js"></script>
     <script src="assets/js/persona-slider.js"></script>
     <script src="assets/js/ticker.js"></script>
     <script src="assets/js/banner.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/accessibility.js"></script>
 
 </body>
 

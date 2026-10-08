@@ -1,0 +1,106 @@
+.page-hero {
+    position: relative;
+    max-height: 170px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(115deg,
+            var(--c1) 0%,
+            var(--c1) 38%,
+            var(--c2) 68%,
+            var(--wintergreen-dream) 100%);
+
+    color: var(--on-key);
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 900px;
+    height: 500px;
+
+    top: -360px;
+    right: 8%;
+
+    border-radius: 50%;
+
+    background: color-mix(in srgb,
+            var(--c3) 18%,
+            transparent);
+
+    transform: rotate(-8deg);
+}
+
+.page-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 1100px;
+    height: 500px;
+
+    top: 40px;
+    left: 35%;
+
+    border-radius: 50%;
+
+    border-top: 1px solid color-mix(in srgb,
+            var(--c4) 22%,
+            transparent);
+
+    border-bottom: 1px solid color-mix(in srgb,
+            var(--c4) 10%,
+            transparent);
+
+    transform: rotate(18deg);
+}
+
+.page-hero-inner {
+    position: relative;
+    z-index: 2;
+
+    width: calc(100% - 3rem);
+    max-width: 1320px;
+    min-height: 150px;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.page-breadcrumb a,
+.page-breadcrumb span {
+    color: var(--on-key);
+}
+
+.page-breadcrumb a {
+    text-decoration: none;
+}
+
+.page-breadcrumb a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.page-hero h1 {
+    margin: 0;
+
+    color: var(--on-key);
+
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+}

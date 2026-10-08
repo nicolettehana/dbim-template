@@ -1,0 +1,72 @@
+/* Search results page. Colours come from the dbim-theme tokens. */
+
+.search-page {
+  padding-block: 2.5rem;
+  background: var(--white);
+  color: var(--black);
+  font-family: "Noto Sans", sans-serif;
+}
+.search-page .search-inner {
+  width: calc(100% - 3rem);
+  max-width: 60rem;
+  margin-inline: auto;
+}
+.search-page h1 { margin: 0 0 1.25rem; font-size: 1.75rem; font-weight: 700; color: var(--key); }
+
+/* Search box on the page */
+.search-page .search-form label { display: block; margin-bottom: 0.5rem; font-weight: 700; }
+.search-page .search-row { display: flex; }
+.search-page .search-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--key);
+  border-right: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+  font: inherit;
+  font-size: 1.5rem;
+}
+.search-page .search-row button {
+  padding: 0.75rem 1.5rem;
+  background: var(--key);
+  color: var(--on-key);
+  border: 1px solid var(--key);
+  border-radius: 0 0.25rem 0.25rem 0;
+  font: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.search-page .search-row input:focus-visible,
+.search-page .search-row button:focus-visible { outline: 3px solid var(--key); outline-offset: 2px; }
+
+.search-page .search-status { margin: 1.5rem 0 1rem; font-size: 1.5rem; font-weight: 700; }
+
+/* Results */
+.search-page .search-results { list-style: none; margin: 0; padding: 0; }
+.search-page .search-item { padding: 1.25rem 0; border-bottom: 1px solid var(--bright-gray); }
+.search-page .search-item-title { margin: 0 0 0.25rem; font-size: 1.5rem; font-weight: 700; }
+.search-page .search-item-title a { color: var(--key); }
+.search-page .search-item-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.search-page .search-item-title a:focus-visible { outline: 2px solid var(--key); outline-offset: 2px; }
+.search-page .search-item-url { margin: 0 0 0.5rem; font-size: 1rem; color: var(--rhythm); word-break: break-all; }
+.search-page .search-item-text { margin: 0; font-size: 1.2rem; line-height: 1.6; }
+.search-page mark { background: #FFEB3B; color: #000000; padding: 0 0.125rem; }
+
+.search-page .search-more {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--white);
+  color: var(--key);
+  border: 1px solid var(--key);
+  border-radius: 0.25rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.search-page .search-more[hidden] { display: none; }
+.search-page .search-more:hover { background: var(--azureish-white-bg); }
+.search-page .search-more:focus-visible { outline: 3px solid var(--key); outline-offset: 2px; }

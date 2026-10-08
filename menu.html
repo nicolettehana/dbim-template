@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main menu test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Your header goes here, above the menu -->
+<div style="height: 6rem; display: grid; place-items: center; background: #755050;">Header</div>
+
+<!-- The menu must be a direct child of <body> (not inside a short wrapper), or it will not stay stuck -->
+<nav class="main-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="main-menu">
+      <span class="nav-bars" aria-hidden="true"></span>Menu
+    </button>
+
+    <ul class="nav-list" id="main-menu">
+      <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+
+      <li class="nav-item">
+        <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="sub-ministry">Ministry</button>
+        <ul class="nav-sub" id="sub-ministry" hidden>
+          <li><a href="#">Sub page one</a></li>
+          <li><a href="#">Sub page two</a></li>
+          <li><a href="#">Sub page three</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="sub-offerings">Offerings</button>
+        <ul class="nav-sub" id="sub-offerings" hidden>
+          <li><a href="schemes.html">Schemes</a></li>
+          <li><a href="vacancies.html">Vacancies</a></li>
+          <li><a href="tenders.html">Tenders</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="sub-documents">Documents</button>
+        <ul class="nav-sub" id="sub-documents" hidden>
+          <li><a href="#">Sub page one</a></li>
+          <li><a href="#">Sub page two</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="sub-media">Media</button>
+        <ul class="nav-sub" id="sub-media" hidden>
+          <li><a href="#">Sub page one</a></li>
+          <li><a href="#">Sub page two</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="sub-connect">Connect</button>
+        <ul class="nav-sub" id="sub-connect" hidden>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">RTI</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<main id="maincontent" tabindex="-1">
+  <p style="padding: 2rem">Scroll down: the menu stays at the top.</p>
+  <div style="height: 150vh; background: linear-gradient(#fff, #EBEAEA);"></div>
+</main>
+
+<script src="assets/js/menu.js"></script>
+</body>
+</html>

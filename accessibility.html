@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility controls test</title>
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- In the head, no defer: applies saved settings before the page paints -->
+  <script src="assets/js/accessibility.js"></script>
+</head>
+<body>
+
+<!-- In your real page this button already exists in the header (class accessibility-btn) -->
+<p style="padding: 1rem 1.5rem">
+  <button type="button" class="accessibility-btn">Open accessibility controls</button>
+</p>
+
+<main id="maincontent" tabindex="-1" style="padding: 1rem 1.5rem">
+  <h1>Sample page</h1>
+  <p>Use the controls to see what each one does to this text, the links and the picture below.
+     <a href="#">This is a link</a> and <a href="#">this is another link</a>.</p>
+  <img src="assets/images/banners/banner-1.svg" width="1920" height="640" alt="Sample banner" style="max-width: 100%; height: auto">
+</main>
+
+<!-- ===== Accessibility drawer: put this just before </body> ===== -->
+<div class="a11y-overlay" id="a11y-overlay"></div>
+
+<aside class="a11y-drawer" id="a11y-drawer" role="dialog" aria-modal="true" aria-labelledby="a11y-title">
+  <div class="a11y-head">
+    <h2 class="a11y-title" id="a11y-title">Accessibility Controls</h2>
+    <button type="button" class="a11y-close" aria-label="Close accessibility controls"></button>
+  </div>
+
+  <div class="a11y-body">
+    <ul class="a11y-grid">
+      <li><button type="button" class="a11y-tile" data-action="contrast" aria-pressed="false"><span class="a11y-ico ico-contrast" aria-hidden="true"></span>Dark contrast</button></li>
+      <li><button type="button" class="a11y-tile" data-action="invert" aria-pressed="false"><span class="a11y-ico ico-invert" aria-hidden="true"></span>Invert</button></li>
+      <li><button type="button" class="a11y-tile" data-action="saturation" aria-pressed="false"><span class="a11y-ico ico-saturation" aria-hidden="true"></span>Saturation<span class="a11y-state" data-state-for="saturation"></span></button></li>
+      <li><button type="button" class="a11y-tile" data-action="text-increase" aria-disabled="false"><span class="a11y-ico ico-text-plus" aria-hidden="true"></span>Text size increase</button></li>
+      <li><button type="button" class="a11y-tile" data-action="text-decrease" aria-disabled="false"><span class="a11y-ico ico-text-minus" aria-hidden="true"></span>Text size decrease</button></li>
+      <li><button type="button" class="a11y-tile" data-action="links" aria-pressed="false"><span class="a11y-ico ico-link" aria-hidden="true"></span>Highlight links</button></li>
+      <li><button type="button" class="a11y-tile" data-action="images" aria-pressed="false"><span class="a11y-ico ico-hide-image" aria-hidden="true"></span>Hide images</button></li>
+      <li><button type="button" class="a11y-tile" data-action="cursor" aria-pressed="false"><span class="a11y-ico ico-cursor" aria-hidden="true"></span>Default cursor</button></li>
+    </ul>
+  </div>
+
+  <div class="a11y-foot">
+    <button type="button" class="a11y-reset">Reset all settings</button>
+  </div>
+
+  <p class="visually-hidden" id="a11y-status" role="status" aria-live="polite"></p>
+</aside>
+
+</body>
+</html>

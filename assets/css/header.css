@@ -13,6 +13,11 @@
   color: var(--black);
   font-family: "Noto Sans", sans-serif;
   border-bottom: 1px solid var(--bright-gray);
+  
+}
+
+header.site-header {
+  position: static;
 }
 
 .site-header .hdr-inner {

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="stylesheet" href="assets/css/compiled.min.css">
+  <link rel="stylesheet" href="assets/css/dbim-theme2.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/search.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/footer4.css">
+  <link rel="stylesheet" href="assets/css/page-hero.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <!-- also add the same header, menu and footer stylesheets as your other pages -->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="hdr-inner">
+  
+      <!-- Emblem and names: use the official emblem and the lockup for your type of entity.
+               On the home page you can make the ministry name an <h1> (keep the same class). -->
+      <a class="hdr-brand" href="index.html">
+        <img src="assets/images/indian-emblem.svg" width="70" height="90" alt="State Emblem of India">
+        <div>
+          <p class="hdr-gov">Government of Meghalaya</p>
+          <p class="hdr-name">Finance Department</p>
+        </div>
+      </a>
+  
+      <!-- Search: point action at your search results page -->
+      <form class="hdr-search" role="search" action="search.html" method="get">
+        <label class="visually-hidden" for="site-search">Search the website</label>
+        <input type="search" id="site-search" name="q" placeholder="Search...">
+        <button type="submit" aria-label="Search"><span class="ico ico-search" aria-hidden="true"></span></button>
+      </form>
+  
+      <!-- Co-brand logo: constant logo for your ministry's flagship programme -->
+      <a class="hdr-cobrand" href="#" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/logos/meglogo.png" width="120" height="56" alt="Skill India (opens in a new tab)">
+      </a>
+  
+      <ul class="hdr-tools">
+        <li>
+          <a class="hdr-tool" href="#maincontent" aria-label="Skip to main content" title="Skip to main content">
+            <span class="ico ico-skip" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <!-- Hook for the Bhashini translation plugin -->
+          <button type="button" class="hdr-tool dont-translate translate-plugin-popup-button"
+            aria-label="Translate this page" title="Translate this page">
+            <span class="ico ico-trans" aria-hidden="true"></span>
+          </button>
+        </li>
+        <li>
+          <!-- Hook for your accessibility panel (text size, contrast) -->
+          <button type="button" class="hdr-tool accessibility-btn" aria-label="Accessibility panel"
+            title="Accessibility panel">
+            <span class="ico ico-access" aria-hidden="true"></span>
+          </button>
+        </li>
+      </ul>
+  
+    </div>
+  </header>
+  
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+  
+      <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="main-menu">
+        <span class="nav-bars" aria-hidden="true"></span>Menu
+      </button>
+  
+      <ul class="nav-list" id="main-menu">
+        <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+  
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-ministry">Ministry</button>
+          <ul class="nav-sub" id="sub-ministry" hidden>
+            <li><a href="#">Sub page one</a></li>
+            <li><a href="#">Sub page two</a></li>
+            <li><a href="#">Sub page three</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-offerings">Offerings</button>
+          <ul class="nav-sub" id="sub-offerings" hidden>
+            <li><a href="schemes.html">Schemes</a></li>
+            <li><a href="vacancies.html">Vacancies</a></li>
+            <li><a href="tenders.html">Tenders</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-documents">Documents</button>
+          <ul class="nav-sub" id="sub-documents" hidden>
+            <li><a href="#">Sub page one</a></li>
+            <li><a href="#">Sub page two</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="sub-media">Media</button>
+          <ul class="nav-sub" id="sub-media" hidden>
+            <li><a href="#">Sub page one</a></li>
+            <li><a href="#">Sub page two</a></li>
+          </ul>
+        </li>
+  
+        <li class="nav-item">
+          <button type="button" class="nav-link nav-toggle" aria-expanded="false"
+            aria-controls="sub-connect">Connect</button>
+          <ul class="nav-sub" id="sub-connect" hidden>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">RTI</a></li>
+          </ul>
+        </li>
+      </ul>
+  
+    </div>
+  </nav>
+
+<!-- Paste your header and menu here, exactly as on your other pages -->
+
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="page-hero-inner">
+
+    <nav class="page-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <span>Search</span>
+    </nav>
+
+    <h1 id="page-title">Search</h1>
+
+  </div>
+</section>
+
+<main id="maincontent" tabindex="-1" class="search-page">
+  <div class="search-inner">
+    <h1>Search results</h1>
+
+    <form class="search-form" role="search" action="search.html" method="get">
+      <label for="search-input">Search this website</label>
+      <div class="search-row">
+        <input type="search" id="search-input" name="q" autocomplete="off">
+        <button type="submit">Search</button>
+      </div>
+    </form>
+
+    <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+    <noscript><p>Search needs JavaScript. Please turn it on to search this website.</p></noscript>
+
+    <ol class="search-results" id="search-results" data-index="assets/search-index.json"></ol>
+    <button type="button" class="search-more" id="search-more" hidden>Show more results</button>
+  </div>
+</main>
+
+<footer class="footerbox" aria-label="Site footer">
+  <div class="container-fluid">
+    <div class="footer-grid">
+
+      <nav class="footer-useful" aria-labelledby="footer-useful-links">
+        <h2 id="footer-useful-links">Useful Links</h2>
+        <ul class="footer-links">
+          <li><a href="#">Archives</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Website Policies</a></li>
+          <li><a href="#">Related Links</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer-lineage">This Website belongs to Finance Department, Government of Meghalaya and hosted
+        by National Informatics Centre, Meghalaya
+        State Centre.</p>
+
+      <div class="footer-subscribe">
+        <h2 id="footer-subscribe">Subscribe for updates</h2>
+        <ul class="footer-social" aria-labelledby="footer-subscribe">
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/x.svg" width="32"
+                height="32" alt="X (opens in a new tab)"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/youtube.svg"
+                width="32" height="32" alt="YouTube (opens in a new tab)"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/facebook.svg"
+                width="32" height="32" alt="Facebook (opens in a new tab)"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/instagram.svg"
+                width="32" height="32" alt="Instagram (opens in a new tab)"></a></li>
+        </ul>
+        <!-- Official logos from the DBIM toolkit, each under 100 KB. Add the myGov logo here if your site uses it. -->
+        <div class="footer-logos">
+          <a href="https://www.meghalaya.gov.in" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/logos/meglogo.png" height="44"
+              alt="Meghalaya.gov.in: Portal of Meghalaya (opens in a new tab)">
+          </a>
+          <a href="https://meg.nic.in" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/logos/nic.svg" height="44"
+              alt="Meg.nic.in: Portal of Meghalaya (opens in a new tab)">
+          </a>
+        </div>
+      </div>
+
+      <!-- <p class="footer-updated">Last Updated On: <time datetime="2026-10-06">06.10.2026</time></p> -->
+      <p class="footer-updated">Last Updated On: <time id="last-updated" datetime="2026-10-06">06.10.2026</time></p>
+
+    </div>
+  </div>
+</footer>
+
+<div class="a11y-overlay" id="a11y-overlay"></div>
+
+<aside class="a11y-drawer" id="a11y-drawer" role="dialog" aria-modal="true" aria-labelledby="a11y-title">
+  <div class="a11y-head">
+    <h2 class="a11y-title" id="a11y-title">Accessibility Controls</h2>
+    <button type="button" class="a11y-close" aria-label="Close accessibility controls"></button>
+  </div>
+
+  <div class="a11y-body">
+    <ul class="a11y-grid">
+      <li><button type="button" class="a11y-tile" data-action="contrast" aria-pressed="false"><span
+            class="a11y-ico ico-contrast" aria-hidden="true"></span>Dark contrast</button></li>
+      <li><button type="button" class="a11y-tile" data-action="invert" aria-pressed="false"><span
+            class="a11y-ico ico-invert" aria-hidden="true"></span>Invert</button></li>
+      <li><button type="button" class="a11y-tile" data-action="saturation" aria-pressed="false"><span
+            class="a11y-ico ico-saturation" aria-hidden="true"></span>Saturation<span class="a11y-state"
+            data-state-for="saturation"></span></button></li>
+      <li><button type="button" class="a11y-tile" data-action="text-increase" aria-disabled="false"><span
+            class="a11y-ico ico-text-plus" aria-hidden="true"></span>Text size increase</button></li>
+      <li><button type="button" class="a11y-tile" data-action="text-decrease" aria-disabled="false"><span
+            class="a11y-ico ico-text-minus" aria-hidden="true"></span>Text size decrease</button></li>
+      <li><button type="button" class="a11y-tile" data-action="links" aria-pressed="false"><span
+            class="a11y-ico ico-link" aria-hidden="true"></span>Highlight links</button></li>
+      <li><button type="button" class="a11y-tile" data-action="images" aria-pressed="false"><span
+            class="a11y-ico ico-hide-image" aria-hidden="true"></span>Hide images</button></li>
+      <li><button type="button" class="a11y-tile" data-action="cursor" aria-pressed="false"><span
+            class="a11y-ico ico-cursor" aria-hidden="true"></span>Default cursor</button></li>
+    </ul>
+  </div>
+
+  <div class="a11y-foot">
+    <button type="button" class="a11y-reset">Reset all settings</button>
+  </div>
+
+  <p class="visually-hidden" id="a11y-status" role="status" aria-live="polite"></p>
+</aside>
+
+
+<!-- Paste your footer here, exactly as on your other pages -->
+
+<script src="assets/js/search.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/accessibility.js"></script>
+</body>
+</html>
