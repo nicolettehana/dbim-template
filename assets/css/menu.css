@@ -10,7 +10,7 @@ html {
 
 .main-nav {
     --nav-size: 2.0625rem;
-    --nav-sub-size: 1.5rem;
+    --nav-sub-size: 1.65rem;
 
     position: sticky;
     top: 0;
@@ -205,7 +205,9 @@ html {
     .main-nav .nav-sub {
         position: absolute;
         top: 100%;
-        left: 0;
+        /* left: 0; */
+        left: 50%;
+            transform: translateX(-50%);
         z-index: 1;
         min-width: 20rem;
         margin: 0;
@@ -221,10 +223,10 @@ html {
         justify-content: center;
     }
 
-    .main-nav .nav-item:nth-last-child(-n+2) .nav-sub {
+    /* .main-nav .nav-item:nth-last-child(-n+2) .nav-sub {
         left: auto;
         right: 0;
-    }
+    } */
 
     /* last two open towards the left */
 }
