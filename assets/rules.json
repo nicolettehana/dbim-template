@@ -1,35 +1,10 @@
 {
   "categories": [
     {
-      "id": "acts",
-      "label": "Acts"
-    },
-    {
       "id": "rules",
       "label": "Rules"
-    },
-    {
-      "id": "grants",
-      "label": "Notifications"
-    },
-    
-    {
-      "id": "ls",
-      "label": "User Manual"
-    },
-    {
-      "id": "pub",
-      "label": "Publications"
-    },
-    
-    {
-      "id": "forms",
-      "label": "Forms"
-    },
-    {
-      "id": "pfms",
-      "label": "PFMS/SNA"
     }
+    
   ],
   "documents": [
     {

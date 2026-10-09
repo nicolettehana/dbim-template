@@ -1,0 +1,46 @@
+/* Inner banner navigation: left and right arrows appear when the links do not all fit.
+   The list itself scrolls (swipe, trackpad or the arrows). */
+
+.innernav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.innernav .nav {
+  flex: 1;
+  min-width: 0;                    /* lets the list scroll instead of pushing the page wider */
+  position: relative;
+  scrollbar-width: none;           /* Firefox: hide the scrollbar */
+}
+
+.innernav .nav-arrow {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  /* background: rgba(255, 255, 255, 0.15); */
+  background-color: var(--azureish-white-bg);
+  color: var(--key);
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.innernav .nav-arrow[hidden] { display: none; }
+.innernav .nav-arrow::before {     /* chevron drawn in CSS */
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-top: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+}
+.innernav .nav-arrow-next::before { transform: translateX(-0.1rem) rotate(45deg); }
+.innernav .nav-arrow-prev::before { transform: translateX(0.1rem) rotate(-135deg); }
+.innernav .nav-arrow:hover:not(:disabled) { background: rgba(255, 255, 255, 0.3); }
+.innernav .nav-arrow:disabled { opacity: 0.35; cursor: not-allowed; }
+.innernav .nav-arrow:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #000000;
+}

@@ -101,8 +101,7 @@ html {
 
 .main-nav .nav-link:hover {
     color: var(--key);
-    /* background-color: var(--columbia-blue);
-    width: 20rem; */
+     /* background-color: var(--azureish-white-bg); */
 }
 
 .main-nav .nav-link:focus-visible {
@@ -145,11 +144,12 @@ html {
     padding: 0 0 1rem 1rem;
     border-left: 3px solid var(--key);
     margin-left: 0.25rem;
+    
 }
 
 .main-nav .nav-sub a {
     display: block;
-    padding: 0.625rem 0.75rem;
+    padding: 1.25rem 1rem;
     /* color: var(--black); */
     color: #fff;
     text-align: center;
@@ -158,10 +158,11 @@ html {
 }
 
 .main-nav .nav-sub a:hover {
-    /* background: var(--azureish-white-bg); */
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--azureish-white-bg);
+    /* background: rgba(255, 255, 255, 0.12); */
     text-decoration: underline;
     text-underline-offset: 3px;
+    color: var(--wintergreen-dream);
 }
 
 .main-nav .nav-sub a:focus-visible {
@@ -193,10 +194,14 @@ html {
     }
 
     .main-nav .nav-link {
-        width: auto;
+        /* width: auto; */
         min-height: 3.75rem;
         padding: 0.5rem 0.75rem;
         justify-content: center;
+
+        width: 20rem;
+            justify-content: center;
+            box-sizing: border-box;
     }
 
     .main-nav .nav-link[aria-current="page"] {
@@ -214,16 +219,22 @@ html {
         z-index: 1;
         min-width: 20rem;
         margin: 0;
-        padding: 1rem 1rem;
+        padding: 0rem 0rem;
         /* background: var(--white); */
         background: rgba(0, 0, 0, 0.85);
         backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
         text-align: center;
-        border: 1px solid var(--bright-gray);
+        border: 0px solid var(--bright-gray);
         border-top: 3px solid var(--key);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         justify-content: center;
+        border-radius: 0 0 5px 5px;
+        overflow: hidden;
+
+        width: 20rem;
+            min-width: 20rem;
+            transform: translateX(-50%);
     }
 
     /* .main-nav .nav-item:nth-last-child(-n+2) .nav-sub {

@@ -8,7 +8,7 @@ body { background: var(--white); color: var(--black); }
 /* ---------- Header ---------- */
 header .logobox svg g path { fill: var(--black-pure); }
 header .logobox p, header .logobox h1 { color: var(--black-pure); }
-header .input-group { border-bottom-color: var(--key); }
+header .input-group { border-bottom-color: var(--key);}
 header .input-group .form-control { background: var(--white); color: var(--black); }
 header .menuright .menutop li { border-right-color: var(--key); }
 header .menuright .menutop li .material-symbols-outlined,
@@ -34,7 +34,8 @@ header .menuright .menutop li .menuicon { background: var(--white); color: var(-
 .Innerbaner .innerbox .breadcrumb li a { text-decoration: underline; }
 
 /* ---------- Inner nav pill ---------- */
-.innernav { background: var(--key); position: relative; z-index: 10;}
+.innernav { background: var(--key); position: relative; z-index: 10;
+  padding-inline: 16px;}
 .innernav .nav-link,
 .innernav .nav-link:hover,
 .innernav .nav-link:focus { color: var(--on-key); }
@@ -43,14 +44,18 @@ header .menuright .menutop li .menuicon { background: var(--white); color: var(-
 .innernav .scroll-btn { background: var(--c2); color: var(--on-key); }
 
 /* ---------- Search + per-page ---------- */
-.filterbox .input-group { border-color: var(--c2); border-radius: 0; border-width: 1px; border-bottom-width: 1px; padding: 0; }
+.filterbox .input-group { border-color: var(--c2); border-radius: 0; border-width: 1px; border-bottom-width: 1px; padding: 0; outline: 2px solid var(--key);
+  outline-offset: 1px;}
 .filterbox .input-group .input-group-text { background: transparent; border: 0; }
-.filterbox .input-group .input-group-text .material-symbols-outlined { color: var(--c2); }
+.filterbox .input-group .input-group-text .material-symbols-outlined { color: var(--c2); border: 1;}
 .filterbox .input-group .form-control,
 .filterbox .input-group .form-select {
   border: 0; box-shadow: none; background-color: var(--white); color: var(--black);
 }
-.filterbox .input-group:focus-within { outline: 2px solid var(--key); outline-offset: 1px; }
+.filterbox .input-group:focus-within {
+  outline: 2px solid var(--key);
+  outline-offset: 1px;
+}
 
 /* ---------- Clear all ---------- */
 .filterbox .clearbtn {
@@ -104,3 +109,9 @@ footer .footerbox a, footer .footerbox span { color: var(--on-key); }
 [data-mode="dark"] .directoryBox,
 [data-mode="dark"] .filterbox .input-group,
 [data-mode="dark"] .innernav { border: 1px solid var(--black); }
+
+@media (min-width: 992px) {
+  .innernav {
+    padding-inline: 24px;
+  }
+}

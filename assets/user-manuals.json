@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": "beams",
+      "label": "Beams"
+    }
+    
+  ],
+  "documents": [
+    {
+      "title": "Beams User Manuals",
+      
+      "category": "beams",
+      "files": [
+        {
+          "title": "User Manual for Administrative Department / Controlling Authority (CA) Draft User",
+          "type": "PDF",
+          "size": "7.22 MB",
+          "url": "assets/docs/user-manuals/beams/User_Manual_CA_Draft.pdf"
+        },
+        {
+          "title": "User Manual for Administrative Department / Controlling Authority (CA) Final User",
+          "type": "PDF",
+          "size": "5.79 MB",
+          "url": "assets/docs/user-manuals/beams/User_Manual_CA_Final.pdf"
+        },
+        {
+          "title": "User Manual for HOD/ Controlling Officer Draft User",
+          "type": "PDF",
+          "size": "6.46 MB",
+          "url": "assets/docs/user-manuals/beams/User_Manual_DDO_Draft.pdf"
+        },
+        {
+          "title": "User Manual for HOD/ Controlling Officer Final User",
+          "type": "PDF",
+          "size": "6.49 MB",
+          "url": "assets/docs/user-manuals/beams/User_Manual_DDO_Final.pdf"
+        },
+        {
+          "title": "User Manual For DDO Draft User",
+          "type": "PDF",
+          "size": "5.96 MB",
+          "url": "assets/docs/user-manuals/beams/User_Manual_HOD_Draft.pdf"
+        },
+        {
+          "title": "User Manual For DDO Final User",
+          "type": "PDF",
+          "size": "4 MB",
+          "url": "assets/docs/user-manuals/beams/User_Manual_HOD_Final.pdf"
+        }
+      ]
+    }
+  ]
+}

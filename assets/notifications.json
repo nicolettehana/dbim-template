@@ -1,34 +1,20 @@
 {
   "categories": [
     {
-      "id": "acts",
-      "label": "Acts"
-    },
-    {
-      "id": "rules",
-      "label": "Rules"
-    },
-    {
-      "id": "grants",
+      "id": "notifications",
       "label": "Notifications"
     },
-    
     {
-      "id": "ls",
-      "label": "User Manual"
+      "id": "circulars",
+      "label": "Circulars"
     },
     {
-      "id": "pub",
-      "label": "Publications"
-    },
-    
-    {
-      "id": "forms",
-      "label": "Forms"
+      "id": "orders",
+      "label": "Orders"
     },
     {
-      "id": "pfms",
-      "label": "PFMS/SNA"
+      "id": "tenders",
+      "label": "Tenders"
     }
   ],
   "documents": [

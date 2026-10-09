@@ -2165,10 +2165,14 @@ footer .footerbox .indbtn {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+  /* margin-left: 20rem;
+  margin-right: 20rem; */
 }
 @media (max-width: 991.5px) {
   .innernav {
     padding: 8px;
+    /* margin-left: 10rem;
+      margin-right: 16rem; */
   }
 }
 @media (max-width: 575.5px) {
@@ -5899,3 +5903,6 @@ button.filterClearBtn:focus-visible {
 }
 
 /*# sourceMappingURL=style.css.map */
+.hide {
+  display: none !important;
+}
