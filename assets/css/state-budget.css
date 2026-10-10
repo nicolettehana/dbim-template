@@ -1,0 +1,115 @@
+/* ==========================================================================
+   State Budget page
+   Load AFTER documents.css. Everything is scoped to .budget-section and uses
+   DBIM tokens only (no hard-coded colours), so it follows data-theme / data-mode.
+   Reuses from documents.css: .docs-filter, .tableheader, .announcementbox,
+   .download-btn, .archive-btn, .pagination, .doc-children, .docs-message.
+   ========================================================================== */
+
+.budget-section .bgt-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--key);
+}
+
+/* ---- View heading ---- */
+.budget-section .bgt-viewhead h2 {
+  margin: 0;
+  color: var(--black);
+  font-weight: 500;
+}
+.budget-section .bgt-viewhead h2:focus { outline: none; }
+.budget-section .bgt-viewhead h2:focus-visible {
+  outline: 2px solid var(--key);
+  outline-offset: 4px;
+}
+.budget-section .bgt-count {
+  margin: 4px 0 0;
+  font-size: 1.4rem;
+  color: var(--rhythm);
+}
+
+/* ---- Cards ---- */
+.budget-section .bgt-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  min-height: 96px;
+  padding: 16px;
+  border: 1px solid var(--c3);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.budget-section .bgt-card:hover {
+  background: var(--c5);
+  border-color: var(--c2);
+  color: var(--black);
+}
+.budget-section .bgt-card:focus-visible {
+  outline: 2px solid var(--key);
+  outline-offset: 2px;
+}
+.budget-section .bgt-card-icon {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--c5);
+  color: var(--key);
+}
+.budget-section .bgt-card-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.budget-section .bgt-card-icon .material-symbols-outlined { font-size: 3.2rem; }
+.budget-section .bgt-card-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.budget-section .bgt-card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+.budget-section .bgt-card-meta {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--rhythm);
+}
+.budget-section .bgt-card-go {
+  flex: 0 0 auto;
+  color: var(--key);
+  font-size: 2.4rem;
+}
+
+/* ---- Document rows (category view) ---- */
+.budget-section .doc-group .announcementbox,
+.budget-section #docList > .announcementbox {
+  gap: 16px;
+}
+.budget-section .doc-children .col-type { flex: 0 0 auto; }
+.budget-section .doc-children .download-btn { margin-left: auto; }
+.budget-section .filetype { flex-direction: row; gap: 8px; font-size: 1.2rem; }
+
+@media (max-width: 991.5px) {
+  .budget-section .announcementbox { flex-wrap: wrap; }
+  .budget-section .announcementbox .col-title { flex: 1 1 100%; }
+}
