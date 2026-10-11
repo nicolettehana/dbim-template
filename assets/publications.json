@@ -8,258 +8,248 @@
   ],
   "documents": [
     {
-      "title": "Detailed Demand for Grants (2016-24)",
-      "year": 2024,
-      "date": "2024-03-15",
-      "category": "grants",
+      "title": "CAG-State Accounts : Accounts at a Glance",
+      
+      "date": "2026-03-15",
+      "category": "general",
       "files": [
         {
-          "title": "Demand for Grants 2016-17",
+          "title": "2014-2015",
+          "year": "2014",
           "type": "PDF",
-          "size": "1.2 MB",
-          "url": "files/dfg-2016-17.pdf"
+          "size": "0.39 MB",
+          "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Account_Glance_2014_15.pdf.pdf"
         },
         {
-          "title": "Demand for Grants 2017-18",
+          "title": "2013-2014",
+          "year": "2013",
           "type": "PDF",
-          "size": "1.1 MB",
-          "url": "files/dfg-2017-18.pdf"
+          "size": "0.37 MB",
+          "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Account_Glance_2013_14.pdf"
+        
+        }
+        ,
+        {
+          "title": "2012-2013",
+          "year": "2012",
+          "type": "PDF",
+          "size": "0.29 MB",
+          "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Account_Glance_2012_13.pdf"
+        
+        }
+        ,
+        {
+          "title": "2011-2012",
+          "year": "2011",
+          "type": "PDF",
+          "size": "0.28 MB",
+          "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Account_Glance_2011_12.pdf"
+        }
+        ,
+        {
+          "title": "2010-2011",
+          "year": "2010",
+          "type": "PDF",
+          "size": "0.35 MB",
+          "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Account_Glance_2010_11.pdf"
         }
       ]
     },
     {
-      "title": "Rajya Sabha Un-Starred Question No: 3794 To be Answered on 05-04-2023",
-      "year": 2023,
-      "date": "2023-04-05",
-      "category": "acts",
-      "files": [
-        {
-          "title": "Reply",
-          "type": "PDF",
-          "size": "210 KB",
-          "url": "files/rsuq-3794.pdf"
-        },
-        {
-          "title": "Annexure I",
-          "type": "PDF",
-          "size": "98 KB",
-          "url": "files/rsuq-3794-a1.pdf"
-        }
-      ]
-    },
+  "title": "CAG-State Accounts : Appropriation Accounts",
+  "date": "2025-03-15",
+  "category": "general",
+  "files": [
     {
-      "title": "Annexure (Raj Sabha) - RSUQ No. 1556 due for reply on 02.08.2023",
-      "year": 2023,
-      "date": "2023-08-02",
-      "category": "acts",
-      "files": [
-        {
-          "title": "Annexure A",
-          "type": "PDF",
-          "size": "150 KB",
-          "url": "files/rsuq-1556-a.pdf"
-        },
-        {
-          "title": "Annexure B",
-          "type": "PDF",
-          "size": "120 KB",
-          "url": "files/rsuq-1556-b.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Rajya Sabha Starred Q.No.220 to be answered on 09.08.2023",
-      "year": 2023,
-      "date": "2023-08-09",
-      "category": "acts",
+      "title": "2014-2015",
+      "year": "2014",
       "type": "PDF",
-      "size": "860.03 KB",
-      "url": "files/rssq-220.pdf"
+      "size": "4.27 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2014-15.pdf"
     },
     {
-      "title": "Rajya Sabha Unstarred Question No. 1235 due for reply on 13.12.2023",
-      "year": 2023,
-      "date": "2023-12-13",
-      "category": "acts",
+      "title": "2013-2014",
+      "year": "2013",
       "type": "PDF",
-      "size": "335.76 KB",
-      "url": "files/rsuq-1235.pdf"
+      "size": "1 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2013_14.pdf"
     },
     {
-      "title": "Annexure to Rajya Sabha Unstarred Question No. 2038 due for reply on 20.12.2023",
-      "year": 2023,
-      "date": "2023-12-20",
-      "category": "acts",
+      "title": "2012-2013",
+      "year": "2012",
       "type": "PDF",
-      "size": "444.53 KB",
-      "url": "files/rsuq-2038-annexure.pdf"
+      "size": "1.29 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2012_13.pdf"
     },
     {
-      "title": "Annexures (Lok Sabha) - for LSUSQ No. 675 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
-      "files": [
-        {
-          "title": "Annexure 1",
-          "type": "PDF",
-          "size": "80 KB",
-          "url": "files/lsusq-675-1.pdf"
-        },
-        {
-          "title": "Annexure 2",
-          "type": "PDF",
-          "size": "75 KB",
-          "url": "files/lsusq-675-2.pdf"
-        },
-        {
-          "title": "Annexure 3",
-          "type": "PDF",
-          "size": "92 KB",
-          "url": "files/lsusq-675-3.pdf"
-        },
-        {
-          "title": "Annexure 4",
-          "type": "PDF",
-          "size": "64 KB",
-          "url": "files/lsusq-675-4.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Annexure in respect of Lok Sabha Unstarred Question no. 508 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
+      "title": "2011-2012",
+      "year": "2011",
       "type": "PDF",
-      "size": "343.02 KB",
-      "url": "files/lsusq-508.pdf"
+      "size": "0.67 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2011_12.pdf"
     },
     {
-      "title": "Annexure in respect of Lok Sabha Starred Question no. 275 replied on 20.03.2023",
-      "year": 2023,
-      "date": "2023-03-20",
-      "category": "ls",
+      "title": "2010-2011",
+      "year": "2010",
       "type": "PDF",
-      "size": "633.56 KB",
-      "url": "files/lssq-275.pdf"
+      "size": "0.64 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2010_11.pdf"
     },
     {
-      "title": "Annexures (Lok Sabha) - Unstarred Question No.1811 due for reply on 31.07.2023",
-      "year": 2023,
-      "date": "2023-07-31",
-      "category": "ls",
+      "title": "2008-2009",
+      "year": "2008",
       "type": "PDF",
-      "size": "908.80 KB",
-      "url": "files/lsusq-1811.pdf"
+      "size": "0.61 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2008_09.pdf"
     },
     {
-      "title": "Sample document 1 - replace or delete",
-      "year": 2022,
-      "date": "2022-02-10",
-      "category": "ls",
+      "title": "2007-2008",
+      "year": "2007",
       "type": "PDF",
-      "size": "137 KB",
-      "url": "files/sample-1.pdf"
+      "size": "3.58 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2007_08.pdf"
     },
     {
-      "title": "Sample document 2 - replace or delete",
-      "year": 2022,
-      "date": "2022-03-10",
-      "category": "acts",
+      "title": "2006-2007",
+      "year": "2006",
       "type": "PDF",
-      "size": "174 KB",
-      "url": "files/sample-2.pdf"
-    },
-    {
-      "title": "Sample document 3 - replace or delete",
-      "year": 2022,
-      "date": "2022-04-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "211 KB",
-      "url": "files/sample-3.pdf"
-    },
-    {
-      "title": "Sample document 4 - replace or delete",
-      "year": 2022,
-      "date": "2022-05-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "248 KB",
-      "url": "files/sample-4.pdf"
-    },
-    {
-      "title": "Sample document 5 - replace or delete",
-      "year": 2022,
-      "date": "2022-06-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "285 KB",
-      "url": "files/sample-5.pdf"
-    },
-    {
-      "title": "Sample document 6 - replace or delete",
-      "year": 2022,
-      "date": "2022-07-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "322 KB",
-      "url": "files/sample-6.pdf"
-    },
-    {
-      "title": "Sample document 7 - replace or delete",
-      "year": 2022,
-      "date": "2022-08-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "359 KB",
-      "url": "files/sample-7.pdf"
-    },
-    {
-      "title": "Sample document 8 - replace or delete",
-      "year": 2022,
-      "date": "2022-09-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "396 KB",
-      "url": "files/sample-8.pdf"
-    },
-    {
-      "title": "Sample document 9 - replace or delete",
-      "year": 2022,
-      "date": "2022-10-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "433 KB",
-      "url": "files/sample-9.pdf"
-    },
-    {
-      "title": "Sample document 10 - replace or delete",
-      "year": 2022,
-      "date": "2022-11-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "470 KB",
-      "url": "files/sample-10.pdf"
-    },
-    {
-      "title": "Sample document 11 - replace or delete",
-      "year": 2022,
-      "date": "2022-12-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "507 KB",
-      "url": "files/sample-11.pdf"
-    },
-    {
-      "title": "Sample document 12 - replace or delete",
-      "year": 2022,
-      "date": "2022-01-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "544 KB",
-      "url": "files/sample-12.pdf"
+      "size": "0.49 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Appropriation_Accounts_2006_07.pdf"
     }
+  ]
+},
+    {
+  "title": "CAG-State Accounts : Finance Accounts",
+  "date": "2024-03-15",
+  "category": "general",
+  "files": [
+    {
+      "title": "2014-2015",
+      "year": "2014",
+      "type": "PDF",
+      "size": "1.07 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2014_15.pdf"
+    },
+    {
+      "title": "2013-2014",
+      "year": "2013",
+      "type": "PDF",
+      "size": "1.18 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2013_14.pdf"
+    },
+    {
+      "title": "2012-2013",
+      "year": "2012",
+      "type": "PDF",
+      "size": "2.02 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2012_13.pdf"
+    },
+    {
+      "title": "2011-2012",
+      "year": "2011",
+      "type": "PDF",
+      "size": "1.5 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2011_12.pdf"
+    },
+    {
+      "title": "2010-2011",
+      "year": "2010",
+      "type": "PDF",
+      "size": "7.41 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2010_11.pdf"
+    },
+    {
+      "title": "2009-2010",
+      "year": "2009",
+      "type": "PDF",
+      "size": "7.34 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2009_10.pdf"
+    },
+    {
+      "title": "2008-2009",
+      "year": "2008",
+      "type": "PDF",
+      "size": "7.21 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2008_09.pdf"
+    },
+    {
+      "title": "2007-2008",
+      "year": "2007",
+      "type": "PDF",
+      "size": "5.64 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2007_08.pdf"
+    },
+    {
+      "title": "2006-2007",
+      "year": "2006",
+      "type": "PDF",
+      "size": "1.13 MB",
+      "url": "../../assets/docs/publications/cag-state-accounts/MEGH_Finance_Accounts_2006_07.pdf"
+    }
+  ]
+},
+    {
+      "title": "Meghalaya Pay Commssion Reports",
+      
+      "date": "2017-07-31",
+      "category": "general",
+      "files": [
+        {
+          "title": "Report of the Fifth Meghalaya Pay Commission",
+          "year": "2017",
+          "type": "PDF",
+          "size": "2.88 MB",
+          "url": "../../assets/docs/publications/Report_of_The_Fifth_Meghalaya_Pay_Commission.pdf"
+        },
+        {
+          "title": "Government Resolution on the Recommendations of the Fourth Meghalaya Pay Commssion",
+          "year": "2009",
+          "type": "PDF",
+          "size": "1.25 MB",
+          "url": "../../assets/docs/publications/Pay_Revision.pdf"
+        },
+        {
+          "title": "ROP of the Meghalaya Service (Revision of Pay) Rules, 2009",
+          "year": "2009",
+          "type": "PDF",
+          "size": "526 KB",
+          "url": "../../assets/docs/publications/RoP_2009.pdf"
+        },
+        {
+          "title": "Report of the Third Meghalaya Pay Commission",
+          "year": "1997",
+          "type": "PDF",
+          "size": "204 MB",
+          "url": "../../assets/docs/publications/Report-of-the-Third-Meghalaya-Pay-Commission.pdf"
+        },
+        {
+          "title": "Report of the Second Meghalaya Pay Commission",
+          "year": "1988",
+          "type": "PDF",
+          "size": "145 MB",
+          "url": "../../assets/docs/publications/Report-of-the-Second-Meghalaya-Pay-Commission.pdf"
+        }
+      ]
+    },
+    {
+      "title": "RBI Reports (rbi.org.in)",
+     
+      "date": "2016-08-09",
+      "category": "general",
+      "type": "LINK",
+      "url": "https://www.rbi.org.in/Scripts/Publications.aspx?publication=Annual"
+    },
+    {
+      "title": "Disclosure Statements Brought Out In Compliance To The Conditions Of Fiscal Transparency Set Out In The Meghalaya Fiscal Responsibility And Budget Management Act And Rules, 2006",
+      "year": 2006,
+      "date": "2006-04-05",
+      "category": "general",
+      "type": "PDF",
+      "size": "1.84 MB",
+      "url": "../../assets/docs/publications/Disclosure-Statements-2016-2017.pdf"
+      
+      
+    }
+    
   ]
 }

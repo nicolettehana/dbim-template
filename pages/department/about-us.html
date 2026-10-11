@@ -162,7 +162,7 @@
             focusable="false">
             <defs>
                 <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
-                    <circle cx="2" cy="2" r="1.6" style="fill:var(--azureish-white)" />
+                    <circle cx="2" cy="2" r="1.6" class="dots" />
                 </pattern>
                 <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
                     <stop offset=".35" stop-color="#fff" stop-opacity="0" />
@@ -173,12 +173,25 @@
                 </mask>
             </defs>
             <!-- waves -->
-            <path d="M0 190 C260 110 520 250 820 170 S1260 90 1440 150 V260 H0Z" style="fill:var(--c2)" opacity=".35" />
-            <path d="M0 225 C300 165 560 275 900 205 S1300 145 1440 195 V260 H0Z" style="fill:var(--c3)"
-                opacity=".25" />
-            <path d="M620 0 C820 90 1060 -30 1440 100 V0Z" style="fill:var(--c2)" opacity=".3" />
+            <!-- waves -->
+        <path
+          d="M0 190 C260 110 520 250 820 170 S1260 90 1440 150 V260 H0Z"
+          class="wave-path-c2"
+          opacity=".35"
+        />
+        <path
+          d="M0 225 C300 165 560 275 900 205 S1300 145 1440 195 V260 H0Z"
+          class="wave-path"
+          opacity=".25"
+        />
+        <path
+          d="M620 0 C820 90 1060 -30 1440 100 V0Z"
+          class="wave-path-c2"
+          opacity=".3"
+        />
             <!-- dots, fading in from the left -->
-            <rect width="1440" height="260" fill="url(#dots)" mask="url(#dotmask)" opacity=".6" />
+        <!-- <rect width="1440" height="260" fill="url(#dots)" mask="url(#dotmask)" opacity=".6" /> -->
+            <rect class="dots-layer" width="1440" height="260" fill="url(#dots)" mask="url(#dotmask)" />
         </svg>
         <div class="container">
             <div class="innerbox">

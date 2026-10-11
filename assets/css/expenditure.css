@@ -1,0 +1,16 @@
+/* Expenditure page: small additions. Load after state-budget.css (shared filter/row styles). */
+.expenditure-section .exp-unavailable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 102px;
+  padding: 8px 12px;
+  border: 1px dashed var(--c3);
+  border-radius: 4px;
+  color: var(--rhythm);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

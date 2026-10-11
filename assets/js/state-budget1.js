@@ -58,6 +58,14 @@
   function show(node, on) { node.classList.toggle('hide', !on); }
   function announce(t) { el.status.textContent = t; }
   function plural(n) { return n + (n === 1 ? ' document' : ' documents'); }
+  function iconFor(file) {
+  var e = ext(file);
+  if (e === 'PDF') return 'picture_as_pdf';
+  if (/^(JPG|JPEG|PNG|GIF|WEBP)$/.test(e)) return 'image';
+  if (/^(XLS|XLSX|CSV)$/.test(e)) return 'table';
+  return 'description';
+}
+
 
   /* Paths come from Excel: plain relative paths only, no "..", no schemes. */
   function safePath(p) {
@@ -202,28 +210,29 @@
     return bytes < 1048576 ? (bytes / 1024).toFixed(2) + ' KB' : (bytes / 1048576).toFixed(2) + ' MB';
   }
   function fillSize(scope, href) {
-    var t = scope.querySelector('.filetype');
-    if (!t || t.querySelector('.filesize')) return;
-    if (!sizeCache.has(href)) {
-      sizeCache.set(href, fetch(href, { method: 'HEAD' }).then(function (r) {
-        return r.ok ? fmtSize(parseInt(r.headers.get('content-length'), 10)) : '';
-      }).catch(function () { return ''; }));
-    }
-    sizeCache.get(href).then(function (txt) {
-      if (txt && !t.querySelector('.filesize')) t.appendChild(h('span', 'filesize', txt));
-    });
+  var t = scope.querySelector('.col-type');          // was '.filetype'
+  if (!t || !t.querySelector('.filetype') || t.querySelector('.filesize')) return;
+  if (!sizeCache.has(href)) {
+    sizeCache.set(href, fetch(href, { method: 'HEAD' }).then(function (r) {
+      return r.ok ? fmtSize(parseInt(r.headers.get('content-length'), 10)) : '';
+    }).catch(function () { return ''; }));
   }
+  sizeCache.get(href).then(function (txt) {
+    if (txt && !t.querySelector('.filesize')) t.appendChild(h('span', 'filesize ms-2', txt));
+  });
+}
 
-  function typeSize(file, size) {
-    var s = h('span', 'col-type');
-    if (file) {
-      var t = h('span', 'filetype');
-      t.appendChild(h('span', null, ext(file)));
-      if (size) t.appendChild(h('span', 'filesize', size));
-      s.appendChild(t);
-    }
-    return s;
+function typeSize(file, size) {
+  var s = h('span', 'col-type d-flex align-items-center');
+  if (file) {
+    var t = h('span', 'filetype');
+    t.appendChild(symbol(iconFor(file)));      // icon on top
+    t.appendChild(h('span', null, ext(file))); // "PDF" underneath
+    s.appendChild(t);
+    if (size) s.appendChild(h('span', 'filesize ms-2', size));  // size beside it, outside .filetype
   }
+  return s;
+}
   function yearCol() {
     var s = h('span', 'col-year');
     s.appendChild(h('span', 'year', state.fy));

@@ -4,262 +4,215 @@
       "id": "forms",
       "label": "Forms"
     }
-    
   ],
   "documents": [
     {
-      "title": "Detailed Demand for Grants (2016-24)",
-      "year": 2024,
-      "date": "2024-03-15",
-      "category": "grants",
-      "files": [
-        {
-          "title": "Demand for Grants 2016-17",
-          "type": "PDF",
-          "size": "1.2 MB",
-          "url": "files/dfg-2016-17.pdf"
-        },
-        {
-          "title": "Demand for Grants 2017-18",
-          "type": "PDF",
-          "size": "1.1 MB",
-          "url": "files/dfg-2017-18.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Rajya Sabha Un-Starred Question No: 3794 To be Answered on 05-04-2023",
-      "year": 2023,
-      "date": "2023-04-05",
-      "category": "acts",
-      "files": [
-        {
-          "title": "Reply",
-          "type": "PDF",
-          "size": "210 KB",
-          "url": "files/rsuq-3794.pdf"
-        },
-        {
-          "title": "Annexure I",
-          "type": "PDF",
-          "size": "98 KB",
-          "url": "files/rsuq-3794-a1.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Annexure (Raj Sabha) - RSUQ No. 1556 due for reply on 02.08.2023",
-      "year": 2023,
-      "date": "2023-08-02",
-      "category": "acts",
-      "files": [
-        {
-          "title": "Annexure A",
-          "type": "PDF",
-          "size": "150 KB",
-          "url": "files/rsuq-1556-a.pdf"
-        },
-        {
-          "title": "Annexure B",
-          "type": "PDF",
-          "size": "120 KB",
-          "url": "files/rsuq-1556-b.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Rajya Sabha Starred Q.No.220 to be answered on 09.08.2023",
-      "year": 2023,
-      "date": "2023-08-09",
-      "category": "acts",
+      "title": "Form of application for commutation of a fraction of Superannuation pension without medical examination",
+      
+      "category": "forms",
       "type": "PDF",
-      "size": "860.03 KB",
-      "url": "files/rssq-220.pdf"
+      "size": "28.3 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/pen_without_med_exam.pdf"
     },
     {
-      "title": "Rajya Sabha Unstarred Question No. 1235 due for reply on 13.12.2023",
-      "year": 2023,
-      "date": "2023-12-13",
-      "category": "acts",
+      "title": "Form of application for commutation of a portion of pension without medical examination",
+      
+      "category": "forms",
       "type": "PDF",
-      "size": "335.76 KB",
-      "url": "files/rsuq-1235.pdf"
+      "size": "12.2 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/commutation_por_pen.pdf"
     },
     {
-      "title": "Annexure to Rajya Sabha Unstarred Question No. 2038 due for reply on 20.12.2023",
-      "year": 2023,
-      "date": "2023-12-20",
-      "category": "acts",
+      "title": "Form of application for commutation of pension after Medical examination by an applicant",
+      
+      "category": "forms",
       "type": "PDF",
-      "size": "444.53 KB",
-      "url": "files/rsuq-2038-annexure.pdf"
+      "size": "58.3 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/commutation_pension.pdf"
     },
     {
-      "title": "Annexures (Lok Sabha) - for LSUSQ No. 675 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
-      "files": [
-        {
-          "title": "Annexure 1",
-          "type": "PDF",
-          "size": "80 KB",
-          "url": "files/lsusq-675-1.pdf"
-        },
-        {
-          "title": "Annexure 2",
-          "type": "PDF",
-          "size": "75 KB",
-          "url": "files/lsusq-675-2.pdf"
-        },
-        {
-          "title": "Annexure 3",
-          "type": "PDF",
-          "size": "92 KB",
-          "url": "files/lsusq-675-3.pdf"
-        },
-        {
-          "title": "Annexure 4",
-          "type": "PDF",
-          "size": "64 KB",
-          "url": "files/lsusq-675-4.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Annexure in respect of Lok Sabha Unstarred Question no. 508 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
+      "title": "Declaration by applicant",
+      
+      "category": "forms",
       "type": "PDF",
-      "size": "343.02 KB",
-      "url": "files/lsusq-508.pdf"
+      "size": "11.6 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/form_declaration.pdf"
     },
     {
-      "title": "Annexure in respect of Lok Sabha Starred Question no. 275 replied on 20.03.2023",
-      "year": 2023,
-      "date": "2023-03-20",
-      "category": "ls",
+      "title": "Nomination for Death-Cum-Retirement Gratuity",
+      
+      "category": "forms",
       "type": "PDF",
-      "size": "633.56 KB",
-      "url": "files/lssq-275.pdf"
+      "size": "9.5 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/death_cum_retirement.pdf"
     },
     {
-      "title": "Annexures (Lok Sabha) - Unstarred Question No.1811 due for reply on 31.07.2023",
-      "year": 2023,
-      "date": "2023-07-31",
-      "category": "ls",
+      "title": "Form for Sanctioning Pension",
+     
+      "category": "forms",
       "type": "PDF",
-      "size": "908.80 KB",
-      "url": "files/lsusq-1811.pdf"
+      "size": "8.8 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/sanctioning_pension.pdf"
     },
     {
-      "title": "Sample document 1 - replace or delete",
-      "year": 2022,
-      "date": "2022-02-10",
-      "category": "ls",
+      "title": "Form for Assessing Pension and Gratuity",
+      
+      "category": "forms",
       "type": "PDF",
-      "size": "137 KB",
-      "url": "files/sample-1.pdf"
+      "size": "15.2 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/assessing_pension.pdf"
     },
     {
-      "title": "Sample document 2 - replace or delete",
-      "year": 2022,
-      "date": "2022-03-10",
-      "category": "acts",
+      "title": "Forms of Certificates against an accounting officer",
+      
+      "category": "forms",
       "type": "PDF",
-      "size": "174 KB",
-      "url": "files/sample-2.pdf"
+      "size": "9.9 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/Form_I.pdf"
     },
     {
-      "title": "Sample document 3 - replace or delete",
-      "year": 2022,
-      "date": "2022-04-10",
-      "category": "ls",
+      "title": "Form of Certificates against a person not an accounting officer",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "211 KB",
-      "url": "files/sample-3.pdf"
+      "size": "9.9 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/forms/Form_II.pdf"
     },
     {
-      "title": "Sample document 4 - replace or delete",
-      "year": 2022,
-      "date": "2022-05-10",
-      "category": "acts",
+      "title": "DDO registration Form",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "248 KB",
-      "url": "files/sample-4.pdf"
+      "size": "115 KB",
+      "url": "../../assets/docs/forms/DDO-registration-Form.pdf"
     },
     {
-      "title": "Sample document 5 - replace or delete",
-      "year": 2022,
-      "date": "2022-06-10",
-      "category": "ls",
+      "title": "Application for Allotment of PRAN",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "285 KB",
-      "url": "files/sample-5.pdf"
+      "size": "341 KB",
+      "url": "../../assets/docs/forms/Application-for-Allotment-of-PRAN.pdf"
     },
     {
-      "title": "Sample document 6 - replace or delete",
-      "year": 2022,
-      "date": "2022-07-10",
-      "category": "acts",
+      "title": "DDO Covering letter for subs-registration",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "322 KB",
-      "url": "files/sample-6.pdf"
+      "size": "31 KB",
+      "url": "../../assets/docs/forms/DDO-Covering-letter-for-subs-registration.pdf"
     },
     {
-      "title": "Sample document 7 - replace or delete",
-      "year": 2022,
-      "date": "2022-08-10",
-      "category": "ls",
+      "title": "DTA Registration Form",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "359 KB",
-      "url": "files/sample-7.pdf"
+      "size": "141 KB",
+      "url": "../../assets/docs/forms/DTA-Registration-Form.pdf"
     },
     {
-      "title": "Sample document 8 - replace or delete",
-      "year": 2022,
-      "date": "2022-09-10",
-      "category": "acts",
+      "title": "DTO Registration Form",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "396 KB",
-      "url": "files/sample-8.pdf"
+      "size": "161 KB",
+      "url": "../../assets/docs/forms/DTO_Registration_Form.pdf"
     },
     {
-      "title": "Sample document 9 - replace or delete",
-      "year": 2022,
-      "date": "2022-10-10",
-      "category": "ls",
+      "title": "PAO Covering letter for DDO registration",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "433 KB",
-      "url": "files/sample-9.pdf"
+      "size": "57 KB",
+      "url": "../../assets/docs/forms/PAO-Covering-letter-for-DDO-registration.pdf"
     },
     {
-      "title": "Sample document 10 - replace or delete",
-      "year": 2022,
-      "date": "2022-11-10",
-      "category": "acts",
+      "title": "PAO covering letter for subscriber registration",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "470 KB",
-      "url": "files/sample-10.pdf"
+      "size": "14 KB",
+      "url": "../../assets/docs/forms/PAO-covering-letter-for-subscriber-registration.pdf"
     },
     {
-      "title": "Sample document 11 - replace or delete",
-      "year": 2022,
-      "date": "2022-12-10",
-      "category": "ls",
+      "title": "Subscriber detail change request form",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "507 KB",
-      "url": "files/sample-11.pdf"
+      "size": "258 KB",
+      "url": "../../assets/docs/forms/Subscriber-detail-change-request-form.pdf"
     },
     {
-      "title": "Sample document 12 - replace or delete",
-      "year": 2022,
-      "date": "2022-01-10",
-      "category": "acts",
+      "title": "Annexure-I (DETAILS TO BE FURNISHED BY THE GOVERNMENT SERVANT IN TRIPLICATE OF THE DDO)",
+      
+      "date": "2026-10-10",
+      "category": "forms",
       "type": "PDF",
-      "size": "544 KB",
-      "url": "files/sample-12.pdf"
+      "size": "17 KB",
+      "url": "../../assets/docs/forms/ANNEXURE-I.pdf"
+    },
+    {
+      "title": "Annexure-II (Format in which information is required to be sent by DDO to Director of Accounts and Treasuries)",
+      
+      "date": "2026-10-10",
+      "category": "forms",
+      "type": "PDF",
+      "size": "9 KB",
+      "url": "../../assets/docs/forms/Annexure-II.pdf"
+    },
+    {
+      "title": "Annexure-II-B (Format in which information is Required to be sent by Director of Accounts and Treasuries to DDOs)",
+      
+      "date": "2026-10-10",
+      "category": "forms",
+      "type": "PDF",
+      "size": "9 KB",
+      "url": "../../assets/docs/forms/ANNEXURE-II-B.pdf"
+    },
+    {
+      "title": "Annexure-III (Format of schedule of Government servant's contributions towards tier-I of the New Pension Scheme)",
+      
+      "date": "2026-10-10",
+      "category": "forms",
+      "type": "PDF",
+      "size": "14 KB",
+      "url": "../../assets/docs/forms/ANNEXURE-III.pdf"
+    },
+    {
+      "title": "Annexure-IV (Format of schedule of Government contributions towards tier-I of the New Pension Scheme for Government)",
+      
+      "date": "2026-10-10",
+      "category": "forms",
+      "type": "PDF",
+      "size": "9 KB",
+      "url": "../../assets/docs/forms/ANNEXURE-IV.pdf"
+    },
+    {
+      "title": "Annexure-V-New Pension Scheme Ledger Folio",
+      
+      "date": "2026-10-10",
+      "category": "forms",
+      "type": "PDF",
+      "size": "15 KB",
+      "url": "../../assets/docs/forms/ANNEXURE-V-NEW PENSION SCHEME LEDGER FOLIO.pdf"
+    },
+    {
+      "title": "Annexure-VI-Index Register",
+      
+      "date": "2026-10-10",
+      "category": "forms",
+      "type": "PDF",
+      "size": "10 KB",
+      "url": "../../assets/docs/forms/ANNEXURE-VI-INDEX REGISTER.pdf"
     }
   ]
 }

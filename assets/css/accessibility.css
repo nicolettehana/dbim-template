@@ -204,3 +204,7 @@ html.a11y-noimg img { display: none !important; }
 /* Default cursor everywhere */
 html.a11y-cursor,
 html.a11y-cursor * { cursor: default !important; }
+
+.pad-space{
+  padding: 1rem 1.5rem
+}

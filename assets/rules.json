@@ -3,263 +3,555 @@
     {
       "id": "rules",
       "label": "Rules"
+    },
+    {
+      "id": "acp-rules",
+      "label": "ACP Rules"
+    },
+    {
+      "id": "medical-attendance-rules",
+      "label": "Medical Attendance Rules"
+    },
+    {
+      "id": "civil-services-rules",
+      "label": "Meghalaya Civil Services Rules"
+    },
+    {
+      "id": "delegation-of-financial-powers-rules",
+      "label": "Delegation of Financial Powers Rules"
+    },
+    {
+      "id": "financial-rules",
+      "label": "Meghalaya Financial Rules"
+    },
+    {
+      "id": "treasury-rules",
+      "label": "Meghalaya Treasury Rules"
+    },
+    {
+      "id": "revision-of-pay-rules",
+      "label": "Revision of Pay Rules"
     }
-    
   ],
   "documents": [
     {
-      "title": "Detailed Demand for Grants (2016-24)",
-      "year": 2024,
-      "date": "2024-03-15",
-      "category": "grants",
+      "title": "General Financial Rules",
+      "year": 2026,
+      "date": "2026-10-10",
+      "category": "rules",
+      "type": "LINK",
+      "url": "https://doe.gov.in/order-circular/general-financial-rules2017-0"
+    },
+    {
+      "title": "Government Accounting Rules, 1990",
+      "year": 1990,
+      "date": "1990-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "1.12 MB",
+      "url": "../../assets/docs/rules/Government-Accounting-Rules-1990.pdf"
+    },
+    {
+      "title": "GPF Rules, 1985",
+      "year": 1985,
+      "date": "1985-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "847 KB",
+      "url": "../../assets/docs/rules/Meghalaya_Civil_Services_General_Provident_Fund_Rules_First_Edition_1985.pdf"
+    },
+    {
+      "title": "Meghalaya Accounts Service Rules, 1996",
+      "year": 1996,
+      "date": "1996-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "190 KB",
+      "url": "http://meglaw.gov.in/rules/Meghalaya_Accounts_Service_Rules_1996.pdf"
+    },
+    {
+      "title": "Meghalaya Contingency Fund Rules, 1972",
+      "year": 1972,
+      "date": "1972-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "199 KB",
+      "url": "../../assets/docs/rules/CF-Rules.pdf"
+    },
+    {
+      "title": "Meghalaya Civil Services General Provident Fund Rules, 2020.",
+      "year": 2020,
+      "date": "2020-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "554 KB",
+      "url": "../../assets/docs/notifications/finance_AF/Finance_AF_GPF_Rules.pdf"
+    },
+    {
+      "title": "The Meghalaya Fiscal And Responsibility Rules, 2006",
+      "year": 2006,
+      "date": "2006-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "187 KB",
+      "url": "../../assets/docs/rules/The_Meghalaya_Fiscal_and_Responsibility_Rules,_2006.pdf"
+    },
+    {
+      "title": "The Meghalaya Fundamental Rules and Subsidiary Rules 1984",
+      "year": 1984,
+      "date": "1984-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "756 KB",
+      "url": "../../assets/docs/rules/Meghalaya_Fundamental_Rules_SubsidiaryRules_1984.pdf"
+    },
+    {
+      "title": "Meghalaya Protection of Interest of Depositors Rules, 2007",
+      "year": 2007,
+      "date": "2007-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "31 KB",
+      "url": "../../assets/docs/rules/Meghalaya-Protection-Interest-Depositors-Rules-2007.pdf"
+    },
+    {
+      "title": "The Meghalaya Travelling Allowance Rules, 1985",
+      "year": 1985,
+      "date": "1985-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "190 KB",
+      "url": "https://meghalaya.gov.in/sites/default/files/rules/meghalaya_travelling_allowances_rules_1985.pdf"
+    },
+    {
+      "title": "Prize Chit and Money Circulation (Banning) Rules 2015",
+      "year": 2015,
+      "date": "2015-01-01",
+      "category": "rules",
+      "type": "PDF",
+      "size": "393 KB",
+      "url": "../../assets/docs/rules/Prize-Chit-Money-Circulation-(Banning)-Rules-2015.pdf"
+    },
+    {
+      "title": "Office Memorandum 22/02/2010: Assured Career Progression Scheme (ACPS) For The State Government Employees",
+      "year": 2010,
+      "date": "2010-02-22",
+      "category": "acp-rules",
+      "type": "PDF",
+      "size": "1.43 MB",
+      "url": "../../assets/docs/rules/acps.pdf"
+    },
+    {
+      "title": "Medical Attendance Rules",
+      "date": "2015-01-01",
+      "category": "medical-attendance-rules",
       "files": [
         {
-          "title": "Demand for Grants 2016-17",
+          "title": "Meghalaya Medical Attendance (25th Amendment) Rules, 2015",
           "type": "PDF",
-          "size": "1.2 MB",
-          "url": "files/dfg-2016-17.pdf"
+          "year": 2015,
+          "size": "37.4 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(25th%20Amendment)%20Rules,%202015.pdf"
         },
         {
-          "title": "Demand for Grants 2017-18",
+          "title": "Meghalaya Medical Attendance (Amendment) Rules, 2014",
           "type": "PDF",
-          "size": "1.1 MB",
-          "url": "files/dfg-2017-18.pdf"
+          "year": 2014,
+          "size": "42.6 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Amendment)%20Rules,%202014.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (24th Amendment) Rules, 2014",
+          "type": "PDF",
+          "year": 2014,
+          "size": "37.5 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(24th%20Amendment)%20Rules,%202014.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (23rd Amendment) Rules, 2014",
+          "type": "PDF",
+          "year": 2014,
+          "size": "37.7 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(23rd%20Amendment)%20Rules,%202014.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (22nd Amendment) Rules, 2013",
+          "type": "PDF",
+          "year": 2013,
+          "size": "37.5 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(22nd%20Amendment)%20Rules,%202013.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (21st Amendment) Rules, 2013",
+          "type": "PDF",
+          "year": 2013,
+          "size": "37.4 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(21st%20Amendment)%20Rules,%202013.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (20th Amendment) Rules, 2013",
+          "type": "PDF",
+          "year": 2013,
+          "size": "27.1 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(20th%20Amendment)%20Rules,%202013.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (19th Amendment) Rules, 2013",
+          "type": "PDF",
+          "year": 2013,
+          "size": "36.9 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(19th%20Amendment)%20Rules,%202013.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (18th Amendment) Rules, 2012",
+          "type": "PDF",
+          "year": 2012,
+          "size": "37 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(18th%20Amendment)%20Rules,%202012.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (17th Amendment) Rules, 2009",
+          "type": "PDF",
+          "year": 2019,
+          "size": "46.3 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(17th%20Amendment)%20Rules,%202009.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (16th Amendment) Rules, 2007",
+          "type": "PDF",
+          "year": 2007,
+          "size": "79.4 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(16th%20Amendment)%20Rules,%202007.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (15th Amendment) Rules, 2007",
+          "type": "PDF",
+          "year": 2007,
+          "size": "38.3 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(15th%20Amendment)%20Rules,%202007.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (14th Amendment) Rules, 2006",
+          "type": "PDF",
+          "year": 2006,
+          "size": "43.5 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(14th%20Amendment)%20Rules,%202006.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (14th Amendment) Rules, 2005",
+          "type": "PDF",
+          "year": 2005,
+          "size": "40.9 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(14th%20Amendment)%20Rules,%202005.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (13th Amendment) Rules, 2004",
+          "type": "PDF",
+          "year": 2004,
+          "size": "40.4 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(13th%20Amendment)%20Rules,%202004.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (12th Amendment) Rules, 2003",
+          "type": "PDF",
+          "year": 2003,
+          "size": "40.2 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(12th%20Amendment)%20Rules,%202003.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (11th Amendment) Rules, 2003",
+          "type": "PDF",
+          "year": 2003,
+          "size": "54.9 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(11th%20Amendment)%20Rules,%202003.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Tenth Amendment) Rules, 2003",
+          "type": "PDF",
+          "year": 2003,
+          "size": "38.2 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Tenth%20Amendment)%20Rules,%202003.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Ninth Amendment) Rules, 2003",
+          "type": "PDF",
+          "year": 2003,
+          "size": "40 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Ninth%20Amendment)%20Rules,%202003.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Eighth Amendment) Rules, 2000",
+          "type": "PDF",
+          "year": 2000,
+          "size": "40.2 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Eighth%20Amendment)%20Rules,%202000.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Seventh Amendment) Rules, 1999",
+          "type": "PDF",
+          "year": 1999,
+          "size": "41 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Seventh%20Amendment)%20Rules,%201999.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Sixth Amendment) Rules, 1999",
+          "type": "PDF",
+          "year": 1999,
+          "size": "41.1 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Sixth%20Amendment)%20Rules,%201999.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Fifth Amendment) Rules, 2000",
+          "type": "PDF",
+          "year": 2000,
+          "size": "45.1 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Fifth%20Amendment)%20Rules,%202000.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Fifth Amendment) Rules, 1999",
+          "type": "PDF",
+          "year": 1999,
+          "size": "45.5 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Fifth%20Amendment)%20Rules,%201999.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Fourth Amendment) Rules, 1998",
+          "type": "PDF",
+          "year": 1998,
+          "size": "40.4 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Fourth%20Amendment)%20Rules,%201998.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Third Amendment) Rules, 1996",
+          "type": "PDF",
+          "year": 1996,
+          "size": "37.7 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Third%20Amendment)%20Rules,%201996.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Second Amendment) Rules, 1993 - Corrigendum",
+          "type": "PDF",
+          "year": 1993,
+          "size": "31.5 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Second%20Amendment)%20Rules,%201993%20-%20CORRIGENDUM.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Second Amendment) Rules, 1993",
+          "type": "PDF",
+          "year": 1993,
+          "size": "40.7 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Second%20Amendment)%20Rules,%201993.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Amendment) Rules, 1993",
+          "type": "PDF",
+          "year": 1993,
+          "size": "46.3 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Amendment)%20Rules,%201993.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Amendment) (Second) Rules, 1992",
+          "type": "PDF",
+          "year": 1992,
+          "size": "51 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Amendment)%20(Second)%20Rules,%201992.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance (Amendment) Rules, 1989",
+          "type": "PDF",
+          "year": 1989,
+          "size": "48.6 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20(Amendment)%20Rules,%201989.pdf"
+        },
+        {
+          "title": "Meghalaya Medical Attendance Rules, 1981",
+          "type": "PDF",
+          "year": 1981,
+          "size": "83.9 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya%20Medical%20Attendance%20Rules,%201981.pdf"
         }
       ]
     },
     {
-      "title": "Rajya Sabha Un-Starred Question No: 3794 To be Answered on 05-04-2023",
-      "year": 2023,
-      "date": "2023-04-05",
-      "category": "acts",
+      "title": "Meghalaya Civil Services Rules",
+      
+      "date": "2010-01-01",
+      "category": "civil-services-rules",
       "files": [
         {
-          "title": "Reply",
+          "title": "The Meghalaya Civil Services (Commutation Of Pension)(First Amendment) Rules 2010",
           "type": "PDF",
-          "size": "210 KB",
-          "url": "files/rsuq-3794.pdf"
+          "year": 2010,
+          "size": "829 KB",
+          "url": "../../assets/docs/rules/mcs_pension_rules_2010.pdf"
         },
         {
-          "title": "Annexure I",
+          "title": "The Meghalaya Civil Services (Pension)(Fifth Amendment) Rules, 2010",
           "type": "PDF",
-          "size": "98 KB",
-          "url": "files/rsuq-3794-a1.pdf"
+          "year": 2010,
+          "size": "84.8 KB",
+          "url": "../../assets/docs/rules/mcs_pension_rules_fifth_amendment2010.pdf"
+        },
+        {
+          "title": "The Meghalaya Civil Services (Pension)( Fourth Amendment) Rules, 1998",
+          "type": "PDF",
+          "year": 1998,
+          "size": "43 KB",
+          "url": "../../assets/docs/rules/mcs_pension_rules_fourth_amendment1998.pdf"
+        },
+        {
+          "title": "Meghalaya Civil Services (Pension)(Third Amendment) Rules, 1998",
+          "type": "PDF",
+          "year": 1998,
+          "size": "40 KB",
+          "url": "../../assets/docs/rules/mcs_pension_rules_third_amendment1998.pdf"
+        },
+        {
+          "title": "The Meghalaya Civil Services (Pension)(Second Amendment Rules) 1989",
+          "type": "PDF",
+          "year": 1989,
+          "size": "21 KB",
+          "url": "../../assets/docs/rules/mcs_pension_rules_second_amendment1989.pdf"
+        },
+        {
+          "title": "The Meghalaya Civil Services (Pension)( First Amendment) Rules, 1989",
+          "type": "PDF",
+          "year": 1989,
+          "size": "39 KB",
+          "url": "../../assets/docs/rules/mcs_pension_rules_first_amendment1989.pdf"
+        },
+        {
+          "title": "Meghalaya Civil Services(Pensions) Rules 1983",
+          "type": "PDF",
+          "year": 1983,
+          "size": "637 KB",
+          "url": "../../assets/docs/rules/Meghalaya_Civil_Services_(Pensions)_Rules_1983.pdf"
         }
       ]
     },
     {
-      "title": "Annexure (Raj Sabha) - RSUQ No. 1556 due for reply on 02.08.2023",
-      "year": 2023,
-      "date": "2023-08-02",
-      "category": "acts",
+      "title": "Meghalaya Delegation of Financial Powers Rules",
+      
+      "date": "2006-01-01",
+      "category": "delegation-of-financial-powers-rules",
       "files": [
         {
-          "title": "Annexure A",
+          "title": "DFP, 2006",
+          "year": 2006,
+          "date": "2006-01-01",
           "type": "PDF",
-          "size": "150 KB",
-          "url": "files/rsuq-1556-a.pdf"
+          "size": "245 KB",
+          "url": "../../assets/docs/rules/The_Meghalaya_Delegation_of_Financial_Power_Rules_2006.pdf"
         },
         {
-          "title": "Annexure B",
+          "title": "DFP , 1981",
+          "year": 1981,
+          "date": "1981-01-01",
           "type": "PDF",
-          "size": "120 KB",
-          "url": "files/rsuq-1556-b.pdf"
+          "size": "0.99 KB",
+          "url": "../../assets/docs/rules/Meghalaya_Delegation_of_Financial_Powers_Rules_1981.pdf"
         }
       ]
     },
     {
-      "title": "Rajya Sabha Starred Q.No.220 to be answered on 09.08.2023",
-      "year": 2023,
-      "date": "2023-08-09",
-      "category": "acts",
-      "type": "PDF",
-      "size": "860.03 KB",
-      "url": "files/rssq-220.pdf"
-    },
-    {
-      "title": "Rajya Sabha Unstarred Question No. 1235 due for reply on 13.12.2023",
-      "year": 2023,
-      "date": "2023-12-13",
-      "category": "acts",
-      "type": "PDF",
-      "size": "335.76 KB",
-      "url": "files/rsuq-1235.pdf"
-    },
-    {
-      "title": "Annexure to Rajya Sabha Unstarred Question No. 2038 due for reply on 20.12.2023",
-      "year": 2023,
-      "date": "2023-12-20",
-      "category": "acts",
-      "type": "PDF",
-      "size": "444.53 KB",
-      "url": "files/rsuq-2038-annexure.pdf"
-    },
-    {
-      "title": "Annexures (Lok Sabha) - for LSUSQ No. 675 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
+      "title": "Meghalaya Financial Rules",
+      
+      "date": "2010-01-01",
+      "category": "financial-rules",
       "files": [
         {
-          "title": "Annexure 1",
+          "title": "Meghalaya Finance Service (Second Amendment) Rules, 2010",
           "type": "PDF",
-          "size": "80 KB",
-          "url": "files/lsusq-675-1.pdf"
+          "year": 2010,
+          "size": "119 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya_Finance_Service_(Second_Amendment)_Rules_2010.pdf"
         },
         {
-          "title": "Annexure 2",
+          "title": "Meghalaya Finance Service (Amendment) Rules, 2010",
           "type": "PDF",
-          "size": "75 KB",
-          "url": "files/lsusq-675-2.pdf"
+          "year": 2010,
+          "size": "191 KB",
+          "url": "http://meglaw.gov.in/rules/Meghalaya_Finance_Service_(Amendment)_Rules_2010.pdf"
         },
         {
-          "title": "Annexure 3",
+          "title": "Meghalaya Financial Rules, 1981",
           "type": "PDF",
-          "size": "92 KB",
-          "url": "files/lsusq-675-3.pdf"
-        },
-        {
-          "title": "Annexure 4",
-          "type": "PDF",
-          "size": "64 KB",
-          "url": "files/lsusq-675-4.pdf"
+          "year": 1981,
+          "size": "3.2 MB",
+          "url": "../../assets/docs/rules/Meghalaya-Financial-Rules-First-Edition-1981.pdf"
         }
       ]
     },
     {
-      "title": "Annexure in respect of Lok Sabha Unstarred Question no. 508 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
-      "type": "PDF",
-      "size": "343.02 KB",
-      "url": "files/lsusq-508.pdf"
+      "title": "Meghalaya Treasury Rules",
+      
+      "date": "2026-10-10",
+      "category": "treasury-rules",
+      "files": [
+        {
+          "title": "General Principle and Rules",
+          "type": "PDF",
+          "size": "87 KB",
+          "url": "../../assets/docs/treasury_rules/part1.pdf"
+        },
+        {
+          "title": "General Organisation on Working of Treasury",
+          "type": "PDF",
+          "size": "110 KB",
+          "url": "../../assets/docs/treasury_rules/part2.pdf"
+        },
+        {
+          "title": "Receipt of Government money and payment of such money into government accounts",
+          "type": "PDF",
+          "size": "45 KB",
+          "url": "../../assets/docs/treasury_rules/part3.pdf"
+        },
+        {
+          "title": "Custody of money relating to or standing in the Government Accounts",
+          "type": "PDF",
+          "size": "70 KB",
+          "url": "../../assets/docs/treasury_rules/part4.pdf"
+        },
+        {
+          "title": "Withdrawal from the Government Accounts",
+          "type": "PDF",
+          "size": "494 KB",
+          "url": "../../assets/docs/treasury_rules/part5.pdf"
+        },
+        {
+          "title": "Special Rules for Bank Treasuries",
+          "type": "PDF",
+          "size": "69 KB",
+          "url": "../../assets/docs/treasury_rules/part6.pdf"
+        },
+        {
+          "title": "Special Rules Applicable to Particular Services",
+          "type": "PDF",
+          "size": "65 KB",
+          "url": "../../assets/docs/treasury_rules/part7.pdf"
+        },
+        {
+          "title": "Public Debt",
+          "type": "PDF",
+          "size": "41 KB",
+          "url": "../../assets/docs/treasury_rules/part8.pdf"
+        },
+        {
+          "title": "Deposit",
+          "type": "PDF",
+          "size": "79 KB",
+          "url": "../../assets/docs/treasury_rules/part9.pdf"
+        }
+      ]
     },
     {
-      "title": "Annexure in respect of Lok Sabha Starred Question no. 275 replied on 20.03.2023",
-      "year": 2023,
-      "date": "2023-03-20",
-      "category": "ls",
+      "title": "Revision of Pay Rules, 1998",
+      "year": 1998,
+      "date": "1998-01-01",
+      "category": "revision-of-pay-rules",
       "type": "PDF",
-      "size": "633.56 KB",
-      "url": "files/lssq-275.pdf"
-    },
-    {
-      "title": "Annexures (Lok Sabha) - Unstarred Question No.1811 due for reply on 31.07.2023",
-      "year": 2023,
-      "date": "2023-07-31",
-      "category": "ls",
-      "type": "PDF",
-      "size": "908.80 KB",
-      "url": "files/lsusq-1811.pdf"
-    },
-    {
-      "title": "Sample document 1 - replace or delete",
-      "year": 2022,
-      "date": "2022-02-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "137 KB",
-      "url": "files/sample-1.pdf"
-    },
-    {
-      "title": "Sample document 2 - replace or delete",
-      "year": 2022,
-      "date": "2022-03-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "174 KB",
-      "url": "files/sample-2.pdf"
-    },
-    {
-      "title": "Sample document 3 - replace or delete",
-      "year": 2022,
-      "date": "2022-04-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "211 KB",
-      "url": "files/sample-3.pdf"
-    },
-    {
-      "title": "Sample document 4 - replace or delete",
-      "year": 2022,
-      "date": "2022-05-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "248 KB",
-      "url": "files/sample-4.pdf"
-    },
-    {
-      "title": "Sample document 5 - replace or delete",
-      "year": 2022,
-      "date": "2022-06-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "285 KB",
-      "url": "files/sample-5.pdf"
-    },
-    {
-      "title": "Sample document 6 - replace or delete",
-      "year": 2022,
-      "date": "2022-07-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "322 KB",
-      "url": "files/sample-6.pdf"
-    },
-    {
-      "title": "Sample document 7 - replace or delete",
-      "year": 2022,
-      "date": "2022-08-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "359 KB",
-      "url": "files/sample-7.pdf"
-    },
-    {
-      "title": "Sample document 8 - replace or delete",
-      "year": 2022,
-      "date": "2022-09-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "396 KB",
-      "url": "files/sample-8.pdf"
-    },
-    {
-      "title": "Sample document 9 - replace or delete",
-      "year": 2022,
-      "date": "2022-10-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "433 KB",
-      "url": "files/sample-9.pdf"
-    },
-    {
-      "title": "Sample document 10 - replace or delete",
-      "year": 2022,
-      "date": "2022-11-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "470 KB",
-      "url": "files/sample-10.pdf"
-    },
-    {
-      "title": "Sample document 11 - replace or delete",
-      "year": 2022,
-      "date": "2022-12-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "507 KB",
-      "url": "files/sample-11.pdf"
-    },
-    {
-      "title": "Sample document 12 - replace or delete",
-      "year": 2022,
-      "date": "2022-01-10",
-      "category": "acts",
-      "type": "PDF",
-      "size": "544 KB",
-      "url": "files/sample-12.pdf"
+      "size": "67 KB",
+      "url": "../../assets/docs/rules/Revision_Pay_Rules_1997.pdf"
     }
   ]
 }

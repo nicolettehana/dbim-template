@@ -171,3 +171,32 @@
   .docs-section .announcementbox { padding: 12px 16px; }
   .docs-section .doc-children { padding-left: 24px; }
 }
+
+/* ---- Desktop: title wraps inside its column, never pushes the button down ---- */
+@media (min-width: 992px) {
+  .docs-section .announcementbox {
+    flex-wrap: nowrap;          /* keep title, year, type and button on one line */
+    align-items: center;
+  }
+  .docs-section .col-title {
+    flex: 1 1 0;                /* start at 0 and take the leftover space */
+    min-width: 0;               /* allow the text to shrink and wrap */
+  }
+  .docs-section .col-year,
+  .docs-section .col-type,
+  .docs-section .col-act {
+    flex-shrink: 0;             /* fixed columns never get squeezed */
+  }
+  .docs-section .doc-title {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+.min-width-150{
+  min-width: 150px;
+}
+
+.fill-color{
+  fill: var(--azureish-white);
+}

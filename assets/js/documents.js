@@ -99,13 +99,32 @@
   }
 
   /* ---------- rendering ---------- */
-  function pdfIcon(type) {
+  // function pdfIcon(type) {
+  //   return (
+  //     '<span class="filetype" aria-label="' + esc(type || "File") + '">' +
+  //     '<span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>' +
+  //     esc(type || "") + "</span>"
+  //   );
+  // }
+  
+function pdfIcon(type) {
+  var fileType = String(type || "File").trim();
+  var isPdf = fileType.toLowerCase() === "pdf";
+
+  if (isPdf) {
     return (
-      '<span class="filetype" aria-label="' + esc(type || "File") + '">' +
-      '<span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>' +
-      esc(type || "") + "</span>"
+      '<span class="filetype" aria-label="PDF">' +
+        '<span class="material-symbols-outlined" aria-hidden="true">' +
+          'picture_as_pdf' +
+        '</span>' +
+        'PDF' +
+      '</span>'
     );
   }
+
+  return '<span class="filetype">' + esc(fileType) + '</span>';
+}
+
 
   function singleRow(d) {
     return (
@@ -138,6 +157,8 @@
               '<span class="material-symbols-outlined doc-icon" aria-hidden="true">description</span>' +
               '<p class="doc-title">' + esc(f.title) + "</p>" +
             "</div>" +
+            '<div class="col-year year">' + esc(f.year) + "</div>" +     // <-- add this line
+      
             '<div class="col-type d-flex align-items-center">' + pdfIcon(f.type) +
               '<span class="filesize ms-2">' + esc(f.size) + "</span></div>" +
             '<div class="col-act">' +

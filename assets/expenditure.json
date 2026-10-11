@@ -1,0 +1,278 @@
+{
+  "documents": [
+    {
+      "id": "appropriation-accounts",
+      "title": "Appropriation Accounts"
+    },
+    {
+      "id": "subsidiary-register",
+      "title": "Subsidiary Register"
+    },
+    {
+      "id": "warning-slip",
+      "title": "Warning Slip"
+    }
+  ],
+  "financialYears": [
+    {
+      "year": "2026-2027",
+      "months": [
+        {
+          "month": "April",
+          "files": {
+            "appropriation-accounts": "2026/april/ExpenditureApril2026-2027.pdf",
+            "subsidiary-register": "2026/april/SubsidiaryApril2026-2027.pdf",
+            "warning-slip": "2026/april/WarningSlipApril2026-2027.pdf"
+          }
+        },
+        {
+          "month": "May",
+          "files": {
+            "appropriation-accounts": "2026/may/ExpenditureMay2026-2027.pdf",
+            "subsidiary-register": "2026/may/SubsidiaryMay2026-2027.pdf",
+            "warning-slip": "2026/may/WarningSlipMay2026-2027.pdf"
+          }
+        },
+        {
+          "month": "June",
+          "files": {
+            "appropriation-accounts": "2026/june/ExpenditureJune2026-2027.pdf",
+            "subsidiary-register": "2026/june/SubsidiaryJune2026-2027.pdf",
+            "warning-slip": "2026/june/WarningSlipJune2026-2027.pdf"
+          }
+        },
+        {
+          "month": "July",
+          "files": {
+            "appropriation-accounts": "2026/july/ExpenditureJuly2026-2027.pdf",
+            "subsidiary-register": "2026/july/SubsidiaryJuly2026-2027.pdf",
+            "warning-slip": "2026/july/WarningSlipJuly2026-2027.pdf"
+          }
+        },
+        {
+          "month": "August",
+          "files": {
+            "appropriation-accounts": "2026/august/ExpenditureAugust2026-2027.pdf",
+            "subsidiary-register": "2026/august/SubsidiaryAugust2026-2027.pdf",
+            "warning-slip": "2026/august/WarningSlipAugust2026-2027.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "year": "2025-2026",
+      "months": [
+        {
+          "month": "April",
+          "files": {
+            "appropriation-accounts": "2025/april/ExpenditureApril2025-2026.pdf",
+            "subsidiary-register": "2025/april/SubsidiaryApril2025-2026.pdf",
+            "warning-slip": "2025/april/WarningSlipApril2025-2026.pdf"
+          }
+        },
+        {
+          "month": "May",
+          "files": {
+            "appropriation-accounts": "2025/may/ExpenditureMay2025-2026.pdf",
+            "subsidiary-register": "2025/may/SubsidiaryMay2025-2026.pdf",
+            "warning-slip": "2025/may/WarningSlipMay2025-2026.pdf"
+          }
+        },
+        {
+          "month": "June",
+          "files": {
+            "appropriation-accounts": "2025/june/ExpenditureJune2025-2026.pdf",
+            "subsidiary-register": "2025/june/SubsidiaryJune2025-2026.pdf",
+            "warning-slip": "2025/june/WarningSlipJune2025-2026.pdf"
+          }
+        },
+        {
+          "month": "July",
+          "files": {
+            "appropriation-accounts": "2025/july/ExpenditureJuly2025-2026.pdf",
+            "subsidiary-register": "2025/july/SubsidiaryJuly2025-2026.pdf",
+            "warning-slip": "2025/july/WarningSlipJuly2025-2026.pdf"
+          }
+        },
+        {
+          "month": "August",
+          "files": {
+            "appropriation-accounts": "2025/august/ExpenditureAugust2025-2026.pdf",
+            "subsidiary-register": "2025/august/SubsidiaryAugust2025-2026.pdf",
+            "warning-slip": "2025/august/WarningSlipAugust2025-2026.pdf"
+          }
+        },
+        {
+          "month": "September",
+          "files": {
+            "appropriation-accounts": "2025/september/ExpenditureSeptember2025-2026.pdf",
+            "subsidiary-register": "2025/september/SubsidiarySeptember2025-2026.pdf",
+            "warning-slip": "2025/september/WarningSlipSeptember2025-2026.pdf"
+          }
+        },
+        {
+          "month": "October",
+          "files": {
+            "appropriation-accounts": "2025/october/ExpenditureOctober2025-2026.pdf",
+            "subsidiary-register": "2025/october/SubsidiaryOctober2025-2026.pdf",
+            "warning-slip": "2025/october/WarningSlipOctober2025-2026.pdf"
+          }
+        },
+        {
+          "month": "November",
+          "files": {
+            "appropriation-accounts": "2025/november/ExpenditureNovember2025-2026.pdf",
+            "subsidiary-register": "2025/november/SubsidiaryNovember2025-2026.pdf",
+            "warning-slip": "2025/november/WarningSlipNovember2025-2026.pdf"
+          }
+        },
+        {
+          "month": "December",
+          "files": {
+            "appropriation-accounts": "2025/december/ExpenditureDecember2025-2026.pdf",
+            "subsidiary-register": "2025/december/SubsidiaryDecember2025-2026.pdf",
+            "warning-slip": "2025/december/WarningSlipDecember2025-2026.pdf"
+          }
+        },
+        {
+          "month": "January",
+          "files": {
+            "appropriation-accounts": "2025/january/ExpenditureJanuary2025-2026.pdf",
+            "subsidiary-register": "2025/january/SubsidiaryJanuary2025-2026.pdf",
+            "warning-slip": "2025/january/WarningSlipJanuary2025-2026.pdf"
+          }
+        },
+        {
+          "month": "February",
+          "files": {
+            "appropriation-accounts": "2025/feb/ExpenditureFeb2025-2026.pdf",
+            "subsidiary-register": "2025/feb/SubsidiaryFeb2025-2026.pdf",
+            "warning-slip": "2025/feb/WarningSlipFeb2025-2026.pdf"
+          }
+        },
+        {
+          "month": "March",
+          "files": {
+            "appropriation-accounts": "2025/march/ExpenditureMarch2025-2026.pdf",
+            "subsidiary-register": "2025/march/SubsidiaryMarch2025-2026.pdf",
+            "warning-slip": "2025/march/WarningSlipMarch2025-2026.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "year": "2024-2025",
+      "months": [
+        {
+          "month": "April",
+          "files": {
+            "appropriation-accounts": "2024/april/ExpenditureApril2024-2025.pdf",
+            "subsidiary-register": "2024/april/SubsidiaryApril2024-2025.pdf",
+            "warning-slip": "2024/april/WarningSlipApril2024-2025.pdf"
+          }
+        },
+        {
+          "month": "May",
+          "files": {
+            "appropriation-accounts": "2024/may/ExpenditureMay2024-2025.pdf",
+            "subsidiary-register": "2024/may/SubsidiaryMay2024-2025.pdf",
+            "warning-slip": "2024/may/WarningSlipMay2024-2025.pdf"
+          }
+        },
+        {
+          "month": "June",
+          "files": {
+            "appropriation-accounts": "2024/june/ExpenditureJune2024-2025.pdf",
+            "subsidiary-register": "2024/june/SubsidiaryJune2024-2025.pdf",
+            "warning-slip": "2024/june/WarningSlipJune2024-2025.pdf"
+          }
+        },
+        {
+          "month": "July",
+          "files": {
+            "appropriation-accounts": "2024/july/ExpenditureJuly2024-2025.pdf",
+            "subsidiary-register": "2024/july/SubsidiaryJuly2024-2025.pdf",
+            "warning-slip": "2024/july/WarningSlipJuly2024-2025.pdf"
+          }
+        },
+        {
+          "month": "August",
+          "files": {
+            "appropriation-accounts": "2024/august/ExpenditureAugust2024-2025.pdf",
+            "subsidiary-register": "2024/august/SubsidiaryAugust2024-2025.pdf",
+            "warning-slip": "2024/august/WarningSlipAugust2024-2025.pdf"
+          }
+        },
+        {
+          "month": "September",
+          "files": {
+            "appropriation-accounts": "2024/september/ExpenditureSeptember2024-2025.pdf",
+            "subsidiary-register": "2024/september/SubsidiarySeptember2024-2025.pdf",
+            "warning-slip": "2024/september/WarningSlipSeptember2024-2025.pdf"
+          }
+        },
+        {
+          "month": "October",
+          "files": {
+            "appropriation-accounts": "2024/october/ExpenditureOctober2024-2025.pdf",
+            "subsidiary-register": "2024/october/SubsidiaryOctober2024-2025.pdf",
+            "warning-slip": "2024/october/WarningSlipOctober2024-2025.pdf"
+          }
+        },
+        {
+          "month": "November",
+          "files": {
+            "appropriation-accounts": "2024/november/ExpenditureNovember2024-2025.pdf",
+            "subsidiary-register": "2024/november/SubsidiaryNovember2024-2025.pdf",
+            "warning-slip": "2024/november/WarningSlipNovember2024-2025.pdf"
+          }
+        },
+        {
+          "month": "December",
+          "files": {
+            "appropriation-accounts": "2024/december/ExpenditureDecember2024-2025.pdf",
+            "subsidiary-register": "2024/december/SubsidiaryDecember2024-2025.pdf",
+            "warning-slip": "2024/december/WarningSlipDecember2024-2025.pdf"
+          }
+        },
+        {
+          "month": "January",
+          "files": {
+            "appropriation-accounts": "2024/january/ExpenditureJanuary2024-2025.pdf",
+            "subsidiary-register": "2024/january/SubsidiaryJanuary2024-2025.pdf",
+            "warning-slip": "2024/january/WarningSlipJanuary2024-2025.pdf"
+          }
+        },
+        {
+          "month": "February",
+          "files": {
+            "appropriation-accounts": "2024/feb/ExpenditureFeb2024-2025.pdf",
+            "subsidiary-register": "2024/feb/SubsidiaryFeb2024-2025.pdf",
+            "warning-slip": "2024/feb/WarningSlipFeb2024-2025.pdf"
+          }
+        },
+        {
+          "month": "March",
+          "files": {
+            "appropriation-accounts": "2024/march/ExpenditureMarch2024-2025.pdf",
+            "subsidiary-register": "2024/march/SubsidiaryMarch2024-2025.pdf",
+            "warning-slip": "2024/march/WarningSlipMarch2024-2025.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "year": "2023-2024",
+      "months": [
+        {
+          "month": "March",
+          "files": {
+            "appropriation-accounts": "2023/march/ExpenditureMarch2023-2024.pdf",
+            "subsidiary-register": "2023/march/SubsidiaryMarch2023-2024.pdf",
+            "warning-slip": "2023/march/WarningSlipMarch2023-2024.pdf"
+          }
+        }
+      ]
+    }
+  ]
+}

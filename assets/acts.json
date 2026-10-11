@@ -2,264 +2,171 @@
   "categories": [
     {
       "id": "acts",
-      "label": "Acts"
+      "label": "General"
     }
-    
   ],
   "documents": [
     {
-      "title": "Detailed Demand for Grants (2016-24)",
+      "title": "The Meghalaya Fiscal Responsibility and Budget Management (Amendment) Act, 2025",
+      "year": 2025,
+      "date": "2025-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "860 KB",
+      "url": "../../assets/docs/acts/Meghalaya_Fiscal_Responsibility_Budget_Management_Amendment_Act_2025.pdf"
+    },
+    {
+      "title": "The Meghalaya Ceiling on Government Guarantees Act, 2025.",
+      "year": 2025,
+      "date": "2025-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "2.55 MB",
+      "url": "../../assets/docs/acts/Meghalaya_Ceiling_on_Government_Guarantees_Act_2025.pdf"
+    },
+    {
+      "title": "The Meghalaya Fiscal Responsibility and Budget Management (Amendment) Act, 2024",
       "year": 2024,
-      "date": "2024-03-15",
-      "category": "grants",
-      "files": [
-        {
-          "title": "Demand for Grants 2016-17",
-          "type": "PDF",
-          "size": "1.2 MB",
-          "url": "files/dfg-2016-17.pdf"
-        },
-        {
-          "title": "Demand for Grants 2017-18",
-          "type": "PDF",
-          "size": "1.1 MB",
-          "url": "files/dfg-2017-18.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Rajya Sabha Un-Starred Question No: 3794 To be Answered on 05-04-2023",
-      "year": 2023,
-      "date": "2023-04-05",
-      "category": "acts",
-      "files": [
-        {
-          "title": "Reply",
-          "type": "PDF",
-          "size": "210 KB",
-          "url": "files/rsuq-3794.pdf"
-        },
-        {
-          "title": "Annexure I",
-          "type": "PDF",
-          "size": "98 KB",
-          "url": "files/rsuq-3794-a1.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Annexure (Raj Sabha) - RSUQ No. 1556 due for reply on 02.08.2023",
-      "year": 2023,
-      "date": "2023-08-02",
-      "category": "acts",
-      "files": [
-        {
-          "title": "Annexure A",
-          "type": "PDF",
-          "size": "150 KB",
-          "url": "files/rsuq-1556-a.pdf"
-        },
-        {
-          "title": "Annexure B",
-          "type": "PDF",
-          "size": "120 KB",
-          "url": "files/rsuq-1556-b.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Rajya Sabha Starred Q.No.220 to be answered on 09.08.2023",
-      "year": 2023,
-      "date": "2023-08-09",
+      "date": "2024-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "860.03 KB",
-      "url": "files/rssq-220.pdf"
+      "size": "929 KB",
+      "url": "../../assets/docs/acts/Meghalaya_Fiscal_Responsibility_Budget_Management_Amendment_Act_2024.pdf"
     },
     {
-      "title": "Rajya Sabha Unstarred Question No. 1235 due for reply on 13.12.2023",
-      "year": 2023,
-      "date": "2023-12-13",
+      "title": "The Meghalaya Fiscal Responsibility and Budget Management (Amendment) Act, 2022 (Act No. 12 of 2022).",
+      "year": 2022,
+      "date": "2022-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "335.76 KB",
-      "url": "files/rsuq-1235.pdf"
+      "size": "1.02 MB",
+      "url": "../../assets/docs/acts/Meghalaya_FRBM_Act.pdf"
     },
     {
-      "title": "Annexure to Rajya Sabha Unstarred Question No. 2038 due for reply on 20.12.2023",
-      "year": 2023,
-      "date": "2023-12-20",
+      "title": "Meghalaya Public Private Partnership Policy (PPP) 2021.",
+      "year": 2021,
+      "date": "2021-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "444.53 KB",
-      "url": "files/rsuq-2038-annexure.pdf"
+      "size": "25.5 MB",
+      "url": "../../assets/docs/document/PPP_Policy_2021.pdf"
     },
     {
-      "title": "Annexures (Lok Sabha) - for LSUSQ No. 675 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
-      "files": [
-        {
-          "title": "Annexure 1",
-          "type": "PDF",
-          "size": "80 KB",
-          "url": "files/lsusq-675-1.pdf"
-        },
-        {
-          "title": "Annexure 2",
-          "type": "PDF",
-          "size": "75 KB",
-          "url": "files/lsusq-675-2.pdf"
-        },
-        {
-          "title": "Annexure 3",
-          "type": "PDF",
-          "size": "92 KB",
-          "url": "files/lsusq-675-3.pdf"
-        },
-        {
-          "title": "Annexure 4",
-          "type": "PDF",
-          "size": "64 KB",
-          "url": "files/lsusq-675-4.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Annexure in respect of Lok Sabha Unstarred Question no. 508 due for reply on 06.02.2023",
-      "year": 2023,
-      "date": "2023-02-06",
-      "category": "ls",
-      "type": "PDF",
-      "size": "343.02 KB",
-      "url": "files/lsusq-508.pdf"
-    },
-    {
-      "title": "Annexure in respect of Lok Sabha Starred Question no. 275 replied on 20.03.2023",
-      "year": 2023,
-      "date": "2023-03-20",
-      "category": "ls",
-      "type": "PDF",
-      "size": "633.56 KB",
-      "url": "files/lssq-275.pdf"
-    },
-    {
-      "title": "Annexures (Lok Sabha) - Unstarred Question No.1811 due for reply on 31.07.2023",
-      "year": 2023,
-      "date": "2023-07-31",
-      "category": "ls",
-      "type": "PDF",
-      "size": "908.80 KB",
-      "url": "files/lsusq-1811.pdf"
-    },
-    {
-      "title": "Sample document 1 - replace or delete",
-      "year": 2022,
-      "date": "2022-02-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "137 KB",
-      "url": "files/sample-1.pdf"
-    },
-    {
-      "title": "Sample document 2 - replace or delete",
-      "year": 2022,
-      "date": "2022-03-10",
+      "title": "The Meghalaya Fiscal Responsibility and Budget Management (Amendment) Act, 2021 (Act No. 10 of 2021).",
+      "year": 2021,
+      "date": "2021-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "174 KB",
-      "url": "files/sample-2.pdf"
+      "size": "1.15 MB",
+      "url": "../../assets/docs/acts/Meghalaya_Fiscal_Responsibility_Budget_Management_Amendment_Act_2021.pdf"
     },
     {
-      "title": "Sample document 3 - replace or delete",
-      "year": 2022,
-      "date": "2022-04-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "211 KB",
-      "url": "files/sample-3.pdf"
-    },
-    {
-      "title": "Sample document 4 - replace or delete",
-      "year": 2022,
-      "date": "2022-05-10",
+      "title": "The Meghalaya Credit Operation and Miscellaneous Provisions Act, 1976",
+      "year": 1976,
+      "date": "1976-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "248 KB",
-      "url": "files/sample-4.pdf"
+      "size": "764 KB",
+      "url": "http://meglaw.gov.in/Acts/1976.pdf"
     },
     {
-      "title": "Sample document 5 - replace or delete",
-      "year": 2022,
-      "date": "2022-06-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "285 KB",
-      "url": "files/sample-5.pdf"
-    },
-    {
-      "title": "Sample document 6 - replace or delete",
-      "year": 2022,
-      "date": "2022-07-10",
+      "title": "Meghalaya Fiscal Responsibility and Budget Management Act, 2006",
+      "year": 2006,
+      "date": "2006-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "322 KB",
-      "url": "files/sample-6.pdf"
+      "size": "1.74 MB",
+      "url": "../../assets/docs/acts/The-Meghalaya-Fiscal-Responsibility-and-Budget-Management-Act-2006.pdf"
     },
     {
-      "title": "Sample document 7 - replace or delete",
-      "year": 2022,
-      "date": "2022-08-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "359 KB",
-      "url": "files/sample-7.pdf"
-    },
-    {
-      "title": "Sample document 8 - replace or delete",
-      "year": 2022,
-      "date": "2022-09-10",
+      "title": "The Meghalaya Fiscal Responsibility and Budget Management (Amendment) Act, 2006",
+      "year": 2006,
+      "date": "2006-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "396 KB",
-      "url": "files/sample-8.pdf"
+      "size": "247 KB",
+      "url": "../../assets/docs/acts/The-Meghalaya-Fiscal-Responsibility-and-Budget-Management-(Amendment)-Act-2006.pdf"
     },
     {
-      "title": "Sample document 9 - replace or delete",
-      "year": 2022,
-      "date": "2022-10-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "433 KB",
-      "url": "files/sample-9.pdf"
-    },
-    {
-      "title": "Sample document 10 - replace or delete",
-      "year": 2022,
-      "date": "2022-11-10",
+      "title": "The Meghalaya Fiscal Responsibility and Budget Management (Amendment) Act, 2009",
+      "year": 2009,
+      "date": "2009-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "470 KB",
-      "url": "files/sample-10.pdf"
+      "size": "31 KB",
+      "url": "../../assets/docs/acts/The-Meghalaya-Fiscal-Responsibility-and-Budget-Management-(Amendment)-Act-2009.pdf"
     },
     {
-      "title": "Sample document 11 - replace or delete",
-      "year": 2022,
-      "date": "2022-12-10",
-      "category": "ls",
-      "type": "PDF",
-      "size": "507 KB",
-      "url": "files/sample-11.pdf"
-    },
-    {
-      "title": "Sample document 12 - replace or delete",
-      "year": 2022,
-      "date": "2022-01-10",
+      "title": "The Meghalaya Fiscal Responsibility and Budget Management (Amendment) Act, 2015",
+      "year": 2015,
+      "date": "2015-01-01",
       "category": "acts",
       "type": "PDF",
-      "size": "544 KB",
-      "url": "files/sample-12.pdf"
+      "size": "3.03 MB",
+      "url": "../../assets/docs/acts/The-Meghalaya-Fiscal-Responsibility-and-Budget-Management-(Amendment)-Act-2015.pdf"
+    },
+    {
+      "title": "The Meghalaya local funds (Accounts & Audit) (Amendment) 1-2 Act, 1988",
+      "year": 1988,
+      "date": "1988-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "365 KB",
+      "url": "http://meglaw.gov.in/Acts/1988.pdf"
+    },
+    {
+      "title": "The Meghalaya Protection of Interest of Depositors (In Financial Establishments) Act, 2006",
+      "year": 2006,
+      "date": "2006-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "1.22 MB",
+      "url": "http://meglaw.gov.in/acts/2006.pdf"
+    },
+    {
+      "title": "The Meghalaya State Finance Commission Act, 2012",
+      "year": 2012,
+      "date": "2012-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "472 KB",
+      "url": "http://meglaw.gov.in/acts/2012.pdf"
+    },
+    {
+      "title": "The Prize Chits and Money Circulation Schemes (Banning) Act, 1978",
+      "year": 1978,
+      "date": "1978-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "160 KB",
+      "url": "../../assets/docs/acts/The-Prize-Chits-Money-Circulation-Schemes-(Banning)-Act-1978.pdf"
+    },
+    {
+      "title": "The Contingency Fund of Meghalaya Act, 1972",
+      "year": 1972,
+      "date": "1972-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "428 KB",
+      "url": "../../assets/docs/acts/The-Contingency-Fund-Meghalaya-Act-1972.pdf"
+    },
+    {
+      "title": "The Contingency Fund of Meghalaya (Amendment) Act, 2016 (Act No. 2 of 2016)",
+      "year": 2016,
+      "date": "2016-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "35 KB",
+      "url": "../../assets/docs/acts/The-Contingency-Fund-Meghalaya-(Amendment)-Act-2016-(Act-No.-2-of-2016).pdf"
+    },
+    {
+      "title": "The Contingency Fund of Meghalaya (Amendment) Act, 2016 (Act NO.7 of 2016)",
+      "year": 2016,
+      "date": "2016-01-01",
+      "category": "acts",
+      "type": "PDF",
+      "size": "393 KB",
+      "url": "../../assets/docs/acts/The-Contingency-Fund-Meghalaya-(Amendment)-Act-2016-(Act-NO.7-of-2016).pdf"
     }
   ]
 }
