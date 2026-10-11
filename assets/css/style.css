@@ -5906,3 +5906,97 @@ button.filterClearBtn:focus-visible {
 .hide {
   display: none !important;
 }
+
+/* ==========================================================================
+   About-page blocks. Three independent components, each with its own prefix,
+   so you can use any one without the others:
+     1. .vision-box    grey statement box
+     2. .number-card   numbered pastel card
+     3. .about-content heading / paragraph styles for the text column
+   New class names: nothing in style.css (.visionbox, .objectivebox) is touched.
+   DBIM tokens only, so the cards follow data-theme (green, blue, ...).
+   ========================================================================== */
+
+/* ---------- 1. Vision box ---------- */
+.vision-box {
+  display: flex;
+  flex-direction: column-reverse;   /* heading is first in the HTML (for screen readers), shown last */
+  justify-content: flex-end;
+  gap: 32px;
+  padding: 56px 40px;
+  border-radius: 16px;
+  background: var(--bright-gray);
+  color: var(--key);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.vision-box__text {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.vision-box__label {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* ---------- 2. Number card ---------- */
+.number-cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.number-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  height: 100%;
+  min-height: 200px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  background: var(--c5);
+  color: var(--black);
+}
+.number-card__num {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--key);
+}
+.number-card__text {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.number-card__text strong { font-weight: 700; }
+
+/* ---------- 3. About text column ---------- */
+.about-content > :first-child { margin-top: 0; }
+.about-content h2 {
+  margin: 24px 0 8px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--key);
+}
+.about-content p {
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+/* ---------- Dark / high-contrast mode (the key colour is near-black there) ---------- */
+[data-mode="dark"] .vision-box { background: var(--c4); color: var(--black); }
+[data-mode="dark"] .number-card { background: var(--c4); }
+[data-mode="dark"] .number-card__num,
+[data-mode="dark"] .about-content h2 { color: var(--black); }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 991.5px) {
+  .vision-box { padding: 32px 24px; }
+  .vision-box__text { font-size: 2.2rem; }
+}
