@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Document rows (icon + title + type/size + View button).
+   Standalone: does NOT need documents.css, .docs-section, or Bootstrap utilities.
+   DBIM tokens only, so it follows data-theme / data-mode.
+   ========================================================================== */
+
+.doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doc-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px;
+  border: 1px solid var(--bright-gray);
+  border-radius: 12px;
+  background: var(--white);
+}
+
+.doc-row__icon {
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  color: var(--rhythm);
+}
+
+.doc-row__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--black);
+  overflow-wrap: anywhere;
+}
+
+.doc-row__meta {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 24px;
+  color: var(--key);
+}
+.doc-row__type {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.doc-row__type .material-symbols-outlined { font-size: 2.25rem; }
+.doc-row__size {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.doc-row__btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 112px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: var(--c4);
+  color: var(--key);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+.doc-row__btn:hover { background: var(--c3); color: var(--key); }
+.doc-row__btn:focus-visible { outline: 2px solid var(--key); outline-offset: 2px; }
+.doc-row__btn .material-symbols-outlined { font-size: 2.4rem; }
+
+/* Dark / high-contrast mode: the key colour is near-black there */
+[data-mode="dark"] .doc-row__meta,
+[data-mode="dark"] .doc-row__btn,
+[data-mode="dark"] .doc-row__btn:hover { color: var(--black); }
+[data-mode="dark"] .doc-row__btn:focus-visible { outline-color: var(--black); }
+
+@media (max-width: 767.5px) {
+  .doc-row { flex-wrap: wrap; padding: 16px; }
+  .doc-row__title { flex: 1 1 calc(100% - 48px); }
+  .doc-row__meta { margin-right: auto; }
+}
