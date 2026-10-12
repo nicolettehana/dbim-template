@@ -6000,3 +6000,7 @@ button.filterClearBtn:focus-visible {
   .vision-box { padding: 32px 24px; }
   .vision-box__text { font-size: 2.2rem; }
 }
+
+ol li::marker {
+    font-weight: bold;
+  }
