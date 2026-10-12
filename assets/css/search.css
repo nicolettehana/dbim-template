@@ -25,6 +25,8 @@
   border: 1px solid var(--key);
   border-right: 0;
   border-radius: 0.25rem 0 0 0.25rem;
+  border: 1px solid var(--columbia-blue);
+    background: var(--white);
   font: inherit;
   font-size: 1.5rem;
 }
@@ -46,8 +48,14 @@
 
 /* Results */
 .search-page .search-results { list-style: none; margin: 0; padding: 0; }
-.search-page .search-item { padding: 1.25rem 0; border-bottom: 1px solid var(--bright-gray); }
-.search-page .search-item-title { margin: 0 0 0.25rem; font-size: 1.5rem; font-weight: 700; }
+.search-page .search-item { padding: 1.75rem 1.75rem; border: 1px solid var(--bright-gray);
+  border-radius: 8px;
+  background: var(--white);
+margin-bottom: 0.75rem;}
+.search-page .search-item-title { margin: 0 0 0.25rem; font-size: 1.75rem; font-weight: 700; }
+.search-page .search-item:hover {
+  background-color: var(--azureish-white-bg);
+}
 .search-page .search-item-title a { color: var(--key); }
 .search-page .search-item-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .search-page .search-item-title a:focus-visible { outline: 2px solid var(--key); outline-offset: 2px; }

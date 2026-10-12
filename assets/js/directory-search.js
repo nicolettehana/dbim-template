@@ -16,13 +16,27 @@
     alpha.appendChild(b);
   });
 
+  // function matches(row) {
+  //   var q = search.value.trim().toLowerCase();
+  //   // ignore honorifics so "Shri Jitin Prasada" files under J
+  //   var key = row.dataset.name.toLowerCase().replace(/^(shri|smt|dr|sh)\.?\s+/, '');
+  //   return (!letter || key.charAt(0) === letter.toLowerCase()) &&
+  //          (!q || row.textContent.toLowerCase().indexOf(q) > -1);
+  // }
+
   function matches(row) {
-    var q = search.value.trim().toLowerCase();
-    // ignore honorifics so "Shri Jitin Prasada" files under J
-    var key = row.dataset.name.toLowerCase().replace(/^(shri|smt|dr|sh)\.?\s+/, '');
-    return (!letter || key.charAt(0) === letter.toLowerCase()) &&
-           (!q || row.textContent.toLowerCase().indexOf(q) > -1);
-  }
+  var q = search.value.trim().toLowerCase();
+
+  // take the name from the visible text, falling back to data-name
+  var nameEl = row.querySelector('.name');
+  var raw = nameEl ? nameEl.textContent : (row.dataset.name || '');
+
+  // ignore honorifics so "Dr. D. Vijay Kumar" files under D
+  var key = raw.trim().toLowerCase().replace(/^(shri|smt|dr|sh)\.?\s+/, '');
+
+  return (!letter || key.charAt(0) === letter.toLowerCase()) &&
+         (!q || row.textContent.toLowerCase().indexOf(q) > -1);
+}
 
   function render() {
     var shown = 0;

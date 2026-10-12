@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="assets/css/footer4.css">
   <link rel="stylesheet" href="assets/css/page-hero.css">
   <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/directory.css" />
+  <link rel="stylesheet" href="assets/css/innernav.css" />
+  <link rel="stylesheet" href="assets/css/back-to-top.css" />
   <!-- also add the same header, menu and footer stylesheets as your other pages -->
 </head>
 <body>
@@ -81,11 +84,13 @@
   
         <li class="nav-item">
           <button type="button" class="nav-link nav-toggle" aria-expanded="false"
-            aria-controls="sub-ministry">Ministry</button>
+            aria-controls="sub-ministry">Department</button>
           <ul class="nav-sub" id="sub-ministry" hidden>
-            <li><a href="#">Sub page one</a></li>
-            <li><a href="#">Sub page two</a></li>
-            <li><a href="#">Sub page three</a></li>
+            <li><a href="pages/department/about-us.html">About Us</a></li>
+            <li><a href="pages/department/branches.html">Branches</a></li>
+            <li><a href="pages/department/directorates.html">Directorates</a></li>
+            <li><a href="pages/department/org-structure.html">Organisational Structure</a></li>
+            <li><a href="pages/department/directory.html">Directory</a></li>
           </ul>
         </li>
   
@@ -93,9 +98,8 @@
           <button type="button" class="nav-link nav-toggle" aria-expanded="false"
             aria-controls="sub-offerings">Offerings</button>
           <ul class="nav-sub" id="sub-offerings" hidden>
-            <li><a href="schemes.html">Schemes</a></li>
-            <li><a href="vacancies.html">Vacancies</a></li>
-            <li><a href="tenders.html">Tenders</a></li>
+            <li><a href="pages/offerings/egov-initiatives.html">e-Gov Initiatives</a></li>
+  
           </ul>
         </li>
   
@@ -103,16 +107,22 @@
           <button type="button" class="nav-link nav-toggle" aria-expanded="false"
             aria-controls="sub-documents">Documents</button>
           <ul class="nav-sub" id="sub-documents" hidden>
-            <li><a href="#">Sub page one</a></li>
-            <li><a href="#">Sub page two</a></li>
+            <li><a href="pages/documents/state-budget.html">State Budget</a></li>
+            <li><a href="pages/documents/acts.html">Acts</a></li>
+            <li><a href="pages/documents/rules.html">Rules</a></li>
+            <li><a href="pages/documents/notifications.html">Notifications</a></li>
+            <li><a href="pages/documents/forms.html">Forms</a></li>
+            <li><a href="pages/documents/publications.html">Publications</a></li>
+            <li><a href="pages/documents/pfms.html">PFMS/SNA</a></li>
+            <li><a href="pages/documents/expenditure.html">Expenditure</a></li>
+            <li><a href="pages/documents/user-manuals.html">User Manuals</a></li>
           </ul>
         </li>
   
         <li class="nav-item">
           <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-controls="sub-media">Media</button>
           <ul class="nav-sub" id="sub-media" hidden>
-            <li><a href="#">Sub page one</a></li>
-            <li><a href="#">Sub page two</a></li>
+            <li><a href="pages/media/nps.html">NPS ki Pathshala</a></li>
           </ul>
         </li>
   
@@ -120,9 +130,10 @@
           <button type="button" class="nav-link nav-toggle" aria-expanded="false"
             aria-controls="sub-connect">Connect</button>
           <ul class="nav-sub" id="sub-connect" hidden>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">RTI</a></li>
+            <li><a href="pages/contact-us.html">Contact Us</a></li>
+            <li><a href="pages/department/directory.html">Directory</a></li>
+            <li><a href="https://megrti.gov.in/" target="_blank">RTI</a></li>
+            <li><a href="pages/footer/links.html">Important Links</a></li>
           </ul>
         </li>
       </ul>
@@ -130,24 +141,47 @@
     </div>
   </nav>
 
-<!-- Paste your header and menu here, exactly as on your other pages -->
-
-<section class="page-hero" aria-labelledby="page-title">
-  <div class="page-hero-inner">
-
-    <nav class="page-breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span aria-hidden="true">/</span>
-      <span>Search</span>
-    </nav>
-
-    <h1 id="page-title">Search</h1>
-
+  <div class="Innerbaner">
+    <svg class="banner-art" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true"
+      focusable="false">
+      <defs>
+        <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.6" class="dots" />
+        </pattern>
+        <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
+          <stop offset=".35" stop-color="#fff" stop-opacity="0" />
+          <stop offset="1" stop-color="#fff" />
+        </linearGradient>
+        <mask id="dotmask">
+          <rect width="1440" height="260" fill="url(#fade)" />
+        </mask>
+      </defs>
+      <!-- waves -->
+      <!-- waves -->
+      <path d="M0 190 C260 110 520 250 820 170 S1260 90 1440 150 V260 H0Z" class="wave-path-c2" opacity=".35" />
+      <path d="M0 225 C300 165 560 275 900 205 S1300 145 1440 195 V260 H0Z" class="wave-path" opacity=".25" />
+      <path d="M620 0 C820 90 1060 -30 1440 100 V0Z" class="wave-path-c2" opacity=".3" />
+      <!-- dots, fading in from the left -->
+      <!-- <rect width="1440" height="260" fill="url(#dots)" mask="url(#dotmask)" opacity=".6" /> -->
+      <rect class="dots-layer" width="1440" height="260" fill="url(#dots)" mask="url(#dotmask)" />
+    </svg>
+    <div class="container">
+      <div class="innerbox">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            
+          </ol>
+        </nav>
+        <h1 class="pagename">Search</h1>
+      </div>
+    </div>
   </div>
-</section>
+
+
 
 <main id="maincontent" tabindex="-1" class="search-page">
-  <div class="search-inner">
+  <div class="container">
     <h1>Search results</h1>
 
     <form class="search-form" role="search" action="search.html" method="get">
@@ -260,5 +294,6 @@
 <script src="assets/js/search.js"></script>
 <script src="assets/js/menu.js"></script>
 <script src="assets/js/accessibility.js"></script>
+<script src="assets/js/back-to-top.js"></script>
 </body>
 </html>
