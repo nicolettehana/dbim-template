@@ -20,7 +20,7 @@ header .menuright .menutop li .menuicon { background: var(--white); color: var(-
   background:
     linear-gradient(to right, var(--banner-transparency) 20%, transparent 80%),
     linear-gradient(135deg, var(--c1), var(--c2));
-  min-height: 190px;
+  min-height: 245px;
 }
 .Innerbaner { overflow: hidden; }
 .Innerbaner::before { display: none; }
