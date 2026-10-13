@@ -145,6 +145,7 @@ html {
     border-left: 3px solid var(--key);
     margin-left: 0.25rem;
     
+    
 }
 
 .main-nav .nav-sub a {
@@ -155,6 +156,7 @@ html {
     text-align: center;
     font-size: var(--nav-sub-size);
     text-decoration: none;
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .main-nav .nav-sub a:hover {

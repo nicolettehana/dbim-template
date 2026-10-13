@@ -3,6 +3,10 @@
     {
       "id": "beams",
       "label": "Beams"
+    },
+    {
+      "id": "ebilling",
+      "label": "e-Billing"
     }
     
   ],
@@ -47,6 +51,48 @@
           "type": "PDF",
           "size": "4 MB",
           "url": "assets/docs/user-manuals/beams/User_Manual_HOD_Final.pdf"
+        }
+      ]
+    },
+    {
+      "title": "e-Billing User Manuals",
+      
+      "category": "ebilling",
+      "files": [
+        {
+          "title": "e-Billing Manual",
+          "type": "LINK",
+          "size": "498 KB",
+          "url": "https://ebilling.megfinance.gov.in/manual/ebilling_manual.pdf"
+        },
+        {
+          "title": "DDO Admin Manual",
+          "type": "LINK",
+          "size": "1.03 MB",
+          "url": "https://ebilling.megfinance.gov.in/manual/ddo_ebilling_manual.pdf"
+        },
+        {
+          "title": "Nil Bill Medical Manual ",
+          "type": "LINK",
+          "size": "623 KB",
+          "url": "https://ebilling.megfinance.gov.in/manual/nil_bill_manual.pdf"
+        },
+        {
+          "title": "Bill with GST/TDS",
+          "type": "LINK",
+          "size": "517 KB",
+          "url": "https://ebilling.megfinance.gov.in/manual/bill_with_gst_tds.pdf"
+        },
+        {
+          "title": "Treasury Objected Bills",
+          "type": "LINK",
+          "size": "185 KB",
+          "url": "https://ebilling.megfinance.gov.in/manual/treasury_objected_bills.pdf"
+        },{
+          "title": "Work Order Bills ",
+          "type": "LINK",
+          "size": "1 MB",
+          "url": "https://ebilling.megfinance.gov.in/manual/work_order_bills_new_1225.pdf"
         }
       ]
     }
