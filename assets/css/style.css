@@ -6128,10 +6128,3 @@ ol li::marker {
   color: var(--key);
 }
 
-.contact-list .contact-card {
-  background: var(--white);
-  border-color: var(--key) !important;
-  /* Bootstrap's .border uses !important, so this needs it too */
-  border-radius: 0;
-  /* square corners; use 0.25rem for slightly rounded */
-}
