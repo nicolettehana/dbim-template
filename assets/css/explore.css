@@ -3,11 +3,11 @@
    Colours come from the dbim-theme tokens. */
 
 .explore {
-  --explore-title-size: 2.25rem;
-  --explore-card-title-size: 2.25rem;
-  --explore-text-size: 1.5rem;
-  --explore-link-size: 1.5rem;
-  --explore-more-size: 1.5rem;
+  --explore-title-size: 1.65rem;
+  --explore-card-title-size: 1.5rem;
+  --explore-text-size: 1.25rem;
+  --explore-link-size: 1.25rem;
+  --explore-more-size: 1rem;
 
   padding-block: 2.5rem;
   background: var(--white);
@@ -279,8 +279,40 @@
 .explore .link-list a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .explore .link-list a:focus-visible { outline: 2px solid var(--key); outline-offset: -2px; }
 
+@media (min-width: 576px) {
+  .explore {
+    --explore-title-size: 1.75rem;
+      --explore-card-title-size: 1.75rem;
+      --explore-text-size: 1rem;
+      --explore-link-size: 1rem;
+      --explore-more-size: 0.75rem;
+  }
+
+  .explore-inner {
+    width: calc(100% - 3rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .explore {
+    --explore-title-size: 1.9rem;
+    --explore-card-title-size: 1.9rem;
+    --explore-text-size: 1.5rem;
+    --explore-link-size: 1.5rem;
+    --explore-more-size: 1.25rem;
+  }
+
+  .explore-inner {
+    width: calc(100% - 2rem);
+  }
+}
+
 /* Side by side only from 1200px up (change this number to switch earlier or later) */
 @media (min-width: 1200px) {
-  .explore { --explore-card-title-size: 2rem; }
+  .explore { --explore-card-title-size: 2.25rem; 
+  --explore-card-title-size: 2.25rem;
+    --explore-text-size: 1.75rem;
+    --explore-link-size: 1.75rem;
+    --explore-more-size: 1.5rem;}
   .explore-inner { width: 88%; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem; }
 }

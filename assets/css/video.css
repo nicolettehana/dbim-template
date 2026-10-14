@@ -1,0 +1,77 @@
+.video-card {
+    --video-title-size: 1.5rem;
+    --video-meta-size: 1rem;
+    --video-key: var(--key, #1b2a6b);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.video-frame {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-frame iframe {
+    border: 0;
+}
+
+.video-title {
+    margin: 0.75rem 0 0.5rem;
+    font-size: var(--video-title-size);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.video-title a {
+    color: var(--black, #000);
+    text-decoration: none;
+}
+
+.video-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.video-title a:focus-visible {
+    outline: 2px solid var(--video-key);
+    outline-offset: 2px;
+}
+
+.video-meta small {
+    font-size: var(--video-meta-size);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #6b7399;
+    /* grey-blue like the screenshot */
+
+    
+}
+
+.row.video-row {
+    --bs-gutter-x: 1.5rem;
+    /* default, safe on phones */
+    --bs-gutter-y: 2.5rem;
+    /* bigger gap between rows is fine */
+}
+
+@media (min-width: 992px) {
+    .row.video-row {
+        --bs-gutter-x: 3rem;
+        /* wider gap only when there's room */
+        --bs-gutter-y: 4rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .video-card {
+        --video-title-size: 1.75rem;
+        --video-meta-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-card {
+        --video-title-size: 1.9rem;
+        --video-meta-size: 1.35rem;
+    }
+}

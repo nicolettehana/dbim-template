@@ -9,13 +9,15 @@ html {
 }
 
 .main-nav {
-    --nav-size: 2.0625rem;
-    --nav-sub-size: 1.65rem;
+    /* --nav-size: 2.0625rem; */
+    /* --nav-sub-size: 1.65rem; */
+    --nav-size: 1.25rem;
+    --nav-sub-size: 1.125rem;
 
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: var(--white);    
+    background: var(--white);
     border-bottom: 1px solid var(--bright-gray);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     font-family: "Noto Sans", sans-serif;
@@ -28,7 +30,7 @@ html {
 }
 
 .main-nav .nav-inner {
-    width: calc(100% - 3rem);
+    width: calc(100% - 2rem);
     max-width: 1590px;
     margin-inline: auto;
 }
@@ -101,13 +103,13 @@ html {
 
 .main-nav .nav-link:hover {
     color: var(--key);
-     /* background-color: var(--azureish-white-bg); */
+    /* background-color: var(--azureish-white-bg); */
 }
 
 .main-nav .nav-link:focus-visible {
     outline: 2px solid var(--key);
     outline-offset: -2px;
-    
+
 }
 
 .main-nav .nav-link[aria-current="page"] {
@@ -144,8 +146,8 @@ html {
     padding: 0 0 1rem 1rem;
     border-left: 3px solid var(--key);
     margin-left: 0.25rem;
-    
-    
+
+
 }
 
 .main-nav .nav-sub a {
@@ -173,9 +175,15 @@ html {
 }
 
 /* Desktop */
-@media (min-width: 992px) {
+/* Desktop: one row. Raise 1200px if the items still feel cramped. */
+@media (min-width: 1200px) {
     .main-nav {
-        --nav-size: 2.125rem;
+        --nav-size: 1.5rem;
+        --nav-sub-size: 1.25rem;
+    }
+
+    .main-nav .nav-inner {
+        width: 88%;
     }
 
     .main-nav .nav-menu-btn {
@@ -188,71 +196,62 @@ html {
         justify-content: space-between;
         max-height: none;
         overflow: visible;
-        padding-bottom: 0;
+        padding: 0;
     }
 
+    /* Items share the row equally instead of a fixed 20rem each */
     .main-nav .nav-item {
         position: relative;
+        flex: 1 1 0;
+        min-width: 0;
     }
 
     .main-nav .nav-link {
-        /* width: auto; */
+        width: 100%;
         min-height: 3.75rem;
         padding: 0.5rem 0.75rem;
         justify-content: center;
-
-        width: 20rem;
-            justify-content: center;
-            box-sizing: border-box;
+        text-align: center;
+        box-sizing: border-box;
     }
 
+    /* bar under the current page */
     .main-nav .nav-link[aria-current="page"] {
         box-shadow: inset 0 -4px 0 var(--key);
     }
 
-    /* bar under the current page */
-
+    /* Dropdown: at least as wide as its item, centred under it */
     .main-nav .nav-sub {
         position: absolute;
         top: 100%;
-        /* left: 0; */
         left: 50%;
-            transform: translateX(-50%);
+        transform: translateX(-50%);
         z-index: 1;
-        min-width: 20rem;
+        width: max(100%, 16rem);
         margin: 0;
-        padding: 0rem 0rem;
-        /* background: var(--white); */
+        padding: 0;
         background: rgba(0, 0, 0, 0.85);
         backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         text-align: center;
-        border: 0px solid var(--bright-gray);
+        border: 0;
         border-top: 3px solid var(--key);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        justify-content: center;
         border-radius: 0 0 5px 5px;
         overflow: hidden;
-
-        width: 20rem;
-            min-width: 20rem;
-            transform: translateX(-50%);
     }
 
-    /* .main-nav .nav-item:nth-last-child(-n+2) .nav-sub {
+    /* Last item: open towards the left so it can't leave the screen */
+    .main-nav .nav-item:last-child .nav-sub {
         left: auto;
         right: 0;
-    } */
-
-    /* last two open towards the left */
+        transform: none;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .main-nav {
-        --nav-size: 2rem;
-    }
-
-    .main-nav .nav-inner {
-        width: 88%;
+        --nav-size: 1.75rem;
+        --nav-sub-size: 1.375rem;
     }
 }

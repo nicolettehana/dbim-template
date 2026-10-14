@@ -5997,8 +5997,8 @@ button.filterClearBtn:focus-visible {
 
 /* ---------- Small screens ---------- */
 @media (max-width: 991.5px) {
-  .vision-box { padding: 32px 24px; }
-  .vision-box__text { font-size: 2.2rem; }
+  .vision-box { padding: 35px 26px; }
+  .vision-box__text { font-size: 2rem; }
 }
 
 ol li::marker {
@@ -6009,3 +6009,129 @@ ol li::marker {
       --bs-table-bg: var(--key);
       --bs-table-color: #fff;
     }
+
+
+        .tiles {
+          --tile-title-size: 1.25rem;
+          --tile-key: var(--key, #1b2a6b);
+          /* dark blue border/arrow */
+          --tile-bg: #d2dcfb;
+          /* light blue placeholder */
+          padding-block: 2rem;
+          font-family: "Noto Sans", sans-serif;
+        }
+    
+        .tiles-inner {
+          width: calc(100% - 2rem);
+          max-width: 1590px;
+          margin-inline: auto;
+        }
+    
+        .tile {
+          display: block;
+          color: var(--black, #000);
+          text-decoration: none;
+        }
+    
+        /* Image box */
+        .tile-img {
+          position: relative;
+          display: block;
+          aspect-ratio: 16 / 10;
+          border: 1px solid var(--tile-key);
+          border-radius: 0.75rem;
+          overflow: hidden;
+          background: #fff;
+        }
+    
+        .tile-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+          display: block;
+        }
+    
+        /* Emblem placeholder: centred, not stretched */
+        .tile-placeholder {
+          background: var(--tile-bg);
+        }
+    
+        .tile-placeholder img {
+          object-fit: contain;
+          padding: 1.25rem 1.25rem 2.5rem;
+        }
+    
+        /* Arrow in bottom-right corner */
+        .tile-arrow {
+          position: absolute;
+          right: 1rem;
+          bottom: 0.75rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          padding: 1rem;
+          /* border: 1px solid var(--key); */
+          background: var(--tile-key);
+          -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14M13 6l6 6-6 6'/></svg>") center / contain no-repeat;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14M13 6l6 6-6 6'/></svg>") center / contain no-repeat;
+        }
+    
+        /* Title under the image */
+        .tile-title {
+          display: block;
+          margin-top: 0.75rem;
+          font-size: var(--tile-title-size);
+          line-height: 1.4;
+        }
+    
+        /* Hover / keyboard focus */
+        .tile:hover .tile-title {
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+    
+        .tile:hover .tile-img {
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        .tile:focus-visible {
+          outline: 2px solid var(--tile-key);
+          outline-offset: 4px;
+          border-radius: 0.5rem;
+        }
+    
+        /* Text size by screen width (ascending order) */
+        @media (min-width: 576px) {
+          .tiles {
+            --tile-title-size: 1.5rem;
+          }
+        }
+    
+        @media (min-width: 992px) {
+          .tiles {
+            --tile-title-size: 1.75rem;
+          }
+        }
+    
+        @media (min-width: 1200px) {
+          .tiles {
+            --tile-title-size: 2rem;
+          }
+        }
+
+.map-section .list-group {
+  --bs-list-group-active-bg: var(--key);
+  --bs-list-group-active-border-color: var(--key);
+}
+
+.map-section .map-open {
+  color: var(--key);
+}
+
+.contact-list .contact-card {
+  background: var(--white);
+  border-color: var(--key) !important;
+  /* Bootstrap's .border uses !important, so this needs it too */
+  border-radius: 0;
+  /* square corners; use 0.25rem for slightly rounded */
+}

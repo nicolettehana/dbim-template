@@ -84,7 +84,7 @@ footer.footerbox .footer-logos img {
 
 /* Very small phones: slightly smaller links so three columns fit */
 @media (max-width: 575.98px) {
-  footer.footerbox { --footer-link-size: 1rem; }
+  footer.footerbox { --footer-link-size: 1.2rem; }
   footer.footerbox .footer-links { gap: 0.625rem 0.75rem; }
 }
 
