@@ -3,7 +3,7 @@
    Colours come from the dbim-theme tokens. */
 
 .explore {
-  --explore-title-size: 1.65rem;
+  --explore-title-size: 1.875rem;
   --explore-card-title-size: 1.5rem;
   --explore-text-size: 1.25rem;
   --explore-link-size: 1.25rem;
@@ -281,7 +281,7 @@
 
 @media (min-width: 576px) {
   .explore {
-    --explore-title-size: 1.75rem;
+    --explore-title-size: 1.875rem;
       --explore-card-title-size: 1.75rem;
       --explore-text-size: 1rem;
       --explore-link-size: 1rem;
@@ -295,7 +295,7 @@
 
 @media (min-width: 992px) {
   .explore {
-    --explore-title-size: 1.9rem;
+    --explore-title-size: 2rem;
     --explore-card-title-size: 1.9rem;
     --explore-text-size: 1.5rem;
     --explore-link-size: 1.5rem;
@@ -310,7 +310,7 @@
 /* Side by side only from 1200px up (change this number to switch earlier or later) */
 @media (min-width: 1200px) {
   .explore { --explore-card-title-size: 2.25rem; 
-  --explore-card-title-size: 2.25rem;
+  --explore-card-title-size: 2rem;
     --explore-text-size: 1.75rem;
     --explore-link-size: 1.75rem;
     --explore-more-size: 1.5rem;}

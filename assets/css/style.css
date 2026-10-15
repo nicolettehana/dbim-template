@@ -6119,12 +6119,159 @@ ol li::marker {
           }
         }
 
-.map-section .list-group {
+/* .map-section .list-group {
   --bs-list-group-active-bg: var(--key);
   --bs-list-group-active-border-color: var(--key);
 }
 
 .map-section .map-open {
   color: var(--key);
+} */
+/* ============ Find Us / map section ============ */
+
+.map-section .list-group {
+  gap: 0.75rem;
+  border-radius: 0;
+
+  /* all cards: --no-key background, --key text */
+  --bs-list-group-bg: var(--azureish-white-bg);
+  --bs-list-group-color: var(--key);
+  --bs-list-group-border-color: color-mix(in srgb, var(--key) 25%, transparent);
+
+  /* hover */
+  --bs-list-group-action-color: var(--key);
+  --bs-list-group-action-hover-color: var(--key);
+  --bs-list-group-action-hover-bg: var(--azureish-white-bg);
+
+  /* active: same colours, marked by border instead */
+  --bs-list-group-active-bg: var(--azureish-white-bg);
+  --bs-list-group-active-color: var(--key);
+  --bs-list-group-active-border-color: var(--key);
 }
 
+.map-section .list-group-item {
+  /* indent for everything under the title */
+  --icon-size: 2.5rem;
+  --icon-gap: 0.5rem;
+  --indent: calc(var(--icon-size) + var(--icon-gap));
+
+  font-size: 2rem;
+  border: 1px solid var(--bs-list-group-border-color);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  color: var(--key);
+  background: var(--no-key);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Bootstrap removes the top border on stacked items; put it back */
+.map-section .list-group-item + .list-group-item {
+  border-top-width: 1px;
+}
+
+.map-section .list-group-item:hover {
+  border-color: var(--key);
+  transform: translateY(-1px);
+}
+
+.map-section .list-group-item.active {
+  border: 2px solid var(--key);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--key) 22%, transparent);
+  color: var(--key);
+  background: var(--azureish-white-bg);
+}
+
+/* location icon */
+.map-section .contact-icon {
+  font-size: var(--icon-size);
+  width: var(--icon-size);
+  margin-right: var(--icon-gap);
+  color: var(--key);
+  vertical-align: middle;
+}
+
+/* building name + address: own line each, indented */
+.map-section .list-group-item small {
+  display: block;
+  padding-left: var(--indent);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: inherit;
+}
+
+/* branch list */
+.map-section .list-group-item ol {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.map-section .list-group-item ol li {
+  padding-left: 0.25rem;
+  margin-bottom: 0.15rem;
+  color: inherit;
+}
+
+/* map side */
+.map-section .ratio {
+  border-radius: 12px;
+}
+
+.map-section .map-open {
+  color: var(--key);
+}
+/* ============ Active-card arrow (points toward the map) ============ */
+
+/* the card needs to be a positioning context, with room for the arrow */
+.map-section .list-group-item {
+  position: relative;
+  padding-right: 4rem;             /* keeps text clear of the arrow */
+}
+
+/* the arrow: hidden by default, centered vertically on the card */
+.map-section .list-group-item::after {
+  content: "\2192";                /* → */
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  font-size: 2.5rem;               /* bigger: try 2rem to 3rem */
+  font-weight: 700;
+  line-height: 1;
+  color: var(--key);
+  opacity: 0;
+  transform: translate(-6px, -50%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+/* visible on the active card */
+.map-section .list-group-item.active::after {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+/* faint hint on hover for the inactive cards */
+.map-section .list-group-item:not(.active):hover::after {
+  opacity: 0.45;
+  transform: translate(0, -50%);
+}
+
+/* map sits below the list on small screens, so point down */
+@media (max-width: 991.98px) {
+  .map-section .list-group-item::after {
+    content: "\2193";              /* ↓ */
+    transform: translate(0, calc(-50% - 6px));
+  }
+
+  .map-section .list-group-item.active::after,
+  .map-section .list-group-item:not(.active):hover::after {
+    transform: translate(0, -50%);
+  }
+}
+
+/* respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .map-section .list-group-item::after {
+    transition: none;
+  }
+}

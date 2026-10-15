@@ -7,7 +7,7 @@
 .about {
   --about-text-align: left;      /* DBIM checklist: body text is left aligned. Use "justify" to match the screenshot. */
   --about-max: none;             /* maximum width of the content */
-  --about-title-size: 2rem;
+  --about-title-size: 1.7rem;
   --about-text-size: 1.5rem;
   --about-btn-size: 1.65rem;
   --about-name-size: 1.5rem;
@@ -153,7 +153,7 @@
 @media (min-width: 430px) {
   .about {
     --about-max: 420px;
-      --about-title-size: 1.5rem;
+      --about-title-size: 1.7rem;
       --about-text-size: 1.35rem;
       --about-btn-size: 1.35rem;
     --about-name-size: 1.25rem;
@@ -173,7 +173,7 @@
 @media (min-width: 576px) {
   .about {
     --about-max: 540px;
-    --about-title-size: 1.65rem;
+    --about-title-size: 1.875rem;
     --about-text-size: 1.5rem;
     --about-btn-size: 1.5rem;
     --about-name-size: 1.5rem;
@@ -198,7 +198,7 @@
 @media (min-width: 992px) {
   .about {
     --about-max: 720px;
-    --about-title-size: 1.75rem;
+    --about-title-size: 2rem;
     --about-text-size: 1.65rem;
     --about-btn-size: 1.65rem;
     --about-name-size: 1.65rem;
@@ -218,6 +218,7 @@
   .about {
     --about-max: 1590px;
     --about-text-size: 1.75rem;
+    --about-title-size: 2.25rem;
     --about-btn-size: 1.75rem;
     --about-name-size: 1.75rem;
     --about-role-size: 1.25rem;

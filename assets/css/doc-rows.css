@@ -97,3 +97,91 @@
   .doc-row__title { flex: 1 1 calc(100% - 48px); }
   .doc-row__meta { margin-right: auto; }
 }
+
+
+/* ============ Sitemap page ============ */
+
+/* section headings */
+.heading {
+  color: var(--key);
+  margin: 2rem 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--key) 25%, transparent);
+}
+
+.heading:first-child {
+  margin-top: 1rem;
+}
+
+/* each sitemap block as a card */
+.maincontent .doc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.maincontent .doc-row2 {
+  background: var(--no-key);
+  border: 1px solid color-mix(in srgb, var(--key) 25%, transparent);
+  border-radius: 12px;
+  padding: 0.9rem 1.25rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.maincontent .doc-row2:hover {
+  border-color: var(--key);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--key) 15%, transparent);
+}
+
+/* top-level item (bullet list) */
+.maincontent .doc-row2 > ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.maincontent .doc-row2 > ul > li::marker {
+  color: var(--key);
+}
+
+.maincontent .doc-row2__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.65rem;
+}
+
+.maincontent .doc-row2__title > a {
+  color: var(--key);
+  text-decoration: none;
+}
+
+.maincontent .doc-row2__title > a:hover {
+  text-decoration: underline;
+}
+
+/* sub-links (roman numeral list) */
+.maincontent .doc-row2 ol {
+  margin: 1rem;
+  padding-left: 1.5rem;
+  font-weight: 400;
+  font-size: 1.45rem;
+}
+
+.maincontent .doc-row2 ol li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.maincontent .doc-row2 ol li::marker {
+  color: var(--key);
+  font-weight: 600;
+}
+
+.maincontent .doc-row2 ol a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.maincontent .doc-row2 ol a:hover {
+  color: var(--key);
+  text-decoration: underline;
+}

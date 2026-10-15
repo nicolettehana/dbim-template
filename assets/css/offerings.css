@@ -3,7 +3,7 @@
    Colours come from the dbim-theme tokens. */
 
 .offerings {
-  --offer-title-size: 2rem;
+  --offer-title-size: 1.875rem;
   --offer-tab-size: 2rem;
   --offer-item-size: 1.5rem;
   --offer-more-size: 1rem;
@@ -179,6 +179,7 @@
 
 @media (min-width: 992px) {
   .offerings {
+    --offer-title-size: 2rem;
     --offer-tab-size: 1.4rem;
       --offer-item-size: 1.4rem;
       --offer-more-size: 1.4rem;
@@ -189,6 +190,7 @@
 }
 @media (min-width: 1200px) {
   .offerings {
+    --offer-title-size: 2.25rem;
     --offer-tab-size: 2rem;
     --offer-item-size: 1.5rem;
     --offer-more-size: 1.5rem;
