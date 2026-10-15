@@ -71,7 +71,7 @@
   }
 
   function fillCategories(cats) {
-    var html = '<option value="">Category</option>';
+    var html = '<option value="">All Categories</option>';
     cats.forEach(function (c) {
       html += '<option value="' + esc(c.id) + '">' + esc(c.label) + "</option>";
     });
