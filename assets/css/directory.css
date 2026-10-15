@@ -26,7 +26,7 @@ header .menuright .menutop li .menuicon { background: var(--white); color: var(-
 .Innerbaner::before { display: none; }
 .Innerbaner .banner-art { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 /* .Innerbaner .container-fluid { position: relative; z-index: 1; } */
-.Innerbaner .innerbox { bottom: 60px; z-index: 1; }
+.Innerbaner .innerbox { bottom: 60px; z-index: 3; }
 .Innerbaner .innerbox .breadcrumb li,
 .Innerbaner .innerbox .breadcrumb li a,
 .Innerbaner .innerbox .breadcrumb li::before,
