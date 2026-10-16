@@ -11,11 +11,18 @@
     if (!viewport || !move || !list || !toggle) return;
 
     // Copy of the list for the loop: hidden from screen readers and keyboard
+    // var clone = list.cloneNode(true);
+    // clone.classList.add('ticker-clone');
+    // clone.setAttribute('aria-hidden', 'true');
+    // clone.setAttribute('inert', '');
+    // move.appendChild(clone);
     var clone = list.cloneNode(true);
-    clone.classList.add('ticker-clone');
-    clone.setAttribute('aria-hidden', 'true');
-    clone.setAttribute('inert', '');
-    move.appendChild(clone);
+clone.classList.add('ticker-clone');
+clone.setAttribute('aria-hidden', 'true');
+clone.querySelectorAll('a').forEach(function (a) {
+  a.setAttribute('tabindex', '-1');
+});
+move.appendChild(clone);
     root.classList.add('is-ready');
 
     function setSpeed() {
