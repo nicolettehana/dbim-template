@@ -98,6 +98,9 @@ header.site-header {
     justify-self: stretch;
     width: 100%;
     max-width: none;
+    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.35rem;
 }
 
 .site-header .hdr-search input {

@@ -11,8 +11,8 @@ html {
 .main-nav {
     /* --nav-size: 2.0625rem; */
     /* --nav-sub-size: 1.65rem; */
-    --nav-size: 1.25rem;
-    --nav-sub-size: 1.125rem;
+    --nav-size: 1.6rem;
+    --nav-sub-size: 1.45rem;
 
     position: sticky;
     top: 0;
@@ -21,6 +21,7 @@ html {
     border-bottom: 1px solid var(--bright-gray);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     font-family: "Noto Sans", sans-serif;
+    padding-top: 1rem;
 }
 
 .main-nav ul {
@@ -178,8 +179,8 @@ html {
 /* Desktop: one row. Raise 1200px if the items still feel cramped. */
 @media (min-width: 1200px) {
     .main-nav {
-        --nav-size: 1.5rem;
-        --nav-sub-size: 1.25rem;
+        --nav-size: 1.75rem;
+        --nav-sub-size: 1.5rem;
     }
 
     .main-nav .nav-inner {
@@ -251,7 +252,7 @@ html {
 
 @media (min-width: 1400px) {
     .main-nav {
-        --nav-size: 1.75rem;
-        --nav-sub-size: 1.375rem;
+        --nav-size: 1.875rem;
+        --nav-sub-size: 1.75rem;
     }
 }
