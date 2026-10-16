@@ -413,6 +413,48 @@ function typeSize(file, size) {
     arrow('chevron_right', 'Next page', state.page === pages, state.page + 1);
   }
 
+  function addAppBadge() {
+  var link = str(root.getAttribute('data-android-app'));
+  if (!/^https:\/\//i.test(link)) return;
+
+  var badgeSrc = root.getAttribute('data-android-badge') || '../../assets/img/google-play-badge.png';
+  var head = el.title.closest('.bgt-viewhead') || el.title.parentNode;
+
+  var st = document.createElement('style');
+  st.textContent =
+    '.bgt-viewhead-app{position:relative;width:100%;flex:1 1 100%;box-sizing:border-box}' +
+    '.bgt-viewhead-app .app-box{position:absolute;top:0;right:0;display:flex;flex-direction:column;align-items:center;gap:6px}' +
+    '.bgt-viewhead-app .app-title{font-size:1.4rem;font-weight:600;color:var(--black);white-space:nowrap}' +
+    '.bgt-viewhead-app .app-badge{display:block;line-height:0}' +
+    '.bgt-viewhead-app .app-badge img{height:40px;width:auto;display:block}' +
+    '@media (min-width:992px){.bgt-viewhead-app{padding-right:240px;min-height:90px}}' +
+    '@media (max-width:991.5px){.bgt-viewhead-app .app-box{position:static;align-items:flex-start;margin-top:12px}}';
+  document.head.appendChild(st);
+
+  head.classList.add('bgt-viewhead-app');
+
+  var box = h('div', 'app-box');
+  box.appendChild(h('span', 'app-title', 'State Budget Mobile App'));
+
+  var a = h('a', 'app-badge');
+  a.href = link;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.setAttribute('aria-label', 'Get the Meghalaya State Budget app on Google Play (opens in a new tab)');
+
+  var img = document.createElement('img');
+  img.src = badgeSrc;
+  img.alt = 'Get it on Google Play';
+  img.addEventListener('error', function () {
+    a.textContent = 'Get it on Google Play';
+    a.className = 'app-badge download-btn';
+  });
+  a.appendChild(img);
+
+  box.appendChild(a);
+  head.appendChild(box);
+}
+
   /* ---------- events ---------- */
   var timer;
   el.search.addEventListener('input', function () {
@@ -442,6 +484,8 @@ function typeSize(file, size) {
       showError('The spreadsheet reader could not be loaded. Please try again later.');
       return;
     }
+    try { addAppBadge(); } catch (e) { /* badge is optional, never block the page */ }
+
     try {
       var rows = await loadSheet(url(MASTER));
       var seen = {};

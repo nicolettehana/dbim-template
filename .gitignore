@@ -1,3 +1,13 @@
 budget_documents/**/*.pdf
 
 assets/docs/notifications/**/*.pdf
+
+assets/docs/**/*.pdf
+
+assets/docs/pfms**/*.pdf
+
+assets/docs/expenditure**/*.pdf
+
+assets/docs/rules**/*.pdf
+
+assets/docs/user-manuals/**/*.pdf
