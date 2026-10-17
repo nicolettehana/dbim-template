@@ -208,3 +208,52 @@ html.a11y-cursor * { cursor: default !important; }
 .pad-space{
   padding: 1rem 1.5rem
 }
+
+/* Inner Banner Contrast */
+
+/* Banner in dark contrast */
+html.a11y-contrast .Innerbaner {
+  background: var(--white) !important;        /* black */
+  border-bottom: 3px solid var(--key);         /* yellow edge so the banner stays distinct */
+}
+
+/* Text: white, links yellow. The extra html + class beats the existing !important rules. */
+html.a11y-contrast .Innerbaner .innerbox .pagename,
+html.a11y-contrast .Innerbaner .innerbox .breadcrumb li,
+html.a11y-contrast .Innerbaner .innerbox .breadcrumb li::before {
+  color: var(--black) !important;              /* white */
+  text-shadow: none;
+}
+html.a11y-contrast .Innerbaner .innerbox .breadcrumb li a {
+  color: var(--link) !important;               /* yellow */
+}
+
+/* Remove the white sheen sweep and glow, which wash out contrast */
+html.a11y-contrast .Innerbaner::after { display: none; }
+html.a11y-contrast .Innerbaner .banner-art { filter: none; opacity: 0.4; }
+html.a11y-contrast .Innerbaner .wave-path,
+html.a11y-contrast .Innerbaner .wave-path-c2,
+html.a11y-contrast .Innerbaner .dots { fill: var(--key); }
+
+
+/* Sub Menu Items Dark Contrast */
+
+/* Main menu sub-items in dark contrast */
+html.a11y-contrast .main-nav .nav-sub {
+  background: var(--white);                 /* solid black, no see-through */
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  border-top: 3px solid var(--key);
+  box-shadow: 0 0 0 1px var(--key);         /* yellow outline so the dropdown stands out from the page */
+}
+html.a11y-contrast .main-nav .nav-sub a {
+  background: var(--white);
+  color: var(--link);                       /* yellow */
+  border-bottom: 1px solid var(--bright-gray);
+}
+html.a11y-contrast .main-nav .nav-sub a:hover,
+html.a11y-contrast .main-nav .nav-sub a:focus-visible {
+  background: var(--key);                   /* yellow block, black text */
+  color: var(--on-key);
+  text-decoration: underline;
+}
