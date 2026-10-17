@@ -48,6 +48,7 @@
 .about .ico-team  { -webkit-mask-image: url("../../assets/images/icons/team.svg");  mask-image: url("../../assets/images/icons/team.svg"); }
 .about .ico-grid  { -webkit-mask-image: url("../../assets/images/icons/org.svg");  mask-image: url("../../assets/images/icons/org.svg"); }
 .about .ico-chart { -webkit-mask-image: url("../../assets/images/icons/performance.svg"); mask-image: url("../../assets/images/icons/performance.svg"); }
+.about .ico-department { -webkit-mask-image: url("../../assets/images/icons/depsrtment.svg"); mask-image: url("../../assets/images/icons/department.svg"); }
 
 /* Heading and text */
 .about-title {
