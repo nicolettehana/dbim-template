@@ -54,7 +54,7 @@
           </a>
         </li>
         <li>
-          <!-- Hook for the Bhashini translation plugin -->
+           Hook for the Bhashini translation plugin 
           <button type="button" class="hdr-tool dont-translate translate-plugin-popup-button"
             aria-label="Translate this page" title="Translate this page">
             <span class="ico ico-trans" aria-hidden="true"></span>
@@ -201,55 +201,106 @@
 </main>
 
 <footer class="footerbox" aria-label="Site footer">
-  <div class="container-fluid">
-    <div class="footer-grid">
+      <div class="container-fluid">
+        <div class="footer-grid">
+          <nav class="footer-useful" aria-labelledby="footer-useful-links">
+            <h2 id="footer-useful-links">Useful Links</h2>
+            <ul class="footer-links">
+              <li><a href="./pages/footer/archives.html">Archives</a></li>
+              <li><a href="./pages/footer/sitemap.html">Site Map</a></li>
+              <li><a href="./pages/footer/help.html">Help</a></li>
+              <li>
+                <a href="./pages/footer/policies.html">Website Policies</a>
+              </li>
+              <li><a href="./pages/footer/links.html">Related Links</a></li>
+              <li><a href="./pages/contact-us.html">Contact Us</a></li>
+            </ul>
+          </nav>
 
-      <nav class="footer-useful" aria-labelledby="footer-useful-links">
-        <h2 id="footer-useful-links">Useful Links</h2>
-        <ul class="footer-links">
-          <li><a href="#">Archives</a></li>
-          <li><a href="#">Site Map</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Website Policies</a></li>
-          <li><a href="#">Related Links</a></li>
-        </ul>
-      </nav>
+          <p class="footer-lineage">
+            This Website belongs to Finance Department, Government of Meghalaya
+            and hosted by National Informatics Centre, Meghalaya State Centre.
+          </p>
 
-      <p class="footer-lineage">This Website belongs to Finance Department, Government of Meghalaya and hosted
-        by National Informatics Centre, Meghalaya
-        State Centre.</p>
+          <div class="footer-subscribe">
+            <!-- <h2 id="footer-subscribe">Subscribe for updates</h2>
+            <ul class="footer-social" aria-labelledby="footer-subscribe">
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><img
+                    src="assets/images/icons/x.svg"
+                    width="32"
+                    height="32"
+                    alt="X (opens in a new tab)"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><img
+                    src="assets/images/icons/youtube.svg"
+                    width="32"
+                    height="32"
+                    alt="YouTube (opens in a new tab)"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><img
+                    src="assets/images/icons/facebook.svg"
+                    width="32"
+                    height="32"
+                    alt="Facebook (opens in a new tab)"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><img
+                    src="assets/images/icons/instagram.svg"
+                    width="32"
+                    height="32"
+                    alt="Instagram (opens in a new tab)"
+                /></a>
+              </li>
+            </ul> -->
+            <!-- Official logos from the DBIM toolkit, each under 100 KB. Add the myGov logo here if your site uses it. -->
+            <div class="footer-logos">
+              <a
+                href="https://www.meghalaya.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Government of Meghalaya"
+                title="Government of Meghalaya"
+              >
+                <img
+                  src="assets/images/logos/meglogo.png"
+                  height="44"
+                  alt="Meghalaya.gov.in: Portal of Meghalaya (opens in a new tab)"
+                />
+              </a>
+              <a
+                href="https://meg.nic.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="NIC Meghalaya"
+                title="NIC Meghalaya"
+              >
+                <img
+                  src="assets/images/logos/nic.svg"
+                  height="44"
+                  alt="Meg.nic.in: Portal of Meghalaya (opens in a new tab)"
+                />
+              </a>
+            </div>
+          </div>
 
-      <div class="footer-subscribe">
-        <!-- <h2 id="footer-subscribe">Subscribe for updates</h2>
-        <ul class="footer-social" aria-labelledby="footer-subscribe">
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/x.svg" width="32"
-                height="32" alt="X (opens in a new tab)"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/youtube.svg"
-                width="32" height="32" alt="YouTube (opens in a new tab)"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/facebook.svg"
-                width="32" height="32" alt="Facebook (opens in a new tab)"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/instagram.svg"
-                width="32" height="32" alt="Instagram (opens in a new tab)"></a></li>
-        </ul> -->
-        <!-- Official logos from the DBIM toolkit, each under 100 KB. Add the myGov logo here if your site uses it. -->
-        <div class="footer-logos">
-          <a href="https://www.meghalaya.gov.in" target="_blank" rel="noopener noreferrer"  title="Government of Meghalaya">
-            <img src="assets/images/logos/meglogo.png" height="44"
-              alt="Meghalaya.gov.in: Portal of Meghalaya (opens in a new tab)">
-          </a>
-          <a href="https://meg.nic.in" target="_blank" rel="noopener noreferrer" title="NIC Meghalaya">
-            <img src="assets/images/logos/nic.svg" height="44"
-              alt="Meg.nic.in: Portal of Meghalaya (opens in a new tab)">
-          </a>
+          <!-- <p class="footer-updated">Last Updated On: <time datetime="2026-10-06">06.10.2026</time></p> -->
+          <p class="footer-updated">
+            Last Updated On:
+            <time id="last-updated" datetime="2026-10-06">06.10.2026</time>
+          </p>
         </div>
       </div>
-
-      <!-- <p class="footer-updated">Last Updated On: <time datetime="2026-10-06">06.10.2026</time></p> -->
-      <p class="footer-updated">Last Updated On: <time id="last-updated" datetime="2026-10-06">06.10.2026</time></p>
-
-    </div>
-  </div>
-</footer>
+    </footer>
 
 <div class="a11y-overlay" id="a11y-overlay"></div>
 
