@@ -2,8 +2,14 @@
    Load this in the <head> (no defer) so a visitor's saved settings apply before the page paints.
    Settings are saved in this browser only (localStorage). Nothing is sent anywhere. */
 (function () {
+//   var STORAGE_KEY = 'a11y-settings';
+// var SIZES = [90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150];   // text size as a percentage of normal, 5% per step
+// var SATURATION_NAMES = ['normal', 'low', 'high'];
+// var DEFAULTS = { contrast: false, invert: false, saturation: 0, size: SIZES.indexOf(100), links: false, images: false, cursor: false };
   var STORAGE_KEY = 'a11y-settings';
-  var SIZES = [87.5, 100, 112.5, 125, 150, 175];          // text size as a percentage of normal
+  // var SIZES = [87.5, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150];   // text size as a percentage of normal, 5% per step
+
+   var SIZES = [87.5, 100, 112.5, 125, 150, 175];          // text size as a percentage of normal
   var SATURATION_NAMES = ['normal', 'low', 'high'];
   var DEFAULTS = { contrast: false, invert: false, saturation: 0, size: 1, links: false, images: false, cursor: false };
 
