@@ -11,3 +11,7 @@ assets/docs/expenditure**/*.pdf
 assets/docs/rules**/*.pdf
 
 assets/docs/user-manuals/**/*.pdf
+
+assets/docs/acts/**/*.pdf
+
+assets/docs/forms/**/*.pdf
