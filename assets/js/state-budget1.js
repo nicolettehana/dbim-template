@@ -198,8 +198,8 @@
   function fillCategories() {
     function opt(v, t) { var o = document.createElement('option'); o.value = v; o.textContent = t; el.cat.appendChild(o); }
     opt('', 'All categories');
-    opt(OTHERS, 'Others');
     state.cards.forEach(function (c) { if (c.multiple) opt(stem(c.file), c.name); });
+    opt(OTHERS, 'Others');
   }
 
   /* ---------- rendering ---------- */
