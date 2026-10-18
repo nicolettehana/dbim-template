@@ -118,7 +118,7 @@
   text-transform: uppercase;               /* short labels only */
   cursor: pointer;
 }
-.a11y-drawer .a11y-tile:hover { background: var(--azureish-white-bg); }
+.a11y-drawer .a11y-tile:hover { background: var(--azureish-white-bg); padding: 10rem; }
 .a11y-drawer .a11y-tile[aria-pressed="true"] { background: var(--key); color: var(--on-key); }
 .a11y-drawer .a11y-tile[aria-disabled="true"] { opacity: 0.4; cursor: not-allowed; }
 .a11y-drawer .a11y-ico {
@@ -156,7 +156,7 @@
   font-weight: 700;
   cursor: pointer;
 }
-.a11y-drawer .a11y-reset:hover { background: var(--azureish-white-bg); }
+.a11y-drawer .a11y-reset:hover { background: var(--azureish-white-bg); padding: 5rem;; }
 
 .a11y-drawer button:focus-visible { outline: 3px solid var(--key); outline-offset: 2px; }
 

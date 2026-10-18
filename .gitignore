@@ -17,3 +17,5 @@ assets/docs/acts/**/*.pdf
 assets/docs/forms/**/*.pdf
 
 assets/docs/publications/**/*.pdf
+
+files/**/*.pdf
