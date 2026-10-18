@@ -212,16 +212,20 @@ header.site-header {
 .site-header .hdr-tools li+li::before {
     content: "";
     width: 1px;
-    height: 2rem;
+    /* height: 2rem; */
+    height: var(--hdr-icon-size);
     background: var(--key);
 }
 
 .site-header .hdr-tool {
     display: grid;
     place-items: center;
-    width: 2.75rem;
+    width: calc(var(--hdr-icon-size) + 0.75rem);
+    height: calc(var(--hdr-icon-size) + 0.75rem);
+    /* height: auto; */
+    /* width: 2.75rem;
     /* easy to tap */
-    height: 2.75rem;
+    /* height: 2.75rem; */ */
     padding: 0;
     background: transparent;
     border: 0;
@@ -246,7 +250,7 @@ header.site-header {
         --hdr-name-size: 2.5rem;
         --hdr-emblem-height: 7rem;
         --hdr-cobrand-height: 7rem;
-        --hdr-icon-size: 3rem;
+        --hdr-icon-size: 2.75rem;
         --hdr-tool-margin: 1rem;
     }
 }
