@@ -9,9 +9,14 @@
   var STORAGE_KEY = 'a11y-settings';
   // var SIZES = [87.5, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150];   // text size as a percentage of normal, 5% per step
 
-   var SIZES = [87.5, 100, 112.5, 125, 150, 175];          // text size as a percentage of normal
-  var SATURATION_NAMES = ['normal', 'low', 'high'];
-  var DEFAULTS = { contrast: false, invert: false, saturation: 0, size: 1, links: false, images: false, cursor: false };
+   //original var SIZES = [87.5, 100, 112.5, 125, 150, 175];          // text size as a percentage of normal
+  // var SIZES = [87.5, 100, 110, 125, 150, 175, 200]; 
+  //  var SATURATION_NAMES = ['normal', 'low', 'high'];
+  // var DEFAULTS = { contrast: false, invert: false, saturation: 0, size: 1, links: false, images: false, cursor: false };
+
+var SIZES = [80, 85, 90, 95, 100, 110, 125, 150, 175, 200];   // % of the site's own base size
+var SATURATION_NAMES = ['normal', 'low', 'high'];
+var DEFAULTS = { contrast: false, invert: false, saturation: 0, size: SIZES.indexOf(100), links: false, images: false, cursor: false };
 
   var root = document.documentElement;
   var state = load();
@@ -41,7 +46,12 @@
     root.classList.toggle('a11y-noimg', state.images);
     root.classList.toggle('a11y-cursor', state.cursor);
 
-    root.style.fontSize = SIZES[state.size] === 100 ? '' : SIZES[state.size] + '%';
+    // root.style.fontSize = SIZES[state.size] === 100 ? '' : SIZES[state.size] + '%';
+    root.style.fontSize = '';                              // back to the site's own size
+if (SIZES[state.size] !== 100) {
+  var base = parseFloat(getComputedStyle(root).fontSize);   // original root size in px
+  root.style.fontSize = (base * SIZES[state.size] / 100) + 'px';
+}
 
     var filters = [];
     if (state.invert) filters.push('invert(1) hue-rotate(180deg)');
